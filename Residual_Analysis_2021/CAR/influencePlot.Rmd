@@ -1,0 +1,29 @@
+
+influencePlot
+65
+Author(s)J. Fox<jfox@mcmaster.ca>ReferencesFox, J. and Weisberg, S. (2019)
+An R Companion to Applied Regression, Third Edition, Sage.
+See Alsolmer,glmer,lme,infIndexPlot.
+
+Examples
+if (require("lme4")){
+print(fm1 <- lmer(Reaction ~ Days + (Days | Subject),sleepstudy)) 
+# from ?lmerinfIndexPlot(influence(fm1, "Subject"))}
+
+if (require("lme4")){
+gm1 <- glmer(cbind(incidence, size - incidence) ~ period + (1 | herd),data = cbpp, family = binomial)
+
+
+infIndexPlot(influence(gm1, "herd", maxfun=100))gm1.11 <- update(gm1, subset = herd != 11) 
+# check deleting herd 11compareCoefs(gm1, gm1.11)}influencePlotRegression Influence PlotDescription
+
+This function creates a “bubble” plot of Studentized residuals versus hat values, with the areas of the 
+circles representing the observations proportional to the value Cook’s distance.  
+
+Vertical referencelines are drawn at twice and three times the average hat value, horizontal reference 
+lines at -2, 0,and 2 on the Studentized-residual scale.UsageinfluencePlot(model, ...)
+
+## S3 method for class'lm'
+
+influencePlot(model, scale=10,xlab="Hat-Values", ylab="Studentized Residuals", id=TRUE, ...)
+## S3 method for class'lmerMod'influencePlot(model, ..
