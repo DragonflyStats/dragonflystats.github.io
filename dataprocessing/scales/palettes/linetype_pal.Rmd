@@ -1,0 +1,7 @@
+linetype_pal Line type palette (discrete).
+#### Description
+Based on a set supplied by Richard Pearson, University of Manchester
+#### Usage
+linetype_pal()
+
+

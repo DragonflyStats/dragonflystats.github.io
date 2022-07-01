@@ -1,0 +1,28 @@
+---
+title: "``trans_range`` Compute range of transformed values."
+author: "Kevin O'Brien"
+date: "19 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+```
+
+``trans_range`` Compute range of transformed values.
+
+#### Description
+
+Silently drops any ranges outside of the domain of trans.
+
+#### Usage
+
+<pre><code>
+trans_range(trans, x)
+</code></pre>
+
+#### Arguments
+
+* trans a transformation object, or the name of a transformation object given as a string.
+* x a numeric vector to compute the range of

@@ -1,0 +1,29 @@
+---
+title: "``censor`` Censor any values outside of range."
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+```
+
+
+#### Description
+Censor any values outside of range.
+
+#### Usage
+<pre><code>
+censor(x, range = c(0, 1), only.finite = TRUE)
+</code></pre>
+
+#### Arguments
+* x numeric vector of values to manipulate.
+* range numeric vector of length two giving desired output range.
+* only.finite if TRUE (the default), will only modify finite values.
+
+#### Examples
+
+```{r}
+censor(c(-1, 0.5, 1, 2, NA))
+```

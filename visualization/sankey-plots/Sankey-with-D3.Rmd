@@ -1,0 +1,78 @@
+---
+title: "D3 Sankey"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sankey Plots
+
+```{r cars}
+library(networkD3)
+nodes = data.frame("name" = 
+ c("Node A", # Node 0
+ "Node B", # Node 1
+ "Node C", # Node 2
+ "Node D"))# Node 3
+
+```
+
+
+```{r}
+links = as.data.frame(matrix(c(
+ 0, 1, 10, # Each row represents a link. The first number
+ 0, 2, 20, # represents the node being conntected from. 
+ 1, 3, 30, # the second number represents the node connected to.
+ 2, 3, 40),# The third number is the value of the node
+ byrow = TRUE, ncol = 3))
+ names(links) = c("source", "target", "value")
+```
+
+
+```{r}
+links
+
+```
+
+
+```{r}
+sankeyNetwork(Links = links, Nodes = nodes,
+ Source = "source", Target = "target",
+ Value = "value", NodeID = "name",
+ fontSize= 12, nodeWidth = 30)
+```
+
+
+```{r}
+# Recreate Bostock Sankey diagram: http://bost.ocks.org/mike/sankey/
+# Load energy projection data
+library(jsonlite)
+library(rjson)
+URL <- paste0('https://cdn.rawgit.com/christophergandrud/networkD3/',
+              'master/JSONdata/energy.json')
+energy <- jsonlite::fromJSON(URL)
+
+```
+
+
+```{r}
+
+# Plot
+sankeyNetwork(Links = energy$links, Nodes = energy$nodes, Source = 'source',
+             Target = 'target', Value = 'value', NodeID = 'name',
+             units = 'TWh', fontSize = 12, nodeWidth = 30)
+
+```
+
+
+```{r}
+# Colour links
+energy$links$energy_type <- sub(' .*', '',
+                               energy$nodes[energy$links$source + 1, 'name'])
+
+sankeyNetwork(Links = energy$links, Nodes = energy$nodes, Source = 'source',
+             Target = 'target', Value = 'value', NodeID = 'name',
+             LinkGroup = 'energy_type', NodeGroup = NULL)
+```

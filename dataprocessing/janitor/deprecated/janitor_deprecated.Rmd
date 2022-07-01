@@ -1,0 +1,43 @@
+---
+title: "janitor"
+author: "Kevin O'Brien"
+date: "22 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+janitor_deprecated
+crosstab Generate a crosstabulation of two vectors.
+#### Description
+This function is deprecated, use tabyl(dat, var1, var2) instead.
+
+#### Usage 
+<pre><code>
+crosstab(...)
+## Default S3 method:
+crosstab(vec1, vec2, percent = "none",
+show_na = TRUE, ...)
+## S3 method for class 'data.frame'
+crosstab(.data, ...)
+</code></pre> 
+
+#### Arguments
+* ... additional arguments, if calling crosstab on a data.frame.
+* vec1 the vector to place on the crosstab column. If supplying a data.frame, this should
+be an unquoted column name.
+* vec2 the vector to place on the crosstab row. If supplying a data.frame, this should be
+an unquoted column name.
+percent which grouping to use for percentages, if desired (defaults to "none", which
+returns simple counts). Must be one of "none", "row", "col", or "all".
+* show_na a logical value indicating whether counts should be displayed where either variable
+is NA.
+* .data (optional) a data.frame, in which case vec1 and vec2 should be unquoted column
+names.
+
+#### Value
+Returns a data.frame with the frequencies of the crosstabulated variables.
+excel_numeric_to_date 13

@@ -1,0 +1,43 @@
+## ``rescale`` Rescale continuous vector to have specified minimum and maximum.
+
+#### Description
+Rescale continuous vector to have specified minimum and maximum.
+
+#### Usage
+
+<pre><code>
+rescale(x, to, from, ...)
+## S3 method for class 'numeric'
+rescale(x, to = c(0, 1), from = range(x, na.rm =
+                                        TRUE, finite = TRUE), ...)
+## S3 method for class 'dist'
+rescale(x, to = c(0, 1), from = range(x, na.rm = TRUE,
+                                      finite = TRUE), ...)
+## S3 method for class 'logical'
+rescale(x, to = c(0, 1), from = range(x, na.rm =
+                                        TRUE, finite = TRUE), ...)
+rescale_max 35
+## S3 method for class 'POSIXt'
+rescale(x, to = c(0, 1), from = range(x, na.rm = TRUE,
+                                      finite = TRUE), ...)
+## S3 method for class 'Date'
+rescale(x, to = c(0, 1), from = range(x, na.rm = TRUE,
+                                      finite = TRUE), ...)
+## S3 method for class 'integer64'
+rescale(x, to = c(0, 1), from = range(x, na.rm = TRUE), ...)
+</code></pre>                                        
+
+#### Arguments
+
+* x continuous vector of values to manipulate.
+* to output range (numeric vector of length two)
+* from input range (vector of length two). If not given, is calculated from the range of x
+* ... other arguments passed on to methods
+
+#### Examples
+
+```{r}`
+rescale(1:100)
+rescale(runif(50))
+rescale(1)
+```

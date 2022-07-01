@@ -1,0 +1,40 @@
+---
+title: "``date_format`` Formatted dates and times."
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+```
+
+
+#### Description
+Formatted dates and times.
+
+#### Usage
+<pre><code>
+date_format(format = "%Y-%m-%d", tz = "UTC")
+time_format(format = "%H:%M:%S", tz = "UTC")
+</code></pre>
+
+#### Arguments
+* ``format`` Date/time format using standard POSIX specification. 
+* See strptime() for possible formats.
+* ``tz`` a time zone name, see ``timezones()``. Defaults to UTC
+
+#### Examples
+
+```{r cars}
+
+a_time <- ISOdatetime(2012, 1, 1, 11, 30, 0, tz = "UTC")
+a_date <- as.Date(a_time)
+date_format()(a_date)
+date_format(format = "%A")(a_date)
+time_format()(a_time)
+time_format(tz = "Europe/Berlin")(a_time)
+
+a_hms <- hms::as.hms(a_time, tz = "UTC")
+time_format(format = "%H:%M")(a_hms)
+
+```

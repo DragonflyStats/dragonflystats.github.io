@@ -1,0 +1,27 @@
+pvalue_format p-values formatter
+#### Description
+Formatter for p-values, adding a symbol "<" for small p-values.
+#### Usage
+<pre><code>
+pvalue_format(accuracy = 0.001, decimal.mark = ".", add_p = FALSE)
+pvalue(x, accuracy = 0.001, decimal.mark = ".", add_p = FALSE)
+</code></pre<
+#### Arguments
+* accuracy Number to round to.
+* decimal.mark The character to be used to indicate the numeric decimal point.
+* add_p Add "p=" before the value?
+* x A numeric vector of p-values.
+
+#### Value
+``pvalue_format`` returns a function with single parameter x, a numeric vector, that returns a character
+vector.
+
+#### Examples
+```{r}
+p <- c(.50, 0.12, .045, .011, .009, .00002, NA)
+pvalue(p)
+pvalue(p, accuracy = .01)
+pvalue(p, add_p = TRUE)
+custom_function <- pvalue_format(accuracy = .1, decimal.mark = ",")
+custom_function(p)
+```

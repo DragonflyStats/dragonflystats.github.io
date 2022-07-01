@@ -1,0 +1,11 @@
+Range Mutable ranges.
+#### Description
+Mutable ranges have a two methods (train and reset), and make it possible to build up complete
+ranges with multiple passes.
+#### Usage
+Range
+
+Format
+An object of class R6ClassGenerator of length 24.
+
+

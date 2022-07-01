@@ -1,0 +1,5 @@
+officer: Manipulation of Microsoft Word and PowerPoint Documents
+ads via Carbon
+The leading mobile apps are ensuring their app is beautiful through visual testing. Start learning how.
+ADS VIA CARBON
+Access and manipulate 'Microsoft Word' and 'Microsoft PowerPoint' documents from R. The package focuses on tabular and graphical reporting from R; it also provides two functions that let users get document content into data objects. A set of functions lets add and remove images, tables and paragraphs of text in new or existing documents. The package does not require any installation of Microsoft products to be able to write Microsoft files.

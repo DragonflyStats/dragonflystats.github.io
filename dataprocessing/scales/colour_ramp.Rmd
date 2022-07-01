@@ -1,0 +1,30 @@
+## colour_ramp Fast colour interpolation
+#### Description
+Returns a function that maps the interval [0,1] to a set of colours. Interpolation is performed in the
+CIELAB colour space. Similar to colorRamp(space = 'Lab'), but hundreds of times faster, and
+provides results in "#RRGGBB" (or "#RRGGBBAA") character form instead of RGB colour matrices.
+#### Usage
+<pre><code>
+colour_ramp(colors, na.color = NA, alpha = TRUE)
+</code></pre>
+
+#### Arguments
+* colors Colours to interpolate; must be a valid argument to grDevices::col2rgb().
+This can be a character vector of "#RRGGBB" or "#RRGGBBAA", colour names
+from grDevices::colors(), or a positive integer that indexes into grDevices::palette().
+* na.color The colour to map to NA values (for example, "#606060" for dark grey, or
+"#00000000" for transparent) and values outside of [0,1]. Can itself by NA,
+which will simply cause an NA to be inserted into the output.
+10 col_numeric
+* alpha Whether to include alpha transparency channels in interpolation. If TRUE then
+the alpha information is included in the interpolation. The returned colours will
+be provided in "#RRGGBBAA" format when needed, i.e., in cases where the colour
+is not fully opaque, so that the "AA" part is not equal to "FF". Fully opaque
+colours will be returned in "#RRGGBB" format. If FALSE, the alpha information
+is discarded before interpolation and colours are always returned as "#RRGGBB".
+
+#### Value
+A function that takes a numeric vector and returns a character vector of the same length with RGB
+or RGBA hex colours.
+See Also
+colorRamp

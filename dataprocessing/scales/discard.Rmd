@@ -1,0 +1,28 @@
+---
+title: "``discard``: Discard any values outside of range."
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+```
+
+
+#### Description
+Discard any values outside of range.
+
+#### Usage
+<pre><code>
+discard(x, range = c(0, 1))
+</code></pre>
+
+#### Arguments
+* ``x``: numeric vector of values to manipulate.
+* ``range``: numeric vector of length two giving desired output range.
+
+#### Examples
+
+```{r}
+discard(c(-1, 0.5, 1, 2, NA))
+```

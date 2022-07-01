@@ -1,0 +1,19 @@
+## ``rescale_none`` Don’t perform rescaling
+
+#### Description
+Don’t perform rescaling
+
+#### Usage
+<pre><code>
+rescale_none(x, ...)
+</code></pre>
+
+#### Arguments
+* ``x``: numeric vector of values to manipulate.
+* ``...``: all other arguments ignored
+
+#### Examples
+
+```{r}
+rescale_none(1:100)
+```

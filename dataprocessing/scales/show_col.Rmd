@@ -1,0 +1,12 @@
+show_col Show colours.
+#### Description
+A quick and dirty way to show colours in a plot.
+#### Usage
+show_col(colours, labels = TRUE, borders = NULL, cex_label = 1)
+#### Arguments
+colours a character vector of colours
+labels boolean, whether to show the hexadecimal representation of the colours in each
+tile
+borders colour of the borders of the tiles; matches the border argument of graphics::rect().
+The default means par("fg"). Use border = NA to omit borders.
+cex_label size of printed labels, works the same as cex parameter of plot()

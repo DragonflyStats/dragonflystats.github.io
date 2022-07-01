@@ -1,0 +1,52 @@
+Package ‘scales’
+August 9, 2018
+Title Scale Functions for Visualization
+Version 1.0.0
+#### #### DescriptionGraphical scales map data to aesthetics, and provide
+methods for automatically determining breaks and labels
+for axes and legends.
+License MIT + file LICENSE
+URL https://scales.r-lib.org, https://github.com/r-lib/scales
+* BugReports https://github.com/r-lib/scales/issues
+* Depends R (>= 3.1)
+* Imports labeling, munsell (>= 0.5), R6, RColorBrewer, Rcpp, viridisLite
+* Suggests dichromat, bit64, covr, hms, testthat (>= 2.0)
+* LinkingTo Rcpp
+* LazyLoad yes
+* RoxygenNote 6.0.1.9000
+* Encoding UTF-8
+* NeedsCompilation yes
+* Author Hadley Wickham [aut, cre], RStudio [cph]
+* Maintainer Hadley Wickham <hadley@rstudio.com>
+* Repository CRAN
+* Date/Publication 2018-08-09 10:10:03 UTC
+R topics documented:
+abs_area       . 3
+alpha       . . . 4
+area_pal       . 4
+as.trans       . 5
+1
+2 R topics documented:
+asn_trans       5
+atanh_trans       . 5
+boxcox_trans       6
+brewer_pal       . 7
+cbreaks       . 7
+censor       . . 8
+col2hcl       . . 9
+colour_ramp       . 9
+col_numeric       . 10
+cscale       . . 12
+date_breaks       . 13
+date_format       . 13
+date_trans       14
+dichromat_pal       14
+discard       . . 15
+div_gradient_pal      . . . 15
+dollar_format       16
+
+trans_new       44
+trans_range       . 45
+viridis_pal       46
+wrap_format       . 46
+zero_range       47

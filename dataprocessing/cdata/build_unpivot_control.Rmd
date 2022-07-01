@@ -1,0 +1,33 @@
+## ``build_unpivot_control`` 
+Build a ``rowrecs_to_blocks()`` control table that specifies a un-pivot (or "shred").
+
+#### Description 
+
+
+Some discussion and examples   can be found here: https://winvector.github.io/FluidData/
+FluidData.html and here https://github.com/WinVector/cdata.
+
+#### Usage 
+<pre><code>
+build_unpivot_control(nameForNewKeyColumn, nameForNewValueColumn,
+columnsToTakeFrom, ...)
+</code></pre>
+
+#### Arguments 
+
+* nameForNewKeyColumn: character name of column to write new keys in.
+* nameForNewValueColumn: character name of column to write new values in.
+* columnsToTakeFrom: character array names of columns to take values from.
+* ... : not used, force later args to be by name
+
+#### Examples 
+```{r}
+build_unpivot_control("measurmentType", "measurmentValue", c("c1", "c2"))
+```
+#### Value
+control table
+
+#### See Also
+rowrecs_to_blocks_q, rowrecs_to_blocks
+
+

@@ -1,0 +1,49 @@
+---
+title: "``as_tabyl`` Add tabyl attributes to a data.frame."
+author: "Kevin O'Brien"
+date: "22 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(janitor)
+```
+
+#### Description
+* A tabyl is a data.frame containing counts of a variable or co-occurrences of two variables (a.k.a., a contingency table or crosstab). This specialized kind of data.frame has attributes that enable adorn_
+functions to be called for precise formatting and presentation of results. E.g., display results as a  mix of percentages, Ns, add totals rows or columns, rounding options, in the style of Microsoft Excel PivotTable.
+* A tabyl can be the result of a call to janitor::tabyl(), in which case these attributes are added
+automatically. This function adds tabyl class attributes to a data.frame that isn’t the result of a call
+to tabyl but meets the requirements of a two-way tabyl: 
+1) First column contains values of variable1 
+2) Column names 2:n are the values of variable 2 
+3) Numeric values in columns 2:n are counts of the co-occurrences of the two variables.*
+* = this is the ideal form of a tabyl, but janitor's adorn_ functions tolerate and ignore non-numeric
+columns in positions 2:n.
+For instance, the result of ``dplyr::count()`` followed by ``tidyr::spread()`` can be treated as a
+tabyl.
+The result of calling ``tabyl()`` on a single variable is a special class of one-way tabyl; this function
+only pertains to the two-way tabyl.
+
+#### Usage 
+<pre><code>
+as_tabyl(dat, axes = 2, row_var_name = NULL, col_var_name = NULL)
+</code></pre> 
+
+#### Arguments
+
+* ``dat``: a data.frame with variable values in the first column and numeric values in all
+other columns.
+* ``axes``: is this a two_way tabyl or a one_way tabyl? If this function is being called by a
+user, this should probably be "2". One-way tabyls are created by tabyl but are
+a special case.
+* ``row_var_name``: (optional) the name of the variable in the row dimension; used by adorn_title().
+* ``col_var_name``: (optional) the name of the variable in the column dimension; used by adorn_title().
+
+#### Value
+Returns the same data.frame, but with the additional class of "tabyl" and the attribute "core".
+#### Examples
+```{r}
+as_tabyl(mtcars)
+```

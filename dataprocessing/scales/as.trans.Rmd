@@ -1,0 +1,17 @@
+---
+title: "scales"
+author: "Kevin O'Brien"
+date: "19 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+as.trans Convert character string to transformer.
+#### Description
+Convert character string to transformer.
+#### Usage
+as.trans(x)
+#### Arguments
+x name of transformer

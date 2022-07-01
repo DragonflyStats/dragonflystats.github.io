@@ -1,0 +1,8 @@
+area_pal Point area palette (continuous).
+#### Description
+Point area palette (continuous).
+#### Usage
+area_pal(range = c(1, 6))
+#### Arguments
+range Numeric vector of length two, giving range of possible sizes. Should be greater
+than 0.

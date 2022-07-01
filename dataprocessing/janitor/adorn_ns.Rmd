@@ -1,0 +1,43 @@
+---
+title: "``adorn_rounding`` Round the numeric columns in a data.frame."
+author: "Kevin O'Brien"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(janitor)
+```
+
+## ``adorn_ns`` Add underlying Ns to a tabyl displaying percentages.
+
+#### Description
+This function adds back the underlying Ns to a tabyl whose percentages were calculated using ``adorn_percentages()``, to display the Ns and percentages together. You can also call it on a nontabyl
+data.frame with tabyl-like format to which you wish to append Ns.
+
+#### Usage 
+
+<pre><code>
+adorn_ns(dat, position = "rear", ns = attr(dat, "core"))
+</code></pre> 
+
+#### Arguments
+* ``dat``: a data.frame of class tabyl that has had adorn_percentages and/or adorn_pct_formatting
+called on it. If given a list of data.frames, this function will apply itself to each data.frame in the list (designed for 3-way tabyl lists).
+* ``position``: should the N go in the front, or in the rear, of the percentage?
+* ``ns``: the Ns to append. The default is the "core" attribute of the input tabyl dat, where the original Ns of a two-way tabyl are stored. However, if you need to modify the numbers, e.g., to format 4000 as 4,000 or 4k, you can do that separately and
+supply the formatted result here.
+
+
+#### Examples
+
+```{r}
+mtcars %>%
+tabyl(am, cyl) %>%
+adorn_percentages("col") %>%
+adorn_pct_formatting() %>%
+adorn_ns(position = "front")
+```
+
+#### Value
+a data.frame with Ns appended

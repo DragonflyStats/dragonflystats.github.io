@@ -1,0 +1,32 @@
+---
+title: "``probability_trans`` Probability transformation."
+author: "Kevin O'Brien"
+date: "19 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+```
+
+
+
+#### Description
+
+Probability transformation.
+
+#### Usage
+
+<pre><code>
+probability_trans(distribution, ...)
+</code></pre>
+
+#### Arguments
+* ``distribution`` probability distribution. Should be standard R abbreviation so that "p" + distribution
+is a valid probability density function, and "q" + distribution is a valid quantile function.
+* ``...`` Other arguments passed on to distribution and quantile functions
+
+```{r}
+#probability_trans(qnorm(0.8))
+```

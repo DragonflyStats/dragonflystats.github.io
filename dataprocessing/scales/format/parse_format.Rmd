@@ -1,0 +1,18 @@
+
+
+parse_format Parse a text label to produce expressions for plotmath.
+#### Description
+Parse a text label to produce expressions for plotmath.
+#### Usage
+parse_format()
+
+#### Value
+a function with single parameter x, a character vector, that returns a list of expressions
+See Also
+plotmath()
+
+#### Examples
+
+```{r}
+parse_format()(c("alpha", "beta", "gamma"))
+```

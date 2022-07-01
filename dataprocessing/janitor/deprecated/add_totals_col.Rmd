@@ -1,0 +1,11 @@
+add_totals_col Append a totals column to a data.frame.
+#### Description
+This function is deprecated, use adorn_totals instead.
+#### Usage <pre><code>
+add_totals_col(dat, na.rm = TRUE)
+</code></pre> #### Arguments
+* ``dat``:  an input data.frame with at least one numeric column.
+na.rm should missing values (including NaN) be omitted from the calculations?
+Value
+Returns a data.frame with a totals column containing row-wise sums.
+add_totals_row 3

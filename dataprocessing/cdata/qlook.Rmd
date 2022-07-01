@@ -1,0 +1,37 @@
+## ``qlook``: Quick look at remote data
+
+#### Description 
+
+Quick look at remote data
+
+#### Usage 
+<pre><code>
+qlook(my_db, tableName, displayRows = 10, countRows = TRUE)
+</code></pre>
+
+#### Arguments 
+
+* my_db DBI database handle
+* tableName name of table to look at
+* displayRows number of rows to sample
+* countRows logical, if TRUE return row count.
+
+#### Value
+
+* str view of data
+
+
+#### Examples 
+```{r}
+if ( requireNamespace("DBI", quietly = TRUE) &&
+requireNamespace("RSQLite", quietly = TRUE)) {
+my_db <- DBI::dbConnect(RSQLite::SQLite(), ":memory:")
+DBI::dbWriteTable(my_db,
+'d',
+data.frame(AUC = 0.6, R2 = 0.2),
+overwrite = TRUE,
+temporary = TRUE)
+qlook(my_db, 'd')
+DBI::dbDisconnect(my_db)
+}
+```

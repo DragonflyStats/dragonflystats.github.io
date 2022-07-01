@@ -1,0 +1,38 @@
+---
+title: "``untabyl`` Remove tabyl attributes from a data.frame."
+author: "Kevin O'Brien"
+date: "22 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(janitor)
+```
+
+#### Description
+Strips away all tabyl-related attributes from a data.frame.
+
+#### Usage 
+<pre><code>
+untabyl(dat)
+</code></pre> 
+
+#### Arguments
+* ``dat``: a data.frame of class tabyl.
+Value
+Returns the same data.frame, but without the tabyl class and attributes.
+
+#### Examples
+```{r}
+mtcars %>%
+tabyl(am)
+
+```
+
+```{r}
+mtcars %>%
+tabyl(am) %>%
+untabyl() %>%
+attributes() # tabyl-specific attributes are gone
+```

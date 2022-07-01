@@ -1,17 +1,28 @@
 ---
-title: "London R - June 2022"
-subtitle: "Kevin O'Brien"
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      countIncrementalSlides: false
-
-
+title: "Dragonfy Statistics"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+Kevin O'Brien
+=====================
+
+Column {.tabset}
+--------------
+
+
 ### Kevin O'Brien
+
+<h4> About Me </h4>
+
+
 
 - Agricultural Data Scientist based in the West of Ireland 
   - Also in London, UK a lot
@@ -20,162 +31,27 @@ output:
 
 - Python Ireland - Director and Conference Lead
 
-- JuliaCon 2022 - Social Media Chair
+- <a href="www.JuliaCon.Org">JuliaCon 2022</a> - Social Media Chair
 
 - Was previously (what is now known) as a "Research Software Engineer" in a University.
 
----
 
-![Limerick City](Limerick.jpg)
----
+R Talks 
+=====================
 
-### Agriculture and Forestry
+Column {.tabset}
+--------------
 
 
-* R is very useful in Forestry 
- - Diameter at Breast Height / Height
- - Growth Curves and Yield Models
- - Statistical Analysis and Data Visualization
- 
-* Other R packages have been ***VERY*** useful 
 
-![ForestryData](timbeter.png)
 
----
 
-```{r child="Career.Rmd"}
-```
+### Working With Documents
 
-```{r echo=FALSE}
-### CAREER
-# - FINISHED
-```
+<h3> Working With Documents</h3>
 
----
+* Presented at the London R Meetup in June 2022
 
-```{r child="Files_And_Directories.Rmd"}
 
-
-
-```
-
-```{r echo=FALSE}
-### FILES AND DIRECTORIES
-
-# add {here} CRAN website
-```
----
-
-
-```{r child="excel.Rmd"}
-```
-
----
-
-
-### Working with Documents
-
-* Agriculture and Forestry is highly regulated in Ireland 
-  - (Water quality, natural heritage, habitats)
-* Lots of documents
-* Government agencies strongly prefer Microsoft Word and PDFs
-* Legal Documents
-* Time consuming
-
-
-
----
-
-```{r child="pdftools.Rmd"}
-
-```
-
----
-
-```{r child="doconv.Rmd"}
-```
-
-```{r echo=FALSE}
-### doconv
-# - Finished 
-```
-
-
-
----
-
-```{r child="stringr.Rmd"}
-
-```
----
-
-### Officerverse
-
-* David Gohel
-
-* https://www.ardata.fr/
-* davidgohel.github.io
-
-#### R Packages
-
-* Officer 
-* Flextable 
-* Officedown
-
-
-
-
-
----
-
-
-```{r child="officer.Rmd"}
-
-```
-```{r echo=FALSE}
-### OFFICER
-
-```
-
----
-
-
-```{r child="flextable.Rmd"}
-
-```
-
-
----
-
-### Useful R packages
-
-* <tt> {tidyverse} </tt>
-* <tt> {janitor} </tt>
-* <tt> {scales} </tt>
-
-### Useful Commands
-
-* <tt> sprintf() </tt>
-
-
-
-
----
-
-
-```{r child="JuliaCon.Rmd"}
-
-```
-
-
-
-
----
-
-
-
-
-
-
-
+*  <a href="London_R_June_2022.html">Working With Documents</a>
 

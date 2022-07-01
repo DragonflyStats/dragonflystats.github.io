@@ -1,0 +1,33 @@
+---
+title: "``grey_pal`` Grey scale palette (discrete)"
+author: "Kevin O'Brien"
+date: "19 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+```
+
+
+#### Description
+Grey scale palette (discrete).
+
+#### Usage
+<pre><code>
+grey_pal(start = 0.2, end = 0.8)
+</code></pre>
+
+#### Arguments
+start grey value at low end of palette
+end grey value at high end of palette
+
+#### Examples
+```{r}
+show_col(grey_pal()(25))
+show_col(grey_pal(0, 1)(25))
+```
+
+#### See Also
+seq_gradient_pal() for continuous version

@@ -1,0 +1,31 @@
+## trim Trim a character vector
+
+#### Description
+This trims a character vector according to the trimming rules used by glue. These follow similar
+rules to Python Docstrings, with the following features.
+• Leading and trailing whitespace from the first and last lines is removed.
+• A uniform amount of indentation is stripped from the second line on, equal to the minimum
+indentation of all non-blank lines after the first.
+• Lines can be continued across newlines by using \.
+
+#### Usage
+<pre><code>
+trim(x)
+</code></pre>
+Arguments
+x A character vector to trim.
+
+#### Examples
+glue("
+A formatted string
+Can have multiple lines
+with additional indention preserved
+")
+glue("
+\\ntrailing or leading newlines can be added explicitly\\n
+")
+glue("
+A formatted string \\
+can also be on a \\
+single line
+")

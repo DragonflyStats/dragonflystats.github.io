@@ -1,0 +1,29 @@
+---
+title: "``remove_empty_cols ``Removes empty columns from a data.frame."
+author: "Kevin O'Brien"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(janitor)
+```
+
+#### Description
+This function is deprecated, use ``remove_empty("cols")`` instead.
+
+#### Usage 
+<pre><code>
+remove_empty_cols(dat)
+</code></pre> 
+
+#### Arguments
+* dat the input data.frame.
+
+#### Examples
+```{r}
+# dat %>% remove_empty_cols
+```
+Value
+Returns the data.frame with no empty columns.
+16 round_half_up

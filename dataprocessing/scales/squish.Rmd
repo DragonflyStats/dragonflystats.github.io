@@ -1,0 +1,34 @@
+---
+title: "``squish`` Squish values into range."
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+```
+
+
+#### Description
+Squish values into range.
+
+#### Usage
+<pre><code>
+squish(x, range = c(0, 1), only.finite = TRUE)
+</code></pre>
+
+#### Arguments
+* ``x``: numeric vector of values to manipulate.
+* ``range``: numeric vector of length two giving desired output range.
+* ``only.finite``: if TRUE (the default), will only modify finite values.
+
+
+#### Examples
+
+```{r}
+squish(c(-1, 0.5, 1, 2, NA))
+squish(c(-1, 0, 0.5, 1, 2))
+```
+
+#### Author(s)
+Homer Strong homer.strong@gmail.com

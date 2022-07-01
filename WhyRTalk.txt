@@ -1,0 +1,18 @@
+https://twitter.com/MiriamForster/status/1541513593354457088
+
+Scope of Talk
+Assume a good knowledge of R already
+ * tidyverse
+
+Preface: Career
+
+1. Files and Directories
+ - global reference
+2. readxl
+3. pdftools
+4. tabulizer
+5. doconv
+6. stringr and lubridate
+7. officer
+8. flextable
+9. Useful R packages

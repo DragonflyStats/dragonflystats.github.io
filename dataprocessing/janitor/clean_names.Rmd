@@ -1,0 +1,51 @@
+
+## ``clean_names`` Cleans names of a data.frame.
+
+#### Description
+
+Resulting names are unique and consist only of the _ character, numbers, and letters. Capitalization
+preferences can be specified using the case parameter. Accented characters are transliterated to ASCII. For example, an "o" with a German umlaut over it becomes "o", and the Spanish character "enye" becomes "n".
+
+#### Usage 
+
+<pre><code>
+clean_names(dat, case = c("snake", "lower_camel", "upper_camel", "screaming_snake", 
+                          "lower_upper", "upper_lower", "all_caps", "small_camel", 
+                          "big_camel", "old_janitor", "parsed", "mixed"))
+</code></pre> 
+
+#### Arguments
+
+* ``dat`` the input data.frame.
+* ``case`` The desired target case (default is "snake"), indicated by these possible values:
+* "snake" produces snake_case
+* "lower_camel" or "small_camel" produces lowerCamel
+* "upper_camel" or "big_camel" produces UpperCamel
+* "screaming_snake" or "all_caps" produces ALL_CAPS
+* "lower_upper" produces lowerUPPER
+* "upper_lower" produces UPPERlower
+* ``old_janitor``: legacy compatibility option to preserve behavior of ``clean_names`` prior to addition of the "case" argument(janitor versions <= 0.3.1 ). Provided as a quick fix for old scripts broken by the changes to clean_names
+in janitor v1.0.
+* "parsed", "mixed", "none", "internal_parsing": less-common cases offered by snakecase::to_any_case. See to_any_case for details.
+
+#### Value
+
+Returns the data.frame with clean names.
+
+#### Examples
+
+```{r}
+# not run:
+# clean_names(poorly_named_df)
+# or pipe in the input data.frame:
+# poorly_named_df %>% clean_names()
+# if you prefer camelCase variable names:
+# poorly_named_df %>% clean_names(., "small_camel")
+# not run:
+
+# library(readxl)
+# readxl("messy_excel_file.xlsx") %>% clean_names()
+```
+
+
+

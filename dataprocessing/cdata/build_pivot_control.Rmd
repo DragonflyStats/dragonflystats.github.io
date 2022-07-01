@@ -1,0 +1,86 @@
+## ``build_pivot_control``
+
+Build a ``blocks_to_rowrecs()``/``rowrecs_to_blocks()`` control table that specifies a pivot from a data.frame.
+
+#### Description 
+
+
+Some discussion and examples   can be found here: https://winvector.github.io/FluidData/
+FluidData.html.
+
+#### Usage 
+ <pre><code>
+build_pivot_control(table, columnToTakeKeysFrom, columnToTakeValuesFrom,
+..., prefix = columnToTakeKeysFrom, sep = NULL)
+
+## Default S3 method:
+build_pivot_control(table, columnToTakeKeysFrom,
+columnToTakeValuesFrom, ..., prefix = columnToTakeKeysFrom,
+sep = NULL)
+
+## S3 method for class 'relop'
+build_pivot_control(table, columnToTakeKeysFrom,
+columnToTakeValuesFrom, ..., prefix = columnToTakeKeysFrom,
+sep = NULL, tmp_name_source = wrapr::mk_tmp_name_source("bpc"),
+temporary = FALSE)
+</code></pre>
+
+#### Arguments 
+
+* ``table``: data.frame to scan for new column names (in-memory data.frame).
+* ``columnToTakeKeysFrom``: character name of column build new column names from.
+* ``columnToTakeValuesFrom``: character name of column to get values from.
+* ``...``: not used, force later args to be by name
+* ``prefix``: column name prefix (only used when sep is not NULL)
+* ``sep``: separator to build complex column names.
+* ``tmp_name_source`: a tempNameGenerator from ``cdata::mk_tmp_name_source()``
+* ``temporary``: logical, if TRUE use temporary tables
+
+
+
+#### Examples 
+```{r}
+d <- data.frame(measType = c("wt", "ht"),
+measValue = c(150, 6),
+stringsAsFactors = FALSE)
+build_pivot_control(d,
+'measType', 'measValue',
+sep = '_')
+```
+
+```{r}
+d <- data.frame(measType = c("wt", "ht"),
+measValue = c(150, 6),
+stringsAsFactors = FALSE)
+ops <- rquery::local_td(d) %.>%
+build_pivot_control(.,
+'measType', 'measValue',
+sep = '_')
+cat(format(ops))
+if(requireNamespace("rqdatatable", quietly = TRUE)) {8
+build_pivot_control_q
+}
+```
+
+```{r}
+library("rqdatatable")
+d %.>%
+ops %.>%
+print(.)
+if(requireNamespace("RSQLite", quietly = TRUE)) {
+db <- DBI::dbConnect(RSQLite::SQLite(), ":memory:")
+DBI::dbWriteTable(db,
+'d',
+d,
+overwrite = TRUE,
+temporary = TRUE)
+db %.>%
+ops %.>%
+print(.)
+DBI::dbDisconnect(db)
+}
+```
+#### Value
+control table
+See Also
+blocks_to_rowrecs, build_pivot_control_q

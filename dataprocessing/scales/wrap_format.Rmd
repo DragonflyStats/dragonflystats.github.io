@@ -1,0 +1,33 @@
+---
+title: "``wrap_format``: Wrap text to a specified width"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+```
+
+## ``wrap_format`` 
+
+Wrap text to a specified width, adding newlines for spaces if text exceeds the width
+
+#### Description
+Wrap text to a specified width, adding newlines for spaces if text exceeds the width
+
+#### Usage
+<pre><code>
+wrap_format(width)
+</code></pre>
+
+#### Arguments
+* ``width``: value above which to wrap
+
+#### Value
+Function with single parameter x, a character vector, that returns a wrapped character vector
+
+#### Examples
+```{r}
+wrap_10 <- wrap_format(10)
+wrap_10('A long line that needs to be wrapped')
+```

@@ -1,0 +1,13 @@
+## `as_glue``: Coerce object to glue
+
+#### Description
+Coerce object to glue
+
+#### Usage
+<pre><code>
+as_glue(x, ...)
+</code></pre>
+
+#### Arguments
+* ``x``: object to be coerced.
+* ``...``: further arguments passed to methods.

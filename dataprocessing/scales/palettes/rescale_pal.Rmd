@@ -1,0 +1,13 @@
+## ``rescale_pal`` Rescale palette (continuous).
+
+#### Description
+Just rescales the input to the specific output range. Useful for alpha, size, and continuous position.
+
+#### Usage
+<pre><code>
+rescale_pal(range = c(0.1, 1))
+</code></pre>
+
+#### Arguments
+* ``range`` Numeric vector of length two, giving range of possible values. Should be between
+0 and 1.

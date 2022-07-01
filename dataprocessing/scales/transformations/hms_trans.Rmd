@@ -1,0 +1,33 @@
+---
+title: "hms_trans Transformation for times (class hms)."
+author: "Kevin O'Brien"
+date: "19 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+library(hms)
+```
+
+#### Description
+
+Transformation for times (class hms).
+
+#### Usage
+<pre><code>
+hms_trans()
+</code></pre>
+
+#### Examples
+
+```{r}
+if (require("hms")) {
+hms <- round(runif(10) * 86400)
+t <- hms_trans()
+t$transform(hms)
+t$inverse(t$transform(hms))
+t$breaks(hms)
+}
+```

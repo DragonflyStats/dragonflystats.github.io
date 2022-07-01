@@ -1,0 +1,10 @@
+## log1p_trans Log plus one transformation.
+#### Description
+Log plus one transformation.
+#### Usage
+<pre><code>
+log1p_trans()
+</code></pre>
+#### Examples
+trans_range(log_trans(), 1:10)
+trans_range(log1p_trans(), 0:9)

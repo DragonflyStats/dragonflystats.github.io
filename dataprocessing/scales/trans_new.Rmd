@@ -1,0 +1,36 @@
+---
+title: "scales"
+author: "Kevin O'Brien"
+date: "19 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+trans_new Create a new transformation object.
+#### Description
+A transformation encapsulates a transformation and its inverse, as well as the information needed
+to create pleasing breaks and labels. The breaks function is applied on the transformed range of the
+range, and it’s expected that the labels function will perform some kind of inverse transformation
+on these breaks to give them labels that are meaningful on the original scale.
+#### Usage
+trans_new(name, transform, inverse, breaks = extended_breaks(),
+minor_breaks = regular_minor_breaks(), format = format_format(),
+domain = c(-Inf, Inf))
+trans_range 45
+#### Arguments
+name transformation name
+transform function, or name of function, that performs the transformation
+inverse function, or name of function, that performs the inverse of the transformation
+breaks default breaks function for this transformation. The breaks function is applied
+to the raw data.
+minor_breaks default minor breaks function for this transformation.
+format default format for this transformation. The format is applied to breaks generated
+to the raw data.
+domain domain, as numeric vector of length 2, over which transformation is valued
+See Also
+asn_trans, atanh_trans, boxcox_trans, date_trans, exp_trans, hms_trans, identity_trans,
+log10_trans, log1p_trans, log2_trans, log_trans, logit_trans, modulus_trans, probability_trans,
+probit_trans, pseudo_log_trans, reciprocal_trans, reverse_trans, sqrt_trans, time_trans

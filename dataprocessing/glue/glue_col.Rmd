@@ -1,0 +1,82 @@
+---
+title: "`glue_col` Construct strings with color"
+author: "Kevin O'Brien"
+date: "22 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(glue)
+```
+
+
+
+##### Description
+The crayon package defines a number of functions used to color terminal output. glue_col() and
+``glue_data_col()`` functions provide additional syntax to make using these functions in glue strings
+easier.
+Using the following syntax will apply the function blue function to the text "foo bar".
+{blue foo bar}
+If you want an expression to be evaluated, simply place that in a normal brace expression (these can
+be nested).
+{blue 1 + 1 = {1 + 1}}
+
+#### Usage
+
+<pre><code>
+glue_col(..., .envir = parent.frame(), .na = "NA")
+glue_data_col(.x, ..., .envir = parent.frame(), .na = "NA")
+</code></pre>
+#### Arguments
+
+* ... [expressions]
+Expressions string(s) to format, multiple inputs are concatenated together before
+formatting.
+glue_collapse 5
+* .envir [environment: parent.frame()]
+Environment to evaluate each expression in. Expressions are evaluated from left
+to right. If .x is an environment, the expressions are evaluated in that environment
+and .envir is ignored.
+.na [character(1): ‘NA’]
+Value to replace NA values with. If NULL missing values are propagated, that is
+an NA result will cause NA output. Otherwise the value is replaced by the value
+of .na.
+.x [listish]
+An environment, list or data frame used to lookup values.
+
+#### Examples
+```{r}
+if (require(crayon)) {
+glue_col("{blue foo bar}")
+glue_col("{blue 1 + 1 = {1 + 1}}")
+white_on_grey <- bgBlack $ white
+glue_col("{white_on_grey
+Roses are {red {colors()[[552]]}}
+Violets are {blue {colors()[[26]]}}
+`glue_col()` can show {red c}{yellow o}{green l}{cyan o}{blue r}{magenta s}
+and {bold bold} and {underline underline} too!
+}")
+}
+```
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

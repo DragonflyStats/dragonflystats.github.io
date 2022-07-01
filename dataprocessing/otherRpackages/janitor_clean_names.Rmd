@@ -1,0 +1,29 @@
+## Clean data.frame names with ``clean_names()``
+
+Call this function every time you read data.
+
+It works in a %>% pipeline, and handles problematic variable names, especially those that are so well-preserved 
+by ``readxl::read_excel()`` and ``readr::read_csv()``.
+
+*    Parses letter cases and separators to a consistent format.
+*    .... Default is to snake_case, but other cases like camelCase are available
+*    Handles special characters and spaces, including transliterating characters like œ to oe.
+*    Appends numbers to duplicated names
+*    Converts "%" to "percent" and "#" to "number" to retain meaning
+*    Spacing (or lack thereof) around numbers is preserved
+
+```{r}
+# Create a data.frame with dirty names
+test_df <- as.data.frame(matrix(ncol = 6))
+names(test_df) <- c("firstName", "ábc@!*", "% successful (2009)",
+                    "REPEAT VALUE", "REPEAT VALUE", "")
+```
+Clean the variable names, returning a data.frame:
+```{r}
+test_df %>%
+  clean_names()
+```
+Compare to what base R produces:
+```{r}
+make.names(names(test_df))
+```

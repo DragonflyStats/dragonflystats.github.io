@@ -1,0 +1,75 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Calendar Heatmap
+=============================
+(Adapted from http://margintale.blogspot.in/2012/04/ggplot2-time-series-heatmaps.html)
+
+```{r include=FALSE,echo=FALSE}
+library(ggplot2)
+library(plyr)
+library(scales)
+library(zoo)
+```
+
+
+<pre><close>
+library(ggplot2)
+library(plyr)
+library(scales)
+library(zoo)
+</close></pre>
+
+When you want to see the variation, especially the highs and lows, of a metric like stock price, on an actual calendar itself, the 
+calendar heat map is a great tool. It emphasizes the variation visually over time rather than the actual value itself.
+
+This can be implemented using the ``geom_tile``. But getting it in the right format has more to do with the data preparation rather than the plotting itself.
+
+```{r}
+
+
+df <- read.csv("https://raw.githubusercontent.com/selva86/datasets/master/yahoo.csv")
+df$date <- as.Date(df$date)  # format date
+df <- df[df$year >= 2012, ]  # filter reqd years
+
+```
+
+### Create Month Week
+
+
+```{r}
+
+df$yearmonth <- as.yearmon(df$date)
+df$yearmonthf <- factor(df$yearmonth)
+df <- ddply(df,.(yearmonthf), transform, monthweek=1+week-min(week))  # compute week number of month
+df <- df[, c("year", "yearmonthf", "monthf", "week", "monthweek", "weekdayf", "VIX.Close")]
+
+
+```
+
+
+```{r}
+
+head(df)
+
+```
+
+
+```{r}
+ggplot(df, aes(monthweek, weekdayf, fill = VIX.Close)) + 
+  geom_tile(colour = "white") + 
+  facet_grid(year~monthf) + 
+  scale_fill_gradient(low="red", high="green") +
+  labs(x="Week of Month",
+       y="",
+       title = "Time-Series Calendar Heatmap", 
+       subtitle="Yahoo Closing Price")
+```
+
+

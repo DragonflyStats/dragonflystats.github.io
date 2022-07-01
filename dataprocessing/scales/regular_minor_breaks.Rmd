@@ -1,0 +1,30 @@
+---
+title: "``regular_minor_breaks`` Minor breaks"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+```
+
+Places minor breaks between major breaks.
+
+#### Description
+Minor breaks. Places minor breaks between major breaks.
+
+#### Usage
+<pre><code>
+regular_minor_breaks(reverse = FALSE)
+</code></pre>
+  
+#### Arguments
+* reverse if TRUE, calculates the minor breaks for a reversed scale
+
+#### Examples
+```{r}`
+m <- extended_breaks()(c(1, 10))
+regular_minor_breaks()(m, c(1, 10), n = 2)
+n <- extended_breaks()(c(0, -9))
+regular_minor_breaks(reverse = TRUE)(n, c(0, -9), n = 2)
+```

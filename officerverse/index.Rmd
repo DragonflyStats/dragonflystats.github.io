@@ -1,0 +1,12 @@
+---
+title: "officerverse"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### flextable
+
+The flextable package provides a framework for easily create tables for reporting and publications. Tables can be embedded within: R Markdown documents with support for HTML, Word and PowerPoint documents. Microsoft Word or PowerPoint documents with package officer. Tables can also be rendered as R plots or graphic files (png, pdf and jpeg).

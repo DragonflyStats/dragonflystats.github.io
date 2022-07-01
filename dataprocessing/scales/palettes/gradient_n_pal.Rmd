@@ -1,0 +1,28 @@
+---
+title: "gradient_n_pal Arbitrary colour gradient palette (continuous).
+"
+author: "Kevin O'Brien"
+date: "19 October 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scales)
+```
+#### Description
+Arbitrary colour gradient palette (continuous).
+
+#### Usage
+<pre><code>
+gradient_n_pal(colours, values = NULL, space = "Lab")
+</code></pre>
+
+#### Arguments
+* ``colours``: vector of colours
+* ``values``: if colours should not be evenly positioned along the gradient this vector gives
+the position (between 0 and 1) for each colour in the colours vector. See
+``rescale()`` for a convenience function to map an arbitrary range to between
+0 and 1.
+* ``space``: colour space in which to calculate gradient. Must be "Lab" - other values are
+deprecated.

@@ -1,0 +1,30 @@
+---
+title: "``convert_to_NA`` Convert string values to true NA values."
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(janitor)
+```
+
+
+#### Description
+Converts instances of user-specified strings into NA. Can operate on either a single vector or an entire
+data.frame.
+
+#### Usage 
+<pre><code>
+convert_to_NA(dat, strings)
+</code></pre> 
+
+#### Arguments
+* dat vector or data.frame to operate on.
+* strings character vector of strings to convert.
+
+#### Value
+Returns a cleaned object. Can be a vector, data.frame, or tibble::tbl_df depending on the provided
+input.
+
+Warning
+Deprecated, do not use in new code. Use dplyr::na_if() instead.
