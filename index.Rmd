@@ -53,5 +53,31 @@ Column {.tabset}
 * Presented at the London R Meetup in June 2022
 
 
-*  <a href="London_R_June_2022.html">Working With Documents</a>
+*  <a href="London_R_June_2022/London_R_June_2022.html">Working With Documents</a>
+
+
+PyCon Limerick {data-navmenu="Events"}
+===========================================
+
+Column 
+--------------------
+
+### PyCon Limerick 2023
+
+<p>
+
+<div>
+<center>
+<img src="./images/PyConLimerick.jpg" width=600 alt="">
+</center>
+</div>
+
+<p>
+
+<h4>Programme and Abstracts</h4>
+<p>
+* Date: Saturday 23rd March 2023
+* Location: Strand Hotel Limerick 
+* Times: 10.00am to 17:10pm approx
+
 
