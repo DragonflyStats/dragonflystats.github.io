@@ -76,13 +76,31 @@ library(leaflet)
 m <- leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
   setView(lng = -0.1387976, lat = 51.5133462, zoom = 16) %>%
-  addMarkers(lng=-0.1349236, lat=51.5165172, popup="Bradley's Spanish Bar") %>%
+  addMarkers(lng=-0.132908, lat=51.5165172, popup="Bradley's Spanish Bar") %>%
   addMarkers(lng=-0.1319526, lat=51.5124381, popup="The French House")
 
 m  # Print the map
 
 ```
-,
+
+
+
+### The City
+
+<h4>The City</h4>
+
+```{r echo=FALSE}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1102952, lat = 51.5134326, zoom = 16) %>%
+  addMarkers(lng=-0.1102952, lat=51.5134326, popup="Oliver Goldsmith's Grave") %>%
+  addMarkers(lng=-0.1074333, lat=51.5140786, popup="The Old Chesire Cheese (Pub)")
+
+m  # Print the map
+
+```
 
 
 ### Wapping
@@ -94,11 +112,33 @@ m <- leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
   setView(lng = -0.05831, lat = 51.505328, zoom = 15) %>%
   addMarkers(lng=-0.06301, lat=51.50345, popup="The Town of Ramsgate") %>%
-  addMarkers(lng=-0.0349695, lat=51.5087151, popup="The Grapes")
+  addMarkers(lng=-0.0349695, lat=51.5087151, popup="The Grapes") %>%
+  addMarkers(lng=-0.0589519, lat=51.5032233, popup="The Captain Kidd")
+
 
 m  # Print the map
 
 ```
+
+
+51.4920942,-0.1925321
+
+### Earl's Court
+
+<h4>Earl's Court</h4>
+
+```{r echo=FALSE}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1925321, lat = 51.4920942, zoom = 16) %>%
+  addMarkers(lng=-0.1920409, lat=51.4888221, popup="The Troubadour")
+
+m  # Print the map
+
+```
+
 
 PyCon Limerick {data-navmenu="Events"}
 ===========================================
