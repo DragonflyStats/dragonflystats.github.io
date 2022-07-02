@@ -60,6 +60,45 @@ Column {.tabset}
 
 *  <a href="London_R_June_2022/London_R_June_2022.html">Working With Documents</a>
 
+London {data-navmenu="London"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+### Soho
+
+<h4>Soho</h4>
+
+```{r echo=FALSE}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1387976, lat = 51.5133462, zoom = 16) %>%
+  addMarkers(lng=-0.1349236, lat=51.5165172, popup="Bradley's Spanish Bar") %>%
+  addMarkers(lng=-0.1319526, lat=51.5124381, popup="The French House")
+
+m  # Print the map
+
+```
+,
+
+
+### Wapping
+
+```{r echo=FALSE}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.05831, lat = 51.505328, zoom = 15) %>%
+  addMarkers(lng=-0.06301, lat=51.50345, popup="The Town of Ramsgate") %>%
+  addMarkers(lng=-0.0349695, lat=51.5087151, popup="The Grapes")
+
+m  # Print the map
+
+```
 
 PyCon Limerick {data-navmenu="Events"}
 ===========================================
