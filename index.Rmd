@@ -22,19 +22,24 @@ Column {.tabset}
 
 <h4> About Me </h4>
 
-
-
-- Agricultural Data Scientist based in the West of Ireland 
-  - Also in London, UK a lot
+- Agricultural Data Scientist based between the West of Ireland and London (UK)
   
-- Why R? - Community Team lead & Webinars co-ordinator (on hiatus)
+- <a href= "www.whyr.pl">Why R? Foundation</a> - Community Team lead & Webinars co-ordinator (on hiatus)
 
-- Python Ireland - Director and Conference Lead
+- <a href= "www.Python.ie">Python Ireland</a> - Company Director and PyCon Ireland Conference Lead
 
-- <a href="www.JuliaCon.Org">JuliaCon 2022</a> - Social Media Chair
+- <a href= "www.JuliaCon.Org">JuliaCon 2022</a> - Social Media Chair
 
-- Was previously (what is now known) as a "Research Software Engineer" in a University.
+- Was previously a Teaching Fellow lecturer and (what is now known) a "Research Software Engineer" in a University.
 
+
+### Why R? Foundation
+
+<h4>Why R? Foundation </h4> 
+
+* The Why R? webinar series took place between April 2020? And May 2021. In totla, there were more than 50 webinars encompassing a wide variety of topics relation to the R programming language. 
+
+* In addition to the webinar series, there were two online conferences that took place in December 2020 and December 2021. 
 
 R Talks 
 =====================
@@ -50,7 +55,7 @@ Column {.tabset}
 
 <h3> Working With Documents</h3>
 
-* Presented at the London R Meetup in June 2022
+* Presented at the <a href="www.meetup.com/LondonR">London R</a> Meetup in June 2022
 
 
 *  <a href="London_R_June_2022/London_R_June_2022.html">Working With Documents</a>
@@ -64,6 +69,7 @@ Column
 
 ### PyCon Limerick 2023
 
+<h4>PyCon Limerick 2023</h4>
 <p>
 
 <div>
@@ -74,7 +80,7 @@ Column
 
 <p>
 
-<h4>Programme and Abstracts</h4>
+
 <p>
 * Date: Saturday 23rd March 2023
 * Location: Strand Hotel Limerick 
