@@ -66,6 +66,21 @@ London {data-navmenu="London"}
 Column {.tabset}
 --------------------
 
+### All London
+
+```{r echo=FALSE}
+library(leaflet)
+
+myDF <- read.csv("https://raw.githubusercontent.com/DragonflyStats/Projects/master/LondonWalworth.csv")
+
+m <- myDF %>% leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1102952, lat = 51.5134326, zoom = 14) %>%
+  addMarkers(lng= myDF$Longtitude, lat= myDF$Latitude,popup=myDF$Name)
+m
+```
+
+
 ### Soho
 
 <h4>Soho</h4>
@@ -82,6 +97,8 @@ m <- leaflet() %>%
 m  # Print the map
 
 ```
+
+
 
 
 
