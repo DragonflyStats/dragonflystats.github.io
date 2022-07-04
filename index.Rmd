@@ -183,7 +183,21 @@ m  # Print the map
 
 ```
 
+### New Map (Arvid Kingl)
 
+```{r echo=FALSE}
+
+
+
+myDF <- read.csv("https://raw.githubusercontent.com/London-Explorer/Datasets/main/London_Version_2_Info.csv")
+
+
+m <- myDF %>% leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1102952, lat = 51.5134326, zoom = 14) %>%
+  addMarkers(lng= myDF$Longitude, lat= myDF$Latitude,popup=myDF$Name)
+m
+```
 
 
 
