@@ -71,7 +71,7 @@ Column {.tabset}
 ```{r echo=FALSE}
 library(leaflet)
 
-myDF <- read.csv("https://raw.githubusercontent.com/DragonflyStats/Projects/master/LondonWalworth.csv")
+myDF <- read.csv("https://raw.githubusercontent.com/London-Explorer/Datasets/main/London_Version_1.csv")
 
 m <- myDF %>% leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
