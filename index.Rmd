@@ -70,8 +70,11 @@ Column {.tabset}
 
 ```{r echo=FALSE}
 library(leaflet)
+library(leaflet.extras)
+library(tidyverse)
 
 myDF <- read.csv("https://raw.githubusercontent.com/London-Explorer/Datasets/main/London_Version_1.csv")
+
 
 m <- myDF %>% leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
@@ -79,6 +82,88 @@ m <- myDF %>% leaflet() %>%
   addMarkers(lng= myDF$Longtitude, lat= myDF$Latitude,popup=myDF$Name)
 m
 ```
+
+### All London
+
+```{r echo=FALSE}
+library(leaflet)
+library(tidyverse)
+library(leaflet.extras)
+
+myDF <- read.csv("https://raw.githubusercontent.com/London-Explorer/Datasets/main/London_Version_1.csv")
+
+myDF <- myDF %>% mutate(Group = rep(1:6,each=15))
+
+icons_Green <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "green"
+)
+
+
+icons_Red <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "red"
+)
+
+icons_Yellow <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "orange"
+)
+
+
+icons_Blue <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "blue"
+)
+
+
+
+icons_Purple <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "purple"
+)
+
+icons_Black <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "black"
+)
+
+
+myDF1 <- myDF %>% filter(Group==1)
+myDF2 <- myDF %>% filter(Group==2)
+myDF3 <- myDF %>% filter(Group==3)
+myDF4 <- myDF %>% filter(Group==4)
+myDF5 <- myDF %>% filter(Group==5)
+myDF6 <- myDF %>% filter(Group==6)
+
+m <-  leaflet(myDF1) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1102952, lat = 51.5134326, zoom = 14) %>%
+  addAwesomeMarkers(lng= myDF1$Longtitude, lat= myDF1$Latitude,icon=icons_Green,popup=myDF1$Name)
+
+m <- m %>%   addAwesomeMarkers(lng= myDF2$Longtitude, lat= myDF2$Latitude,icon=icons_Red,popup=myDF2$Name)
+m <- m %>%   addAwesomeMarkers(lng= myDF3$Longtitude, lat= myDF3$Latitude,icon=icons_Purple,popup=myDF3$Name)
+m <- m %>%   addAwesomeMarkers(lng= myDF4$Longtitude, lat= myDF4$Latitude,icon=icons_Blue,popup=myDF4$Name)
+m <- m %>%   addAwesomeMarkers(lng= myDF5$Longtitude, lat= myDF5$Latitude,icon=icons_Yellow ,popup=myDF5$Name)
+m <- m %>%   addAwesomeMarkers(lng= myDF6$Longtitude, lat= myDF6$Latitude,icon=icons_Black ,popup=myDF6$Name)
+
+
+m
+```
+
+
 
 
 ### Soho
@@ -153,6 +238,42 @@ m <- leaflet() %>%
   addMarkers(lng=-0.1920409, lat=51.4888221, popup="The Troubadour")
 
 m  # Print the map
+
+```
+
+### Colour Test 1
+
+```{r}
+# first 20 quakes
+df.20 <- quakes[1:20,]
+
+getColor <- function(quakes) {
+  sapply(quakes$mag, function(mag) {
+  if(mag <= 4) {
+    "green"
+  } else if(mag <= 5) {
+    "orange"
+  } else {
+    "red"
+  } })
+}
+
+getColor(df.20)
+```
+
+### Colour Test 2
+
+```{r}
+icons <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = getColor(df.20)
+)
+
+leaflet(df.20) %>% addTiles() %>%
+  addAwesomeMarkers(~long, ~lat, icon=icons, label=~as.character(mag))
+
 
 ```
 
