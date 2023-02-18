@@ -34,8 +34,10 @@ my_doc <- read_docx() %>%
 </code></pre>      
 
 * Formatted Text
+
 * Add Images
-* Replace Text in existing document
+
+* Replace Text in Existing Document
 
 
 ---

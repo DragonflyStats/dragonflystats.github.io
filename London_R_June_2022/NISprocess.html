@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Creating Documents with R - October 2022</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Creating Documents with R - October 2022
+## Kevin O’Brien
+
+---
+
+
+
+
+&lt;style type="text/css"&gt;
+pre {
+  background: #ADD8E6;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+&lt;/style&gt;
+
+
+
+### Step 1
+
+* The relevant datasets, such as Harvest Block Details, Screening Information, is held on a master spreadsheet in a dedicated folder on Citrix.
+
+* This Dataset is maintained by Emma Benson, John Landy, Marie Therese Roche and more.
+
+* Citrix is the optimal location because of ease of access for the R programming environment,
+
+---
+
+
+### Step 2
+
+* This data can be processed by the R programming language.
+
+* In the first instance, the entire data set is loaded into the R environment using the ***{readxl}*** R package.
+
+* Individual sheets from the master data spreadsheet are loaded as required.
+
+&lt;pre&gt;&lt;code&gt;
+library(readxl)
+
+HB_details &lt;- read_excel("MasterData.xlsx", sheet = "HB_Details")
+
+Screening &lt;- read_excel("MasterData.xlsx", sheet = "Screening")
+&lt;/code&gt;&lt;/pre&gt;
+---
+
+### Step 3
+
+* The data is reduced to the particular felling licence applications required for the current run.
+
+* There are multiple types of reporting requirements:
+
+  - Single Screened In Application - NIS and Prescreening Report
+  - Multiple FLs applied for jointly - NIS and Prescreening Reports
+  - Single Screened out Applications - Prescreening Report Only
+
+* The relevant type of report required is also recorded.
+
+
+* The data undergoes some pre-processing.
+
+
+
+---
+
+### Step 4
+
+* One by one, data for each FL (or group of FLs) is extracted and processed by the main R programme.
+
+* Using the ***officer*** R package, a word document is created and populated with information relevant to the each FL, along with formatted text.
+
+* The ***officer*** R package can insert headings, images, tables and inserted sheets as appropriate. It can also specify landscape or portrait formats as required.
+
+* Tables can be created using the ***flextable*** R package.
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Officer R Package
+
+Automated Generation of Word Documents with R
+
+![officer](officer/officer-r-package.PNG)
+
+
+---
+
+### Officer R Package
+
+#### Examples
+
+&lt;pre&gt;&lt;code&gt;
+my_doc &lt;- read_docx() %&gt;%
+      body_add_par(value='Some text etc etc') %&gt;%
+      body_add_flextable(value=ft) %&gt;% 
+      body_add_break()
+      
+&lt;/code&gt;&lt;/pre&gt;      
+
+* Formatted Text
+
+* Add Images
+
+* Replace Text in Existing Document
+
+
+---
+
+### Officer R Package
+
+#### Example
+
+&lt;pre&gt;&lt;code&gt;
+
+MyText_header &lt;- fpar(ftext(MyText_header ,  
+		prop = fp_text(color = "black", font.family="Calibri", 
+		font.size = 14, bold = TRUE)))
+
+MyText_1 &lt;- fpar(ftext(MyText_1 ,  
+		prop = fp_text(color = "black", font.family="Calibri", 
+		font.size = 12, bold = FALSE)))
+
+MyText_2  &lt;- fpar(ftext(MyText_2 ,  
+		prop = fp_text(color = "black", font.family="Calibri", 
+		font.size = 12, bold = FALSE)))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+---
+
+### Officer R Package
+
+#### Example
+
+&lt;pre&gt;&lt;code&gt;
+my_doc &lt;- my_doc  %&gt;% 
+  body_add_fpar( MyText_header ) %&gt;%   
+  body_add_par("", style = "Normal") %&gt;%
+  body_add_fpar( MyText_1 ) %&gt;%   
+  body_add_par("", style = "Normal") %&gt;%
+  body_add_fpar( MyText_2) %&gt;%   
+  body_add_par("", style = "Normal")
+
+
+print(my_doc, target = Output_File_Name)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Flextable R Package
+
+Automated Generation of Tables with R
+
+![flextable](flextable/flextable-r-package.PNG)
+
+(***Author: David Gohel***)
+---
+
+### Flextable R Package
+
+Automated Generation of Tables with R
+
+![flextable](flextable/flextable-r-package-2.PNG)
+
+(***Author: David Gohel***)
+
+---
+
+### Flextable R Package
+
+&lt;pre&gt;&lt;code&gt;
+This_OutPut_Table  &lt;- This_Input_DF %&gt;% 
+  flextable() %&gt;% 
+  width(width=c(2.25,4.75)) %&gt;%  
+  align( align = "left", part = "all" ) %&gt;%
+  font(fontname = "Calibri",part="all") %&gt;%
+  fontsize(size = 12, part = "body") %&gt;%
+  padding(padding = 3, part = "all" ) %&gt;%
+  delete_part(part="header") %&gt;%
+  border_remove() %&gt;%
+  border_outer( part="all", border = big_border ) %&gt;%
+  border_inner_h(part="all", border = big_border ) %&gt;%
+  border_inner_v(part="all", border = big_border ) 
+
+
+my_doc &lt;- my_doc %&gt;% 
+  body_add_flextable(This_OutPut_Table,align="left") %&gt;%
+  body_add_par("", style = "Normal")
+
+&lt;/code&gt;&lt;/pre&gt;
+
+---
+
+### Flextable Gallery
+
+&lt;tt&gt; ardata-fr.github.io/flextable-gallery/gallery/ &lt;/tt&gt;
+
+![flextable](flextable/gallery.PNG)
+
+(***Author: David Gohel***)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

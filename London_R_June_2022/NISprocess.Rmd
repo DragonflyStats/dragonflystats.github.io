@@ -1,0 +1,107 @@
+---
+title: "Creating Documents with R - October 2022"
+subtitle: "Kevin O'Brien"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(magrittr)
+library(knitr)
+library(dplyr)
+library(janitor)
+
+
+```
+
+```{css, echo=FALSE}
+pre {
+  background: #ADD8E6;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+```
+
+
+
+### Step 1
+
+* The relevant datasets, such as Harvest Block Details, Screening Information, is held on a master spreadsheet in a dedicated folder on Citrix.
+
+* This Dataset is maintained by Emma Benson, John Landy, Marie Therese Roche and more.
+
+* Citrix is the optimal location because of ease of access for the R programming environment,
+
+---
+
+
+### Step 2
+
+* This data can be processed by the R programming language.
+
+* In the first instance, the entire data set is loaded into the R environment using the ***{readxl}*** R package.
+
+* Individual sheets from the master data spreadsheet are loaded as required.
+
+<pre><code>
+library(readxl)
+
+HB_details <- read_excel("MasterData.xlsx", sheet = "HB_Details")
+
+Screening <- read_excel("MasterData.xlsx", sheet = "Screening")
+</code></pre>
+---
+
+### Step 3
+
+* The data is reduced to the particular felling licence applications required for the current run.
+
+* There are multiple types of reporting requirements:
+
+  - Single Screened In Application - NIS and Prescreening Report
+  - Multiple FLs applied for jointly - NIS and Prescreening Reports
+  - Single Screened out Applications - Prescreening Report Only
+
+* The relevant type of report required is also recorded.
+
+
+* The data undergoes some pre-processing.
+
+
+
+---
+
+### Step 4
+
+* One by one, data for each FL (or group of FLs) is extracted and processed by the main R programme.
+
+* Using the ***officer*** R package, a word document is created and populated with information relevant to the each FL, along with formatted text.
+
+* The ***officer*** R package can insert headings, images, tables and inserted sheets as appropriate. It can also specify landscape or portrait formats as required.
+
+* Tables can be created using the ***flextable*** R package.
+
+
+
+
+---
+
+
+```{r child="officer.Rmd"}
+```
+```{r echo=FALSE}
+### OFFICER
+```
+
+---
+
+
+```{r child="flextable.Rmd"}
+```
