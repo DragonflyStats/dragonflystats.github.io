@@ -1,6 +1,0 @@
-## reverse_trans Reverse transformation.
-#### Description
-Reverse transformation.
-
-#### Usage
-reverse_trans()

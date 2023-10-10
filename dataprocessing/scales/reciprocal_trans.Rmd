@@ -1,7 +1,0 @@
-## ``reciprocal_trans`` Reciprocal transformation.
-#### Description
-Reciprocal transformation.
-#### Usage
-<pre><code>
-reciprocal_trans()
-</code></pre>

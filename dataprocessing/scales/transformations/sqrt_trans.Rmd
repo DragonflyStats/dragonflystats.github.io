@@ -1,5 +1,0 @@
-sqrt_trans Square-root transformation.
-#### Description
-Square-root transformation.
-#### Usage
-sqrt_trans()

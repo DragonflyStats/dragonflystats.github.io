@@ -1,7 +1,0 @@
-shape_pal Shape palette (discrete).
-#### Description
-Shape palette (discrete).
-#### Usage
-shape_pal(solid = TRUE)
-#### Arguments
-solid should shapes be solid or not?

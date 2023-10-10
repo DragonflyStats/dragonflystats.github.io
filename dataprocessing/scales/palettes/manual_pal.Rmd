@@ -1,7 +1,0 @@
-manual_pal Manual palette (manual).
-#### Description
-Manual palette (manual).
-#### Usage
-manual_pal(values)
-#### Arguments
-values vector of values to be used as a palette.

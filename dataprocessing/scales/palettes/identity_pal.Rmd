@@ -1,5 +1,0 @@
-identity_pal Identity palette.
-#### Description
-Leaves values unchanged - useful when the data is already scaled.
-#### Usage
-identity_pal()
