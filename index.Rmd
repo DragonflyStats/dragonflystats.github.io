@@ -20,15 +20,40 @@ Column {.tabset}
 
 ### Kevin O'Brien
 
+---------------------
+
 <h4> About Me </h4>
 
 - Agricultural Data Scientist based between the West of Ireland and London (UK)
-  
+
+- Was (what is now known) as a "Research Software Engineer" in a University.
+
+- Former University Lecturer of Mathematics and Statistics. 
+
+  * Maths and Statistics Students (Teaching R)
+  * Health sciences, Life Sciences, Equine science, Sports Science, Food science, Biochemistry 
+
+---------------------
+
+<h4> Affiliations</h4>
+
 - <a href= "www.whyr.pl">Why R? Foundation</a> - Community Team lead & Webinars co-ordinator (on hiatus)
 
-- <a href= "www.Python.ie">Python Ireland</a> - Company Director and PyCon Ireland Conference Lead
+- <a href= "www.JuliaCon.Org">JuliaCon 2023</a> - Social Media Chair (since 2017)
 
-- <a href= "www.JuliaCon.Org">JuliaCon 2022</a> - Social Media Chair
+- <a href= "www.Python.ie">Python Ireland</a> - **Former** Director & Conference Lead (Vestigial)
+
+---------------------
+
+#### Research Software Engineering
+
+* Research software engineering is the use of software engineering practices in research applications. 
+
+* The term was proposed in a research paper in 2010 in response to an empirical survey on tools used for software development in research projects. 
+
+* It started to be used in United Kingdom in 2012, when it was needed to define the type of software development needed in research. 
+
+* This focuses on reproducibility, reusability, and accuracy of data analysis and applications created for research.
 
 
 Why R? Foundation {data-navmenu="Rstats"}

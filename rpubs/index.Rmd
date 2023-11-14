@@ -1,0 +1,25 @@
+---
+title: "Dragonfy Statistics"
+output: 
+  flexdashboard::flex_dashboard:
+  theme: united
+css: style.css
+---
+  
+  ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+Kevin O'Brien
+=====================
+
+Column {.tabset}
+--------------
+
+### Robust Regression
+
+* [Introduction to Robust Regression](https://rpubs.com/DragonflyStats/introduction_to_robust_regression)
+* [Robust Regression - Huber Weighting](https://rpubs.com/DragonflyStats/robust_regression_huber_weighting)
+* [Robust Regression - The Stackloss Dataset](https://rpubs.com/DragonflyStats/robust-regression-stackloss-example)
+* [Robust Regression - Weighting Methods](https://rpubs.com/DragonflyStats/robust-regression-stackloss-example)
