@@ -1,0 +1,466 @@
+
+Inspecting Dataframes
+===================================
+
+ 
+Exercise 11
+ 
+The ‘Iris’ data is a resident dataset in R.
+ 
+What are the names of each column of this data set?
+What type of data does each column contain?
+Which column has the highest pair-wise correlation with the first column (excluding the final non-numerical column)?
+ 
+Exercise 12
+ 
+The resident data set ‘mtcars’ contains information about cars from a 1974 Motor Trend issue. Load the data set and answer the following questions.
+>data(mtcars)
+ 
+1. What are the variable names?
+2. what is the maximum mpg
+3. Which car has this?
+4. What are the first 5 cars listed?
+5. What horsepower (hp) does the "Valiant" have?
+
+Exercise 7
+ 
+The Whiteside data is stored in the MASS package.
+ 
+> library(MASS)
+ 
+Get a description of the Whiteside data.
+What are the names of the columns in the Whiteside data?
+Create summary statistics for the Whiteside data.
+Plot gas consumption versus temperature. Use plot symbol 15, and title the plot "Whiteside’s Gas consumption” .
+ 
+
+
+Mathematical Exercise
+====================================
+
+
+### Exercise 1
+ 
+Evaluate the following:
+ 
+
+the area of a circle of radius 2 
+the natural log of  100   	
+the log of 100 to the base 10   
+the exponential of 10   	
+the square of 12   	  	
+the sine of 1.5 pi   	
+the absolute value of  -9 
+the square root of 110 
+the factorial of 6
+
+
+How many ways are there of choosing two items from a batch of ten items?
+ 
+Exercise 2
+ 
+1.  Generate a sequence of values from 1 to 10
+2.  Create a vector ‘x’ of those values .
+3.  Generate a sequence of values from 5 to 8 incrementing by 0.5
+4.  Create a vector ‘y’ with values from 10 to 1 (i.e. in decreasing order).
+5.  Create a vector w <- pi + sqrt(x)/2.
+6.  Round the values of ‘w’ to two decimal places.
+7.  Round the values of ‘w’ down into integer values.
+8.  Round the values of ‘w’ up into integer values.
+ 
+Exercise 3
+ 
+Create a character vector of the following names: Alan, Brian, Cathal, Dermot and Enda
+Create a logical vector ‘logic’ of the following values: True False False True True
+Create a binary equivlanent to ‘logic’
+
+
+
+### Exercise 4
+
+
+Suppose you keep track of your mileage each time you go to the petrol station. At your last 8 fill-ups the mileage was
+
+ 
+<pre><code>
+65311 65624 65908 66219 66499 66821 67145 67447
+</code></pre>
+ 
+
+Create a vector ‘miles’ from this data. Use the function diff() on the data. What does it give?
+
+ 
+
+> miles = c(65311, 65624, 65908, 66219, 66499, 66821, 67145, 67447)
+
+> x = diff(miles)
+
+ 
+
+You should see the number of miles between fill-ups. 
+Find the maximum number of, the average number of miles and the minimum number of miles between fill-ups.
+
+### Exercise 9
+ 
+Construct a matrix A with values 2, 7, 2 in row 1, values 5, 1, 5 in row 2 and values 5, 6, 7 in row 3, i.e. a 3×3 matrix. Also construct a  3×1 matrix B with values 1,5,7. 
+ 
+What is the determinant of A?
+What is the inverse of A?
+Multiply A by B
+Solve a system of linear equations Ax=B
+Construct a matrix C, the transpose of B.
+Combine A and B into a new matrix D using cbind().
+Combine A and C into a new matrix H using rbind().
+Determine the dimensions of D and H using dim() function.
+ 
+Exercise 10
+ 
+Plot the following functions ( between -2π and 2π). Include the X and Y axes on your plot.
+ 
+1.Cosine   	  	  	  	  	 ( use line type 7, colour  red)
+2.Sine   	  	  	  	  	 ( use line type 8, colour blue)
+3.Exponential   	  	  	  	 ( use line type 9, colour green)
+4.  Absolute value   	  	  	 ( use line type 10, colour pink) 
+ 
+ 
+Functions and Programming Exercises
+=====================================
+
+### Exercise 1
+
+Add up all the numbers for 1 to 50
+
+*  Using the sum() command.
+*  using a ‘for’ loop.
+
+### Exercise 2
+
+Create a matrix that contains the pair-wise correlation coefficient of the numeric columns of the ‘Iris’ data. 
+Use a nested ‘for’ loops.
+
+### Exercise 3
+
+Generate a vector of randomly generated numbers (Normal, mean 10, standard deviation 2). 
+Using ‘for’ loops, replace each element that is greater than 11 by the value 11.
+
+
+Probability Distributions
+=========================================================
+
+### Exercise 19
+
+ 
+
+Construct a vector of the 0.9, 0.95, 0.975 and 0.99 quantiles of the standard normal distribution.
+
+ 
+
+Construct a vector of cumulative distribution functions of the followingvalues
+
+1, 1.28, 1.68, 1.96.
+
+ 
+
+### Exercise 20
+
+ 
+
+Generate a normally distributed random sample of size 300. What is the mean and standard deviation of this sample? What are the 0.9, 0.95, 0.975 and 0.99 quantiles quantiles of this sample? Compare both sets of results.
+
+ 
+
+Use R to determine the 90th, 95th and 99th quantiles of a normal distribution, with mean 100 and standard deviation 15.
+
+ 
+
+### Exercise 21
+
+ 
+
+IQ scores are assumed to have a normal distribution with mean 100 and standard deviation 15.
+
+ 
+1.
+What IQ would you have if you were in the 80th percentile?
+
+2.
+Estimate the threshold for the top 10 percent?
+
+3.
+What is the probability of having an IQ above 142?
+
+4.
+What is the probability of having an IQ below 97?
+
+
+ 
+
+ 
+
+### Exercise 22
+
+ 
+
+Use the uniform distribution to simulate 100 throws of two dice. The outcome is the combined values of both dice. Use the appropriate R command to discretize values.
+
+ 
+1.
+What is the mean and standard deviation of the outcomes?
+
+2.
+Make a stem-and-leaf plot of the outcomes.
+
+3.
+Make a histogram of the outcomes. (hint: use breaks =seq(1.5,12.5))
+
+
+ 
+Analysing Datasets Exercises
+=========================================
+
+### Exercise 1
+
+Generate a histogram for data set 'scores', with an accompanying box-and-whisker plot.
+The colour of the histogram's bar should be yellow. The orientation for the boxplot should be horizontal.
+
+\begin{verbatim}
+scores <-c(23,19,22,22,19,20,25,26,26,19,24,23,17,21,28,26)
+
+par(mfrow=c(2,1)) # two rows , one column
+
+hist(scores,main="Distribution of scores",xlab="scores",col="yellow")
+
+boxplot(scores ,horizontal=TRUE)
+
+par(mfrow =c(1,1)) #reset
+\end{verbatim}
+
+
+### Exercise 2
+ 
+In the library MASS is a dataset UScereal which contains information about popular breakfast cereals.
+ 
+Attach the data set as follows
+> library('MASS')
+> data('UScereal')
+> attach(UScereal)
+> names(UScereal) # to see the names
+ 
+Now, investigate the following relationships, and make comments on what you see. You can use tables, barplots, scatterplots etc. to do your investigation.
+ 
+1. The relationship between manufacturer and shelf
+2. The relationship between fat and vitamins
+3. The relationship between fat and shelf
+4. The relationship between carbohydrates and sugars
+5. The relationship between fibre and manufacturer
+6. The relationship between sodium and sugars 
+
+
+### Exercise 12
+
+ 
+
+The resident data set ‘mtcars’ contains information about cars from a 1974 Motor Trend issue. 
+Load the data set and answer the following questions.
+
+>data(mtcars)
+
+ 
+
+1. What are the variable names?
+
+2. What is the maximum mpg?
+
+3. Which car has this?
+
+4. What are the first 5 cars listed?
+
+5. What horsepower (hp) does the "Valiant" have?
+
+
+
+### Exercise 5
+ 
+The following data gives, for each amount by which an elastic band is stretched over
+the end of a ruler, the distance that the band moved when released.
+ 
+Stretch (mm)
+46
+54
+48
+50
+44
+42
+52
+Distance (cm)
+148
+182
+178
+166
+109
+141
+166
+ 
+Create a data frame called ‘elasticband’. (use data.frame() command)
+Create summary statistics for the data frame.  (use summary() command)
+Create a boxplot of the distance   	  	 (use boxplot() command)
+What is the correlation between stretch and distance (use cor() command)
+What is the covariance   	  	  	   ( use cov() command)
+Create a plot of distance versus stretch.   	 (use plot() command) 
+Create a histogram of the distance (use hist() command)
+ 
+ 
+ 
+  
+Exercise 17
+ 
+If the lengths of all three sides (a,b,c) of a triangle are known, then the area is given by Heron's Formula.
+Area = sqrt(s × (s-a) × (s-b) × (s-c))
+ 
+where s = (a + b + c) / 2
+ 
+Write a function that calculates the area of a triangle when the lengths of three sides are given as arguments.
+ 
+Write a function that calculates the internal angles of the triangle, using the cosine rule
+Cosine rule: a2 = b2 + c2- 2bc(cosA)
+ 
+A is the angle opposite side ‘a’ and between sides ‘b’ and ‘c’
+ 
+Exercise 18
+ 
+Generate three set of 15 randomly generated numbers, ‘x’, ‘y’ and ‘z’.
+Make a single scatterplot of ‘y’ against ‘x’   (plot symbol 16 , colour red)
+Set the symbol size to 1.1	  	 (cex =1.1)
+Make another for ‘z’ against ‘x’	 (plot symbol 18, colour blue)
+Combine the two scatterplots into the same plot.
+Add a vertical line (type 5) indicating the mean value of ‘y’ (colour: red)
+Add another for the mean value of ‘z’(colour: blue).
+Add a line (type 7) with intercept 1 and slope 0.5.
+Title the plot ‘Scatterplot’.
+Title the axes ‘horizontal’ and ‘vertical’.
+Add a legend to the plot.
+ 
+ 
+Inference Procedure Exercises
+====================================================
+
+
+\section{Exercise 1 The following are measurements (in mm) of a critical
+dimension on a sample of twelve engine crankshafts:
+
+\begin{verbatim}
+224.120 224.001 224.017 223.982 223.989 223.961
+223.960 224.089 223.987 223.976 223.902 223.980
+\end{verbatim}
+(a) Calculate the mean and standard deviation for these data.
+(b) The process mean is supposed to be ? = 224mm. Is this the
+case? Give reasons for your answer.
+(c) Construct a 99\% confidence interval for these data and interpret.
+(d) Check that the normality assumption is valid using 2 suitable plots.
+
+\begin{verbatim}
+> x<-c(224.120,224.001,224.017,223.982 ,223.989 ,223.961,
++ 223.960 ,224.089 ,223.987 ,223.976 , 223.902 ,223.980)
+>
+> mean(x)
+[1] 223.997
+>
+> sd(x)
+[1] 0.05785405
+>
+> t.test(x,mu=224,conf.level=0.99)
+
+One Sample t-test
+
+data:  x
+t = -0.1796, df = 11, p-value = 0.8607
+alternative hypothesis: true mean is not equal to 224
+99 percent confidence interval:
+223.9451 224.0489
+sample estimates:
+mean of x
+223.997
+
+\end{verbatim}
+\section{Exercise 2} 
+The height of 12 Americans and 10 Japanese was measured. Test for a difference in the heights of both populations.
+\begin{verbatim}
+Americans
+174.68   169.87165.07165.95 204.99 177.61 
+170.11  170.71181.52 167.68 158.62 182.90
+Japanese
+158.76  168.85  159.64  180.02  164.24
+161.91  163.99  152.71  157.32  147.20
+\end{verbatim}
+
+### Exercise 3
+
+A large group of students each took two exams. The marks obtained in both exams by a sample of eight students is given below
+
+\begin{verbatim}
+Student12345678
+Exam 15776473962564981
+Exam 26781624957615971
+\end{verbatim}
+Test the hypothesis that in the group as a whole the mean mark gained did not vary according to the exam against the hypothesis that the mean mark in the second exam was higher
+\begin{verbatim}
+>
+> Ex1<-c(57,76,47,39,62,56,49,81)
+> Ex2<-c(67,81,62,49,57,61,59,71)
+> t.test(Ex1-Ex2)
+
+One Sample t-test
+
+data:  Ex1 - Ex2
+t = -1.6733, df = 7, p-value = 0.1382
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+-12.065666   2.065666
+sample estimates:
+mean of x
+-5
+\end{verbatim}
+
+
+### Exercise 3
+
+Exercise 23b:  A company wants to investigate the proportion of males and females promoted in the last year. 
+45 out of 400 female candidates were promoted, while 520 out of 3270 male candidates were promoted. Is there evidence of sexism in the company?
+\begin{verbatim}
+> x.vec=c(45,520)
+> n.vec=c(400,3270)
+>  prop.test(x.vec,n.vec)
+
+2-sample test for equality of proportions with continuity correction
+
+data:  x.vec out of n.vec
+X-squared = 5.5702, df = 1, p-value = 0.01827
+alternative hypothesis: two.sided
+95 percent confidence interval:
+-0.08133043 -0.01171238
+sample estimates:
+prop 1prop 2
+0.1125000 0.1590214
+\end{verbatim}
+
+
+### Exercise 4
+A poll on social issues interviewed 1025 people randomly selected from the United States. 
+450 of people said that they do not get enough time to themselves. 
+A report claims that over 41\% of the population are not satisfied with personal time. Is this the case?
+
+<pre><code>
+
+> prop.test(450,1025,p=0.40,alternative="greater")
+
+1-sample proportions test with continuity correction
+
+data:  450 out of 1025, null probability 0.4
+X-squared = 6.3425, df = 1, p-value = 0.005894
+alternative hypothesis: true p is greater than 0.4
+95 percent confidence interval:
+0.413238 1.000000
+sample estimates:
+p
+0.4390244
+</code></pre>

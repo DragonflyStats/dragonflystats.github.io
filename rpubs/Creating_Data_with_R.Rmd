@@ -1,0 +1,54 @@
+\section{Creating Data with ``R}}
+
+\subsection{Data Import}
+It is necessary to import outside data into ``R} before you start analysing it. Here we will look at some relevant issues.
+
+\subsubsection{Microsoft XLS File}
+Very often, the sample data is in MS Excel$^{\mbox{\tiny{TM}}}$ format, and needs to be imported into ``R} prior to use. For this, we could use the ``read.xls()`` function from the \textbf{\textit{gdata}} package. The command reads from an Excel spreadsheet and returns a data frame. The following shows how to load an Excel spreadsheet named ``mydata.xls". As the package is not in the core ``R} library, it has to be installed and loaded into the ``R} workspace. (This spreadsheet is saved in the working directory).
+\begin{verbatim}
+> library(gdata)                   # load the gdata package
+> help(read.xls)                   # documentation
+> mydata = read.xls("mydata.xls")  # read from first sheet
+\end{verbatim}
+
+
+
+%Similarly to read.csv and read.csv2, the functions write.csv and write.csv2 are provided as wrappers to read.table, with appropriate options set to produce comma- or semicolon-separated files.
+
+%\newpage
+
+
+
+
+%We can use this approach to create a data frame :
+%> data.frame(rbind(X,Y))
+ % X1 X2 X3
+%X  1  2  3
+%Y  4  5  6
+
+%We can then use rownames and colnames to assign meaningful names to this data frame.
+
+%---- END OF CREATING DATA
+%-------------------------------------------------------------------------------------------------------%
+%----------------------------------------------------------------------------------CREATING DATA--------%
+
+%\section{Data Entry Methods}
+#### {Using the ``scan()`` command}
+
+
+
+#### {Importing and Exporting Data}
+#### {The ``read.csv()`` command}
+#### {The ``write.csv()`` command}
+#### {The ``sink()`` command}
+
+%-------------------------------------------------------------------------%
+#### {Classes of Data Objects}
+%\begin{verbatim}
+%class(Numvec)
+%class(Charvec)
+%class(A)
+%class(iris)
+%class(Nile)
+%\end{verbatim}
+

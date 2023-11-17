@@ -1,0 +1,35 @@
+
+## Working with Objects in R
+
+
+### Listing all items in a workspace
+
+To list all items in an <tt>R</tt> environment, we use the \texttt{ls()} function. This provides a list of all data objects  accessible.
+
+<pre><code>
+> ls()
+ [1] "a"          "A"          "authors"    "b"          "books"     
+ [6] "C"          "D"          "ex1"        "Gerb"       "Lst"       
+[11] "m"          "m1"         "op"         "presidents" "r"            
+</code></pre>
+------------------------------------------------------------------------------------------
+
+### Removing Objects
+Sometimes it is desirable to save a subset of your workspace instead of the entire workspace. 
+One option is to use the \texttt{rm()} function to remove unwanted objects right before exiting your <tt>R</tt> session. 
+Another possibility is to use the save function. 
+
+------------------------------------------------------------------------------------------
+
+### Saving Objects
+The save function accepts multiple arguments to specify the objects you wish to save, or, alternatively, a character vector with the names of the objects can be passed to save through the \texttt{list=} argument. 
+
+Once the objects to be saved are specified, the only other required option is the \texttt{file=option}, specifying the destination of the saved R object. 
+
+Although there is no requirement to do so, it is common to use a suffix of \texttt{.rda} or \texttt{.RData} for saved <tt>R</tt> workspace files.
+
+For example, to save the <tt>R</tt> objects x, y, and z to a file called <tt>myData.rda</tt> ,the following statements could be used:
+
+<pre><code>
+> save(x,y,z,file= ‘mydata.rda’)
+</code></pre>

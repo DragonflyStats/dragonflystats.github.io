@@ -1,0 +1,44 @@
+
+
+
+<h3>Outliers</h3>
+If the outlier test identifies one or more values as being an outlier, we must consider the following
+
+<ol>
+<li>	<b>Was the outlier value entered into the computer incorrectly?</b><br>
+If the "outlier" is in fact a typo, fix it. It is always worth going back to the original data source, and checking that outlier value entered into Prism is actually the value you obtained from the experiment. If the value was the result of calculations, check for math errors.
+
+<li><b>	Is the outlier value scientifically impossible?</b><br>
+Of course you should remove outliers from your data when the value is completely impossible. Examples include a negative weight, or an age (of a person) that exceed 150 years. Those are clearly errors, and leaving erroneous values in the analysis would lead to nonsense results.
+
+<li>	<b>Is the assumption of a Normal distribution dubious?</b><br>
+The Grubbs' tests assume that all the values are sampled from a Gaussian distribution, with the possible exception of one (or a few) outliers from a different distribution. If the underlying distribution is not Gaussian, then the results of the outlier test is unreliable. It is especially important to beware of lognormal distributions. If the data are sampled from a lognormal distribution, you expect to find some very high values which can easily be mistaken for outliers. Removing these values would be a mistake.
+
+<li>	<b>Is the outlier value potentially scientifically interesting?</b><br>
+If each value is from a different animal or person, identifying an outlier might be important. Just because a value is not from the same normal distribution as the rest doesn't mean it should be ignored. An interesting phenomenon may have been discovered. Don't discard  the data as an outlier without considering if the observation is potentially scientifically interesting. 
+
+<li>	 <b>Do the data records indicate any sort of experimental problem with that value</b><br>
+It is easier to justify removing a value from the data set when it is not only tagged as an "outlier" by an outlier test, but you also recorded problems with that value when the experiment was performed.
+
+<li> 	 <b>Do you have a policy on when to remove outliers?</b><br>
+Ideally, removing an outlier should not be an ad hoc decision. In general , you should follow a policy, and apply that policy consistently.
+
+<li> <b>If you are looking for two or more outliers, could masking be a problem?</b><br>
+<b>\texttt{Masking is the name given to the problem where the presence of two (or more) outliers, can make it harder to find even a single outlier.
+
+</ol>
+
+If you answered no to all those questions.
+If you've answered no to all the questions above, there are two possibilities:
+The suspect value came from the same normal population as the other values. You just happened to collect a value from one of the tails of that distribution.
+	
+The suspect value came from a different distribution than the rest. Perhaps it was due to a mistake, such as bad pipetting, voltage spike, holes in filters, etc. 
+
+If you knew the first possibility was the case, you would keep the value in your analyses. Removing it would be a mistake.
+If you knew the second possibility was the case, you would remove it, since including an erroneous value in your analyses will give invalid results. 
+
+The problem, of course, is that you can never know for sure which of these possibilities is correct. An outlier test cannot answer that question for sure. Ideally, you should create a lab policy for how to deal with such data, and follow it consistently.
+If you don't have a lab policy on removing outliers, here is suggestion: Analyze your data both with and without the suspected outlier. If the results are similar either way, you've got a clear conclusion. If the results are very different, then you are stuck. Without a consistent policy on when you remove outliers, you are likely to only remove them when it helps push the data towards the results you want.
+
+
+

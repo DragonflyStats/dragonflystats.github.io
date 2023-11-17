@@ -1,0 +1,49 @@
+Packages
+R contains one or more libraries of packages. Packages contain various functions and data sets for numerous purposes, e.g. the “ggplot2” graphics package, the “actuar” financial package, the “nlme” statistical methods package, etc. 
+
+R consists of a base package and many additional packages. Some packages are part of the basic installation. 
+
+Others must be downloaded from the Comprehensive R Archive Network (CRAN), on the R website.
+
+(Remark: most, but not all packages, are on CRAN. Another repository is R Forge. There are now several thousand packages there.)
+
+To access all of the functions and data sets in a particular package, it must first be loaded into the workspace. 
+
+For example, to load the nlme package:
+
+> library(nlme)
+> #you can now use this package
+
+You can remove a package you have loaded using the command detach().
+
+One important thing to note is that if you terminate your session and start a new session with the saved workspace, you must load the packages again.
+
+ 
+Installing packages
+
+To install a package use the command install.packages(). Notice that you use the plural "packages" even if it is just for one package.
+
+> install.packages("evir",”outliers”)
+> 
+> # carry out installation instructions
+>
+> library(evir)
+> library(outliers)
+ 
+To check what packages are currently loaded into the workspace, use the command search().
+
+> search()
+
+[1] ".GlobalEnv" "package:MASS" "package:stats"
+[4] "package:graphics" "package:grDevices" "package:utils"
+[7] "package:datasets" "package:methods" "Autoloads"
+[10] "package:base"
+
+
+Learning about Packages
+Workbooks and help manuals for R packages are usually available on the CRAN website. These are an invaluable resource for using packages.
+Some packages require a more recent version of R than the one installed. You will have to install the new version accordingly.
+Packages can be updated using the update.packages() command.
+Also packages are "dependents" on other packages. Installing one package may require the installation of other packages that it is able to run, and these will also be installed. 
+A list of dependencies  usually accompanies a package’s website.
+
