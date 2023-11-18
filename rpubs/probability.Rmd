@@ -1,3 +1,14 @@
+---
+title: "Probability Distributions"
+subtitle: "Logistic Regression Models"
+author: DragonflyStats.github.io
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+
 Probability distributions
 ==========================================
 A probability distribution describes how the values of a random variable is distributed. For example, the collection of all possible outcomes of a sequence of coin tossing is known to follow the binomial distribution. Whereas the means of sufficiently large samples of a data population are known to resemble the normal distribution. Since the characteristics of these theoretical distributions are well understood, they can be used to make statistical inferences on the entire data population as a whole.
@@ -10,11 +21,12 @@ We looking at how to generate random numbers, we previous encountered the unifor
 •	The Chi-Squared Distribution
 
 If you would like to know what distributions are available you can do a search using the command help.search("distribution").
-Here we give details about the commands associated with the normal distribution and briefly mention the commands for other distributions. The functions for different distributions are very similar where the differences are noted below.
+Here we give details about the commands associated with the normal distribution and briefly mention the commands for other distributions. 
+The functions for different distributions are very similar where the differences are noted below.
 
+------------------------------------------------------------
 
-
-   <h3>4.1 The Normal Distribution</h3>
+<h3>4.1 The Normal Distribution</h3>
 
 There are four functions that can be used to generate the values associated with the normal distribution. You can get a full list of them and their options using the help command:
 
@@ -116,7 +128,9 @@ The last function we examine is the rnorm function which can generate random num
 > qqnorm(y)
 > qqline(y)
 
-Section 4.2 The t Distribution
+----------------------------------------------------------------------
+
+## Section 4.2 The t Distribution
 
 There are four functions that can be used to generate the values associated with the t distribution. You can get a full list of them and their options using the help command:
 
@@ -170,7 +184,7 @@ Finally random numbers can be generated according to the t distribution:
 > rt(3,df=20)
 [1]  0.8023832 -0.4759780 -1.0546125
 
-Section 4.3 The Binomial Distribution
+## Section 4.3 The Binomial Distribution
 
 There are four functions that can be used to generate the values associated with the binomial distribution. You can get a full list of them and their options using the help command:
 
@@ -222,7 +236,8 @@ Finally random numbers can be generated according to the binomial distribution:
 > rbinom(5,100,.7)
 [1] 66 66 58 68 63
 > 
-Section 4.4 The Chi-Squared Distribution
+
+## Section 4.4 The Chi-Squared Distribution
 
 There are four functions that can be used to generate the values associated with the Chi-Squared distribution. You can get a full list of them and their options using the help command:
 

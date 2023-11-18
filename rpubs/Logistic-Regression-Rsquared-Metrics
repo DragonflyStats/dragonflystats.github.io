@@ -1,0 +1,83 @@
+---
+title: "Logistic Regression: R-Sqaured Metrics"
+subtitle: "Logistic Regression Models"
+author: DragonflyStats.github.io
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+
+
+Pseudo-R2s
+=======================================================
+
+* In linear regression the squared multiple correlation, R2 is used to assess goodness of fit as it represents the proportion of variance in the criterion that is explained by the predictors.
+* In logistic regression analysis, there is no agreed upon analogous measure, but there are several competing measures each with limitations.
+
+Five of the most commonly used indices are examined here:
+
+* Likelihood ratio R2L
+* Cox and Snell R2CS
+* Nagelkerke R2N
+* McFadden R2McF
+* Tjur R2T
+
+-----------------------------------------------------------
+
+### Likelihood ratio R2L
+
+R2L is given by [25]
+
+$${\displaystyle R_{\text{L}}^{2}={\frac {D_{\text{null}}-D_{\text{fitted}}}{D_{\text{null}}}}.} $$.
+* This is the most analogous index to the squared multiple correlation in linear regression.
+* It represents the proportional reduction in the deviance wherein the deviance is treated as a measure of variation analogous but not identical to the variance in linear regression analysis.[20] One limitation of the likelihood ratio R2 is that it is not monotonically related to the odds ratio,[25] meaning that it does not necessarily increase as the odds ratio increases and does not necessarily decrease as the odds ratio decreases.
+
+-----------------------------------------------------------
+
+### Cox and Snell R2CS
+
+R2CS is an alternative index of goodness of fit related to the R2 value from linear regression. 
+
+It is given by:
+
+$${\displaystyle R_{\text{CS}}^{2}=1-\left({\frac {L_{M}}{L_{0}}}\right)^{2/n}.}$$
+where LM and L0 are the likelihoods for the model being fitted and the null model, respectively. 
+The Cox and Snell index is problematic as its maximum value is ${\displaystyle 1-L_{0}^{2/n}}$. 
+The highest this upper bound can be is 0.75, but it can easily be as low as 0.48 when the marginal proportion of cases is small.[26]
+
+-----------------------------------------------------------
+
+### Nagelkerke R2N
+
+R2N provides a correction to the Cox and Snell R2 so that the maximum value is equal to 1. Nevertheless, the Cox and Snell and likelihood ratio R2s show greater agreement with each other than either does with the Nagelkerke R2.
+
+* Of course, this might not be the case for values exceeding .75 as the Cox and Snell index is capped at this value. The likelihood ratio R2 is often preferred to the alternatives as it is most analogous to R2 in linear regression, is independent of the base rate (both Cox and Snell and Nagelkerke R2s increase as the proportion of cases increase from 0 to .5) and varies between 0 and 1.
+
+-----------------------------------------------------------
+
+### McFadden R2McF
+
+R2McF is defined as
+
+$${\displaystyle R_{\text{McF}}^{2}=1-{\frac {\ln(L_{M})}{\ln(L_{0})}},} $$
+and is preferred over R2CS by Allison. The two expressions R2McF and R2CS are then related respectively by,
+
+$${\displaystyle {\begin{matrix}R_{\text{CS}}^{2}=1-\left({\dfrac {1}{L_{0}}}\right)^{\frac {2(R_{\text{McF}}^{2})}{n}}\\[1.5em]R_{\text{McF}}^{2}=-{\dfrac {n}{2}}\cdot {\dfrac {\ln(1-R_{\text{CS}}^{2})}{\ln(L_{0})}}\end{matrix}}} {\begin{matrix}R_{\text{CS}}^{2}=1-\left({\dfrac {1}{L_{0}}}\right)^{\frac {2(R_{\text{McF}}^{2})}{n}}\\[1.5em]R_{\text{McF}}^{2}=-{\dfrac {n}{2}}\cdot {\dfrac {\ln(1-R_{\text{CS}}^{2})}{\ln(L_{0})}}\end{matrix}}$$
+However, Allison now prefers R2T which is a relatively new measure developed by Tjur.
+
+It can be calculated in two steps:
+* For each level of the dependent variable, find the mean of the predicted probabilities of an event.
+* Take the absolute value of the difference between these means
+
+-----------------------------------------------------------
+### Usage
+
+
+A word of caution is in order when interpreting pseudo-R2 statistics. 
+
+* The reason these indices of fit are referred to as pseudo R2 is that they do not represent the proportionate reduction in error as the R2 in linear regression does.[25] Linear regression assumes homoscedasticity, that the error variance is the same for all values of the criterion. 
+* Logistic regression will always be heteroscedastic – the error variances differ for each value of the predicted score. For each value of the predicted score there would be a different value of the proportionate reduction in error. Therefore, it is inappropriate to think of R2 as a proportionate reduction in error in a universal sense in logistic regression.[25]
+
+
