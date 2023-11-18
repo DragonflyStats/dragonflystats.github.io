@@ -1,4 +1,12 @@
-
+---
+title: "Logistic Regression: Model Fit Diagnostics"
+subtitle: "Logistic Regression Models"
+author: DragonflyStats.github.io
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
 <!-- ############################################# -->
 {Review of SLR}
 <ul>
