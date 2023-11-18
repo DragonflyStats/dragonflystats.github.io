@@ -1,6 +1,13 @@
-      
+---
+title: "Logistic Regression: Model Fit Diagnostics"
+subtitle: "Logistic Regression Models"
+author: DragonflyStats.github.io
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
 
-%---------------------------------------------------
 <p>{cor.test() }
 We can test correlation in bivariate data using the cor.test() function.
 This test can be applied to all correlation coefficients.\\ We will only consider the default type, Pearson's product moment correlation coefficient.\\
@@ -14,7 +21,7 @@ The default alternative is that the correlation coefficient is not zero.
 >cor.test(A,B)
 </code></pre>
 
-<p>
+--------------------------------------------------
 
 
 <pre><code>
@@ -38,3 +45,4 @@ sample estimates:
 * We can specifythe confidence level and alternative hypothesis as per previous procedures, but null value must be zero.
 * Can specify other correlation types using `method'.
 
+--------------------------------------------------
