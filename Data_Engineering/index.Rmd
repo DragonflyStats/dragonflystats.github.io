@@ -1,3 +1,11 @@
+---
+output:
+  flexdashboard::flex_dashboard:
+    theme: 
+      version: 4
+      bootswatch: minty
+---
+
 ## Data Engineering Course
 
 Coursework for the IBM Data Engineering Professional Certificate
