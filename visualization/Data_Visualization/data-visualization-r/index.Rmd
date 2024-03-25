@@ -1,0 +1,4 @@
+
+This course is the second in a specialization in Data Visualization offered by Johns Hopkins. 
+It is intended for learners who have either have some experience with R and data wrangling in the tidyverse or have taken the previous course in the specialization. 
+The focus in this course learning to use ggplot2 to make a variety of visualizations and to polish those visualizations using tools within ggplot as well as vector graphics editing software. The course will not go into detail about how the data management works behind the scenes.
