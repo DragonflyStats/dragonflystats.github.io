@@ -1,0 +1,14 @@
+Summary: Basic SQL
+Congratulations! You have completed this lesson. At this point in the course, you know: 
+
+The Data Manipulation Language (DML) statements read and modify data. 
+
+The search condition of the WHERE clause uses a predicate to refine the search.
+
+ The SQL retrieves specific data from databases.
+
+The COUNT, DISTINCT, and LIMIT are expressions used with SELECT statements. 
+
+The real-world applications of SELECT statements.
+
+ The INSERT, UPDATE, and DELETE are DML statements for populating and changing tables. 
