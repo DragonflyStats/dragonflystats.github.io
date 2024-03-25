@@ -7,7 +7,9 @@ Coursework for the IBM Data Engineering Professional Certificate
 * Python for Data Science, AI & Development
   - Introduction to Python for Numerical Programming
   - Core Functionality, Programming Control Statements, Numpy and Pandas
-* Python Project for Data Engineering
+* ["Python-Project-for-Data-Engineering/index.html"](Python Project for Data Engineering)
+  - Extract Transform and Load (ETL) data using an IDE 
+  - More Advanced Python Programming
 * Introduction to Relational Databases (RDBMS)
 * Databases and SQL for Data Science with Python
 * Hands-on Introduction to Linux Commands and Shell Scripting
