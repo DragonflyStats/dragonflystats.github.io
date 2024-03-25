@@ -9,4 +9,9 @@ Coursework for the IBM Data Engineering Professional Certificate
   - Core Functionality, Programming Control Statements, Numpy and Pandas
 * Python Project for Data Engineering
 * Introduction to Relational Databases (RDBMS)
-* ["Getting-started-with-Data-warehousing-and-BI-Analytics.html"](Getting Started with Data Warehousing and BI Analytics)
+* Databases and SQL for Data Science with Python
+* Hands-on Introduction to Linux Commands and Shell Scripting
+* ["Getting-started-with-Data-warehousing-and-BI-Analytics/index.html"](Getting Started with Data Warehousing and BI Analytics)
+* Introduction to NoSQL Databases
+* Introduction to Big Data with Spark and Hadoop
+* Data Engineering Capstone Project
