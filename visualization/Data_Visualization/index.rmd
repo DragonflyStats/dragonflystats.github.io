@@ -1,0 +1,19 @@
+## Data Visualization & Dashboarding with R Specialization
+
+* Coursera Career Certificate Specialization - 5 course series
+
+#### About
+
+* This Specialization is intended for learners seeking to develop the ability to visualize data using R. 
+* Through five courses, you will use R to create static and interactive data visualizations and publish them on the web, which will you prepare you to provide insight to many types of audiences.
+
+#### Applied Learning Project
+
+Learners will generate many different types of visualizations to explore data, from simple figures like bar plots and scatter plots to interactive dashboards. Learners will integrate these figures into reproducible research products and share them online.
+
+#### Components
+* Getting Started with Data Visualization in R
+* Data Visualization in R with ggplot2
+* Advanced Data Visualization with R
+* Publishing Visualizations in R with Shiny and flexdashboard
+* Data Visualization Capstone
