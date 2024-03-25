@@ -10,7 +10,7 @@ output:
 
 
 Probability distributions
-==========================================
+=========
 A probability distribution describes how the values of a random variable is distributed. For example, the collection of all possible outcomes of a sequence of coin tossing is known to follow the binomial distribution. Whereas the means of sufficiently large samples of a data population are known to resemble the normal distribution. Since the characteristics of these theoretical distributions are well understood, they can be used to make statistical inferences on the entire data population as a whole.
 
 We looking at how to generate random numbers, we previous encountered the uniform and normal distribution. There are a large number of probability distributions available, but we only look at a few. 
