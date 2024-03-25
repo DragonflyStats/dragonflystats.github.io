@@ -1,0 +1,22 @@
+---
+output:
+  flexdashboard::flex_dashboard:
+    theme: 
+      version: 4
+      bootswatch: minty
+---
+
+
+
+Column {.tabset}
+--------------------------------
+
+### Week 01
+
+* Introduction to Core Concepts
+
+### Week 02
+
+```{r child="Week_02.Rmd"}
+```
+
