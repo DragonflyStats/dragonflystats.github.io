@@ -1,0 +1,98 @@
+<!-https://www.jeffdoser.com/files/for875/_book/databases-and-r>
+
+We will use a sample database provided by SQLite called chinook that contains data on store employees, customers, and the music they purchased.
+
+First, go to http://www.sqlitetutorial.net/sqlite-sample-database/ and download the chinook database into your R working directory so you can follow along with this example yourself.
+
+Upon successful download, the first step we need to do is install/load the necessary packages for connecting to the external database. To help dplyr communicate with the SQL engine, install the dbplyr package using install.packages("dbplyr"). Next we need the RSQLite package for interfacing with the SQLite database. Install this by running install.packages("RSQLite") in the R console. Then load the packages, along with dplyr:
+
+```{r}
+library(dplyr)
+library(dbplyr)
+library(RSQLite)
+```
+
+We next use the DBI package to connect directly to the database. DBI is a backend package that provides a common interface for R to work with many different database management systems using the same code. This package does much of the communication from R to the database that occurs behind the scenes, and is an essential part of using dplyr to work with databases. If you have not yet installed the DBI package, you can do so using install.packages("DBI").
+
+```{r}
+library(DBI)
+chinook <- dbConnect(SQLite(), "chinook.db")
+```
+This command creates a reference to the database, and tells R to connect to this database in a specific location (your location could change depending on where you save the chinook.db file). A similar approach could be used to connect to databases of other database management systems like Oracle, MySQL, PostgreSQL, and others. Most databases do not live in a file, but instead live on another server. This causes the above connection to be much more complex, but for now we will focus on this simple case.
+
+Now lets look closer at the chinook database.
+
+```{r}
+src_dbi(chinook)
+```
+
+The above function displays the location of the database, as well as the tables contained in the database. You can see in the chinook database there are numerous tables regarding customers, employees, and the music that customers purchased. In total, there are 13 tables contained in this database.
+
+Now that we know the structure of the database, we can perform some simple queries on the data using dplyr syntax. For now, let’s focus on the employees table.
+
+```{r}
+employees <- tbl(chinook, "employees")
+employees
+```
+Notice how the employees table looks mostly like a regular tibble, but has a couple added lines detailing its location as a remote table in a SQLite database.
+
+Now lets use familiar dplyr commands to perform queries on the database63.
+
+employees %>% 
+  select(LastName, FirstName, Phone, Email) %>% 
+  arrange(LastName)
+## # Source:     lazy query [?? x 4]
+## # Database:   sqlite 3.38.5
+## #   [/home/jeffdoser/Dropbox/teaching/for875/textbook/chinook.db]
+## # Ordered by: LastName
+##   LastName FirstName Phone             Email           
+##   <chr>    <chr>     <chr>             <chr>           
+## 1 Adams    Andrew    +1 (780) 428-9482 andrew@chinookc…
+## 2 Callahan Laura     +1 (403) 467-3351 laura@chinookco…
+## 3 Edwards  Nancy     +1 (403) 262-3443 nancy@chinookco…
+## 4 Johnson  Steve     1 (780) 836-9987  steve@chinookco…
+## 5 King     Robert    +1 (403) 456-9986 robert@chinookc…
+## 6 Mitchell Michael   +1 (403) 246-9887 michael@chinook…
+## 7 Park     Margaret  +1 (403) 263-4423 margaret@chinoo…
+## 8 Peacock  Jane      +1 (403) 262-3443 jane@chinookcor…
+employees %>% 
+  filter(Title == "Sales Support Agent") %>% 
+  select(LastName, FirstName, Address) %>% 
+  arrange(LastName)
+## # Source:     lazy query [?? x 3]
+## # Database:   sqlite 3.38.5
+## #   [/home/jeffdoser/Dropbox/teaching/for875/textbook/chinook.db]
+## # Ordered by: LastName
+##   LastName FirstName Address         
+##   <chr>    <chr>     <chr>           
+## 1 Johnson  Steve     7727B 41 Ave    
+## 2 Park     Margaret  683 10 Street SW
+## 3 Peacock  Jane      1111 6 Ave SW
+employees %>% 
+  group_by(ReportsTo) %>% 
+  summarize(numberAtLocation = n())
+## # Source:   lazy query [?? x 2]
+## # Database: sqlite 3.38.5
+## #   [/home/jeffdoser/Dropbox/teaching/for875/textbook/chinook.db]
+##   ReportsTo numberAtLocation
+##       <int>            <int>
+## 1        NA                1
+## 2         1                2
+## 3         2                3
+## 4         6                2
+You can see by using dplyr you are able to use the same syntax to query the database as you used to analyze data frames in Chapter 6. The most important difference to again note is that when working with remote databases the R code is translated into SQL and executed in the database using the SQL engine, not in R. When doing this, dplyr is as “lazy” as possible as it never pulls data in R unless explicity asked. It collects everything you ask it to do and then sends it to the database all in one step. This is often a very useful feature when desiring to look at a certain group of records in a database. To understand this further, take a look at the following code, which at first you might think will output a tibble or data frame:
+
+salesSupportAgents <- employees %>% 
+  filter(Title == "Sales Support Agent") %>% 
+  select(LastName, FirstName, Address) %>% 
+  arrange(LastName) 
+salesSupportAgents
+## # Source:     lazy query [?? x 3]
+## # Database:   sqlite 3.38.5
+## #   [/home/jeffdoser/Dropbox/teaching/for875/textbook/chinook.db]
+## # Ordered by: LastName
+##   LastName FirstName Address         
+##   <chr>    <chr>     <chr>           
+## 1 Johnson  Steve     7727B 41 Ave    
+## 2 Park     Margaret  683 10 Street SW
+## 3 Peacock  Jane      1111 6 Ave SW
