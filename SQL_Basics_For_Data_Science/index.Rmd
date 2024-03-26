@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Column {.tabset}
 --------------
 
-### Overview of Module
+### Overview of Specialization
 
 ## SQL Basics for Data Science Specialization
 
