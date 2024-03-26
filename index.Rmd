@@ -1,5 +1,5 @@
 ---
-title: "Dragonfy Statistics"
+title: "Dragonfly Statistics"
 output: 
   flexdashboard::flex_dashboard:
     theme: united
@@ -39,9 +39,9 @@ Column {.tabset}
 
 - <a href= "www.whyr.pl">Why R? Foundation</a> - Community Team lead & Webinars co-ordinator (on hiatus)
 
-- <a href= "www.JuliaCon.Org">JuliaCon 2023</a> - Social Media Chair (since 2017)
+- <a href= "www.JuliaCon.Org">JuliaCon 2023</a> - Social Media Chair (2017 to 2023)
 
-- <a href= "www.Python.ie">Python Ireland</a> - **Former** Director & Conference Lead (Vestigial)
+- <a href= "www.Python.ie">Python Ireland</a> - **Former** Director & Conference Lead 
 
 ---------------------
 
@@ -77,19 +77,26 @@ R Talks
 Column {.tabset}
 --------------
 
-
-
-
-
 ### Working With Documents
 
 <h3> Working With Documents</h3>
 
 * Presented at the <a href="www.meetup.com/LondonR">London R</a> Meetup in June 2022
 
-
 *  <a href="London_R_June_2022/London_R_June_2022.html">Working With Documents</a>
 
+
+### Older Talks
+
+<h4> "Probability: Pitfalls, Paradoxes"</h4>
+* Versions in various programming languages to be revised in 2024
+* Monty Hall Problem, The Monte Carlo Gambler's Ruin of 1913, The Canadian Lottery Winner.
+* Implementation of several topics discussed in "The Drunkard's Walk"
+
+<h4> Diagnostics and Model Appraisal for R</h4>
+* Model Diagnostics for Linear Models and GLMs
+* Graphical Procedures i.e. QQ plots, In-built model diagnostic plots, Radio Plots
+* Cooks' Distance, Mahalanobis Distances, DFFITS, DFBETAs
 
 ```{r child="r/linkedin.Rmd"}
 ```
@@ -106,7 +113,7 @@ Column {.tabset}
 
 <h4> PyData Global </h4>
 
-PyData Global 2011 Conference is taking place online between Thurs 1st and Sat 3rd December 2022.
+PyData Global 2022 Conference is taking place online between Thurs 1st and Sat 3rd December 2022.
 Join PyData for our third year hosting this event virtually bringing together PyData Chapters, community members, and attendees from all over the world together for an unforgettable PyData Conference.
 <p>
 To find out more, go to our conference website: <a href="www.pydata.org/global2022">www.pydata.org/global2022</a>
