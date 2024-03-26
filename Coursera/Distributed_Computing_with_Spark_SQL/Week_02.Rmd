@@ -1,0 +1,6 @@
+### Week 02
+<h4>Spark Core Concepts</h4>
+
+* In this module, you will be able to explain the core concepts of Spark. 
+* You will learn common ways to increase query performance by caching data and modifying Spark configurations. 
+* You will also use the Spark UI to analyze performance and identify bottlenecks, as well as optimize queries with Adaptive Query Execution.
