@@ -1,2 +1,8 @@
-In this module, you will be able to identify and discuss the general demands of data applications. You'll be able to access data in a variety of formats and compare and contrast the tradeoffs between these formats. You will explore and examine semi-structured JSON data (common in big data environments) as well as schemas and parallel data writes. 
-You will be able to create an end-to-end pipeline that reads data, transforms it, and saves the result.
+
+### Week 3
+
+<h4> Week 3</h4>
+* In this module, you will be able to identify and discuss the general demands of data applications. 
+* You'll be able to access data in a variety of formats and compare and contrast the tradeoffs between these formats. 
+* You will explore and examine semi-structured JSON data (common in big data environments) as well as schemas and parallel data writes. 
+* You will be able to create an end-to-end pipeline that reads data, transforms it, and saves the result.
