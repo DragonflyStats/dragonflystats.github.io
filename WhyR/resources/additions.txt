@@ -1,0 +1,28 @@
+---------------------------
+https://www.eventbrite.ie/e/career-zoo-presents-tech-on-the-wild-atlantic-way-2020-tickets-77292514993#tickets
+
+
+---------------------------
+Machine learning for coders
+
+Machine Learning (ML) is no longer ring fenced to researchers and data scientists.
+
+New high-level APIs are driving the democratisation of ML applications and enabling programmers to build and implement ML solutions in their own work. 
+This talk describes how these APIs work and why they sometimes perform better than even state-of-the-art solutions.
+
+---------------------------
+
+Why R? 
+ pree-meeting
+
+Why R? pre-meetings are R meetups that support local R communities. Their main goal is to promote Why R? 2019 Conference.
+
+Another purpose of those meetings is to provide space for the professional networking and knowledge exchange for practitioners and students from the areas of statistical machine learning, programming, optimization and data science.
+
+In 2019, we have already managed to co-organize 12 R meetups around Central-Eastern Europe, among others in Warsaw, Prague, Amsterdam, Copenhagen or Wroclaw. We often provide beverages and pizza, cover transportation and accomodation costs for speakers and pay for the after party. Such meetings are a great opportunity to understand the needs and areas of interest of R users around the Europe. In total we have organized 30 R + data science meetings overall.
+
+Those meetings would not happen without the help of local R hosts who have invested a lot of time and energy in this project!
+
+If you want to organize R meetup in your city and you are looking for the support to cover the costs of snacks or transport for the speakers, 
+you should contact us via kontakt_at_whyr.pl. We would be more than happy to suggest the potential use cases for presentations, share ideas for
+ the networking and help to find speakers in your close region.

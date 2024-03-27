@@ -1,0 +1,338 @@
+---
+title: "Salzburg Explorer"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+
+```
+
+Salzburg Explorer
+=====================
+
+Column {.tabset}
+--------------
+
+
+### About
+<h4> About<h4>
+<p>
+An R project to discover the wonderful city of Salzburg.
+</p>
+<br>
+<img src="images/coverimage.jpg" alt="useR! 2024 Salzburg Concept Art" style="width:400px;"/>
+
+
+### Contributors
+
+<h4>Contributors </h4> 
+
+* Kevin O'Brien
+
+
+Salzburg {data-navmenu="Salzburg"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+### All Salzburg
+
+```{r echo=FALSE}
+library(leaflet)
+library(leaflet.extras)
+library(tidyverse)
+
+myDF <- read.csv("https://raw.githubusercontent.com/London-Explorer/Datasets/main/London_Version_1.csv")
+
+
+m <- myDF %>% leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1102952, lat = 51.5134326, zoom = 14) %>%
+  addMarkers(lng= myDF$Longtitude, lat= myDF$Latitude,popup=myDF$Name)
+m
+```
+
+### All Salzburg
+
+```{r echo=FALSE}
+library(leaflet)
+library(tidyverse)
+library(leaflet.extras)
+
+myDF <- read.csv("https://raw.githubusercontent.com/London-Explorer/Datasets/main/London_Version_1.csv")
+
+
+icons_Green <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "green"
+)
+
+
+icons_Red <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "lightred"
+)
+
+icons_Yellow <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "orange"
+)
+
+
+icons_Blue <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "lightblue"
+)
+
+
+
+icons_Purple <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "darkpurple"
+)
+
+icons_Black <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "gray"
+)
+
+SalzDF <- read_csv("SalzburgLocations.csv")
+
+m <-  leaflet(SalzDF) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = 13.044999, lat = 47.799997, zoom = 14) %>%
+  addAwesomeMarkers(lng= SalzDF$Longtitude, 
+                    lat=SalzDF$Latitude,
+                    icon=icons_Green,
+                    popup=SalzDF$Name)
+
+
+m
+```
+
+
+
+
+### Soho
+
+<h4>Soho</h4>
+
+```{r echo=FALSE}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1387976, lat = 51.5133462, zoom = 16) %>%
+  addMarkers(lng=-0.132908, lat=51.5165172, popup="Bradley's Spanish Bar") %>%
+  addMarkers(lng=-0.1319526, lat=51.5124381, popup="The French House")
+
+m  # Print the map
+
+```
+
+### New Map (Arvid Kingl)
+
+```{r echo=FALSE}
+
+library(leaflet)
+library(tidyverse)
+library(leaflet.extras)
+
+icons_Green <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "green"
+)
+
+
+icons_Red <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "red"
+)
+
+icons_Yellow <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "orange"
+)
+
+
+icons_Blue <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "blue"
+)
+
+
+
+icons_Purple <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "purple"
+)
+
+icons_Black <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "black"
+)
+
+
+
+
+myDF <- read.csv("https://raw.githubusercontent.com/London-Explorer/Datasets/main/London_Version_2_Info.csv")
+
+
+
+
+myDF1 <- myDF %>% filter(Type %in% c("Museum","Sight"))
+myDF2 <- myDF %>% filter(Type %in% c("Pub","Pub","Venue/Pub","Pub/Food"))
+myDF3 <- myDF %>% filter(Type %in% c("Park"))
+myDF4 <- myDF %>% filter(Type %in% c("Church"))
+myDF5 <- myDF %>% filter(Type %in% c("House","Residence"))
+myDF6 <- myDF %>% filter(Type %in% c("Theatre and Arts"))
+
+
+
+m <-  leaflet(myDF1) %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1102952, lat = 51.5134326, zoom = 14) %>%
+  addAwesomeMarkers(lng= myDF1$Longitude, lat= myDF1$Latitude,icon=icons_Green,popup=myDF1$Name)
+
+m <- m %>%   addAwesomeMarkers(lng= myDF2$Longitude, lat= myDF2$Latitude,icon=icons_Red,popup=myDF2$Name)
+m <- m %>%   addAwesomeMarkers(lng= myDF3$Longitude, lat= myDF3$Latitude,icon=icons_Purple,popup=myDF3$Name)
+m <- m %>%   addAwesomeMarkers(lng= myDF4$Longitude, lat= myDF4$Latitude,icon=icons_Blue,popup=myDF4$Name)
+m <- m %>%   addAwesomeMarkers(lng= myDF5$Longitude, lat= myDF5$Latitude,icon=icons_Yellow ,popup=myDF5$Name)
+m <- m %>%   addAwesomeMarkers(lng= myDF6$Longitude, lat= myDF6$Latitude,icon=icons_Black ,popup=myDF6$Name)
+
+
+m
+```
+
+
+
+### The City
+
+<h4>The City of Salzburg</h4>
+
+```{r echo=FALSE}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1102952, lat = 51.5134326, zoom = 16) %>%
+  addMarkers(lng=-0.1102952, lat=51.5134326, popup="Oliver Goldsmith's Grave") %>%
+  addMarkers(lng=-0.1074333, lat=51.5140786, popup="The Old Chesire Cheese (Pub)")
+
+m  # Print the map
+
+```
+
+
+### Wapping
+
+<h4>Wapping</h4>
+
+```{r echo=FALSE}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.05831, lat = 51.505328, zoom = 15) %>%
+  addMarkers(lng=-0.06301, lat=51.50345, popup="The Town of Ramsgate") %>%
+  addMarkers(lng=-0.0349695, lat=51.5087151, popup="The Grapes") %>%
+  addMarkers(lng=-0.0589519, lat=51.5032233, popup="The Captain Kidd")
+
+
+m  # Print the map
+
+```
+
+
+51.4920942,-0.1925321
+
+### Earl's Court
+
+<h4>Earl's Court</h4>
+
+```{r echo=FALSE}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1925321, lat = 51.4920942, zoom = 16) %>%
+  addMarkers(lng=-0.1920409, lat=51.4888221, popup="The Troubadour")
+
+m  # Print the map
+
+```
+
+
+
+Using the {leaflet} R package {data-navmenu="About"}
+======================================
+
+Column {.tabset}
+------------------
+
+### Colour Test 1
+
+```{r}
+# first 20 quakes
+df.20 <- quakes[1:20,]
+
+getColor <- function(quakes) {
+  sapply(quakes$mag, function(mag) {
+  if(mag <= 4) {
+    "green"
+  } else if(mag <= 5) {
+    "orange"
+  } else {
+    "red"
+  } })
+}
+
+getColor(df.20)
+```
+
+### Colour Test 2
+
+```{r}
+icons <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = getColor(df.20)
+)
+
+leaflet(df.20) %>% addTiles() %>%
+  addAwesomeMarkers(~long, ~lat, icon=icons, label=~as.character(mag))
+
+
+```
+

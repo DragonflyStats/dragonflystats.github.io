@@ -1,0 +1,89 @@
+---
+title: "UL Forestry Data Project"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+UL Data Analytics  Project
+=====================
+
+Column {.tabset}
+--------------
+
+### Meeting 1
+
+<h4> Meeting 1 </h4>
+
+#### 1. Data Sets provided
+
+* Grade Summary
+* Stems Details
+* Stand Summary
+
+#### 2. Long term objective
+
+* Maximizing the Volume and value from each sub compartment
+* This will be done by testing various cutting strategies
+
+
+
+### Meeting 2
+
+<h4> Meeting 2 </h4>
+
+#### 1. Shapefile for BAU 5 and 6
+ * using the <tt>{sf}</tt> R package with <tt>{ggplot2}</tt>
+  - RSJ completed first task with <tt>{rgdal}</tt>
+ * RSJ to attempt a chloropleth map using ***median YC*** - using the <tt>{sf}</tt> R package
+	- Remark We wont use Median YC in the long term, we will revert to ***Weighted Yield Class***
+
+#### 2. Log Data 
+ * KOB to provide Logs data for BAU 5 and 6. 
+ * Large Data sets, so in the first instance, a sample of each to allow code preparation.
+ * Full Data sets will be available through DMCI's repository
+ * OF Interest  - Ratio of long and diameter to short and diameter.
+ * Long-term objective - Breakdown of diameter ratios by yield class and geographic location.
+
+
+#### 3. District map to aggregate forests 
+ * KOB to provide
+ * Identify Coastal and internal districts
+ * Optional - Coordinates of median of Subcompartmemt
+ * Intention - The location relative to the coast is a proxy for wind-risk
+
+#### 4. Elevation data.
+ * KOB to sourse from JPP and DMCI
+
+#### 5. Yield class data and weighted Yieldclass.
+ * Need to provide an updates YC data set.
+ * YCs that have zero value can be amended to 4.
+ * Coillte to correct discrepancies
+
+#### 6. Teagasc Soil Data
+ * KOB to sourse from JPP and DMCI
+
+
+#### 7. Volumes per Subcompartment
+ * Optimal cutting strategy for a given location. ,
+ * Lets pick a subcomparment, and validate the volume produced according to the ***Test A cutting strategy***.
+ * Remark- output in denominated in terms of Volumes per Hectare.
+ * Intermediate objective - determing the value per hectare for a given cutting strategy. 
+ * Harvest Units within CK06 and CK08 (2 or 3 from each)
+    - CK06-H0013, CK06-H0018, CK06-H0028
+ * KOB and RSJ to calculate separately
+ 
+#### 8. Tree Height Regression Models
+  * We will progress to this later on.
+  * In the mean time have a quick look at the following project.
+  * https://rpubs.com/Pun_/PredictiveModellingofVolumeofCheeryTrees
+  * The immediate objective to see do we have the right data to try this out.	
+
+### 9. For Later on
+ *  Missing Data Imputation for missing yield classes, etc
