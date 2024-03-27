@@ -257,7 +257,7 @@ Well, the returns are well worth it.
 
 
 
-London {data-navmenu="London"}
+London {data-navmenu="Maps"}
 ===========================================
 
 Column {.tabset}
@@ -509,41 +509,6 @@ m  # Print the map
 
 ```
 
-### Colour Test 1
-
-```{r}
-# first 20 quakes
-df.20 <- quakes[1:20,]
-
-getColor <- function(quakes) {
-  sapply(quakes$mag, function(mag) {
-  if(mag <= 4) {
-    "green"
-  } else if(mag <= 5) {
-    "orange"
-  } else {
-    "red"
-  } })
-}
-
-getColor(df.20)
-```
-
-### Colour Test 2
-
-```{r}
-icons <- awesomeIcons(
-  icon = 'ios-close',
-  iconColor = 'black',
-  library = 'ion',
-  markerColor = getColor(df.20)
-)
-
-leaflet(df.20) %>% addTiles() %>%
-  addAwesomeMarkers(~long, ~lat, icon=icons, label=~as.character(mag))
-
-
-```
 
 
 PyCon Limerick {data-navmenu="Python"}
