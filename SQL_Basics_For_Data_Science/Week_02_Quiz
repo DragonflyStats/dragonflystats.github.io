@@ -1,0 +1,277 @@
+
+### Question 1
+
+Which step should happen first in data analysis?
+
+A. **INCORRECT** Cleaning and Labeling Data
+B. **CORRECT** Collecting Data
+C. Machine Learning
+
+Incorrect
+Please revisit the lesson: Hierarchy of Data.
+
+------------------------------------------------------------------
+### Question 2
+TROUBLESHOOT THIS ERROR by selecting appropriate actions to remedy this specific query:
+Kat ran 9 lines of MySQL (finished in 112ms):
+
+<pre><code>
+--------------
+
+CREATE TABLE 
+
+example_table
+
+(
+
+column1  DATE, 
+
+column2  VARCHAR(30),
+
+column3  INT
+
+)
+
+--------------
+
+ERROR 1050 (42S01) at line 1: Table 'example_table' already exists
+
+Bye
+
+mysql> 
+
+  
+</code><pre>
+
+A. There is no error here
+B. **CORRECT** Run DESCRIBE TABLE example_table to see if the existing example_table is structured appropriately
+C. Check the syntax, near line 6
+D. Check that the data type for column2 should actually be VARCHAR(30)
+
+Correct
+It is important to know how tables are structured to run the correct query script.
+
+-----------------------------------------------------------------
+### Question 3
+Based on the code snippet below, which statements are definitely true (select all that apply): 
+
+<pre><code>
+CREATE TABLE table_x AS
+
+SELECT 
+
+  dates_rollup.date, 
+
+  COUNT(*)
+
+FROM 
+
+  Dates_rollup
+
+JOIN 
+
+  Table_y
+
+ON 
+
+ dates_rollup.date = table_y.date
+
+GROUP BY 
+
+  date
+</code></pre>
+  
+
+A. **INCORRECT**  table_y has no dependencies
+B. **INCORRECT**  table_y is dependent on table_x
+C. table_x is dependent on table_y
+D. table_x is dependent on table_y and dates_rollup
+
+-------------------------------------------------------------------------
+
+### Question 4
+
+Based on what you know about the orders table for this class, which of the following columns have a suitable datatype?
+
+undefined
+**Please note, due to the limitations of the free version of Mode Analytics, you are not able to replicate this data without an Enterprise account.
+
+0.4 / 1 point
+
+A. Created_at
+B. user_id
+C. Invoice_id
+D. item_name
+E. Paid_at
+
+This should not be selected
+Please revisit the lesson: Data Types.
+
+-------------------------------------------------------------------------
+
+### Question 5
+For this class, we are using Mode on a dataset specifically created for this course. 
+Which of these circumstances could be different in a real world situation? (Select all that apply.)
+
+
+A. The categories of data types (Number, Date, String)
+B. **CORRECT** How frequently the data is updated
+C. **CORRECT** The specific dialect of SQL
+
+Correct
+* The categories of data will be the same in any dialect, you should feel prepared to write SQL in any dialect.
+* It is very difficult simulating live updated data in a course, and in the real world you will likely find updated data.
+
+-------------------------------------------------------------------------
+
+### Question 6
+Based on what you know about the items table for this class, which of the following columns have a suitable datatype? (Select all that apply.)
+
+<IMAGE>
+
+**Please note, due to the limitations of the free version of Mode  Analytics, you are not able to replicate this data without an Enterprise  account.
+
+
+
+A. category
+B. name
+C. *INCORRECT** created_at
+
+This should not be selected
+Please revisit the lesson: Data Types.
+
+
+-------------------------------------------------------------------------
+
+### Question 7
+Which of the following table methods allows you to specify data types?
+
+A. **INCORRECT** **Option A** 
+
+<pre><code>
+CREATE TABLE 
+
+example_table 
+
+AS …
+</code></pre>
+
+B. **Option B**
+<pre><code>
+SELECT * 
+
+FROM 
+
+   example_table 
+
+AS …  
+</code></pre>
+
+C. **Option C**
+<pre><code>
+
+MAKE NEW TABLE 
+
+   example_table 
+
+AS …
+</code></pre>
+
+D. **Option D**
+<pre><code>
+
+CREATE TABLE    
+
+  example_table 
+
+  (column_name1 ….)
+</code></pre>
+
+-------------------------------------------------------------------------
+
+### Question 8
+When creating a user info table we used a variable in place of which column?
+
+
+
+A. The user
+B. The order id
+C. The date
+
+Incorrect
+Please revisit the lesson: Hierarchy of Data.
+
+-------------------------------------------------------------------------
+
+### Question 9
+Suppose in a table, you find a column called email which contains the value user@domain.com. What is the correct data type category for this column?
+
+<pre><code>
+...
+
+email
+
+...
+
+...
+
+user@domain.com
+
+...
+
+...
+
+...
+
+...
+
+</code></pre>
+
+
+A. Number
+B. **CORRECT** Date
+C. String
+
+---------------------------------------------------------
+### Question 10
+In this module, we created a table specifically of item view events. What level of the hierarchy of data does this belong on?
+
+
+A. **INCORRECT** Learn and Optimize
+B. Explore and Transform
+C. Collecting Data
+
+Incorrect
+Please revisit the lesson: Hierarchy of Data.
+
+---------------------------------------------------------
+### Question 11
+Suppose in a table you find a column called event_id, which contains the value z87df6ab4waoa756b3. What is the correct data type category for this column?
+
+...
+
+event_id
+
+...
+
+...
+
+z87df6ab4waoa756b3
+
+...
+
+...
+
+...
+
+...
+
+
+1 / 1 point
+
+A. Date
+B. **CORRECT** String
+C. Number
+
+Correct
+This is an example of string data.

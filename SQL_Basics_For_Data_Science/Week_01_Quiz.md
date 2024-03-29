@@ -5,7 +5,7 @@ Based on the dataset for this course, what does this query count?
 
 A. Counts the number of rows in the orders table
 B. **INCORRECT** Counts the number of users who have ordered an item
-C. Counts the number of invoices
+C. **INCORRECT** Counts the number of invoices
 D. **INCORRECT** Counts the numbers of users
 
 
@@ -28,7 +28,7 @@ In the events table, (dsv1069.events) for this class, how many rows exist per ev
 
 A. **INCORRECT** Always more than one
 B. **INCORRECT** Exactly one
-C. One per parameter_name
+C. **CORRECT** One per parameter_name
 
 Incorrect
 Please revisit the lesson: Introduction to the Course Dataset.
@@ -50,7 +50,7 @@ Based on your exploration of the tables in the course dataset. Why are the resul
 
 <IMAGE>
 
-A. There are no parent_user_ids that satisfy the WHERE clause
+A. **CORRECT** There are no parent_user_ids that satisfy the WHERE clause
 B. There are no events with this event_name
 C. **INCORRECT** The users table is empty
 
@@ -81,7 +81,7 @@ What does this query do? Select all true statements.
 
 A. **INCORRECT** The query counts the number of events.
 B. **INCORRECT** The query counts the number of view_item events.
-C. The query counts the number of rows corresponding to view_item events.
+C. **CORRECT** The query counts the number of rows corresponding to view_item events.
 D. The query returns all of the rows in the events table.
 E. **INCORRECT** The query counts the number of rows in the events table.
 
@@ -98,7 +98,7 @@ What happens when some rows have a NULL value in the column table_alpha.key?
 A. **INCORRECT** Each row with a null value will be joined to every row in table_beta.
 B. Each row with a null value is joined to every row in table_beta where table_beta.column is null.
 C. **INCORRECT** It is not possible for a join key to be null, the query will return an error.
-D. Those values aren't included in the result.
+D. **INCORRECT** Those values aren't included in the result.
 
 ----------------------------------------------------------
 ### Question 9
@@ -106,7 +106,7 @@ Which of the following are problems with the query below?
 
 <IMAGE>
 
-A. Count(*) counts rows not unique users
+A. **CORRECT** Count(*) counts rows not unique users
 B. The join should be on users.user_id
 C. **INCORRECT** The join should be on users.parent_user_id
 D. We need a GROUP BY clause

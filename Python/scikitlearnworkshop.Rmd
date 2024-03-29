@@ -1,0 +1,16 @@
+Scikit-Learn Workshop {data-navmenu="Python"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+### Scikit-Learn
+
+```{r child="Part_01_Installation.Rmd"}
+```
+
+```{r child="Part_02_Familiarization.Rmd"}
+```
+
+```{r child="Part_03_GettingData.Rmd"}
+```

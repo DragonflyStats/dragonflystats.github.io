@@ -1,5 +1,5 @@
 
-## Evaluating Models with ROC Curves}
+## Evaluating Models with ROC Curves
 
 *  Receiving Operating Characteristic, or ROC, is a visual way for inspecting the performance of a binary classification algorithm. 
 *  In particular, it's comparing the rate at which your classifier is making correct predictions (\textit{True Positives} or TP) and the rate at which your classifier is making false alarms (\textit{False Positives} or FP). 

@@ -98,7 +98,7 @@ Column {.tabset}
 * Graphical Procedures i.e. QQ plots, In-built model diagnostic plots, Radio Plots
 * Cooks' Distance, Mahalanobis Distances, DFFITS, DFBETAs
 
-```{r child="r/linkedin.Rmd"}
+```{r child="rstats/linkedin.Rmd", eval=FALSE}
 ```
 
 
@@ -251,7 +251,8 @@ It's all about community, and reinvesting in it in the right places, at the righ
 Well, the returns are well worth it.
 
  
-
+```{r child="Python/scikitlearnworkshop.Rmd"}
+```
 
 
 
@@ -492,6 +493,33 @@ m  # Print the map
 
 
 51.4920942,-0.1925321
+
+### Earl's Court
+
+<h4>Earl's Court</h4>
+
+```{r echo=FALSE}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -0.1925321, lat = 51.4920942, zoom = 16) %>%
+  addMarkers(lng=-0.1920409, lat=51.4888221, popup="The Troubadour")
+
+m  # Print the map
+
+```
+
+
+
+
+Salzburg {data-navmenu="Maps"}
+===========================================
+
+Column {.tabset}
+--------------------
+```{r child="maps/Salzburg/Salzburg.Rmd"}
+```
 
 ### Earl's Court
 
