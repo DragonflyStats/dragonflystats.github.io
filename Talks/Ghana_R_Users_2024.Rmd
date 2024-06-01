@@ -1,0 +1,4 @@
+In this talk, I will be discussing my career path as a data scientist in the fields of food science, life science, forestry and agriculture, and how I foresee 
+how this working in the sector will evolve into the future. I will draw attention to some skillsets that I have found to be very useful and under-appreciated, and give 
+some recommendations to career-young data scientists who are embarking on a similar career.
+Key topics include Statistical Anaylsis, Statistical Process Control, Data Engineering, Databases and Dashboard tools
