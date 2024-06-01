@@ -2,3 +2,27 @@ In this talk, I will be discussing my career path as a data scientist in the fie
 how this working in the sector will evolve into the future. I will draw attention to some skillsets that I have found to be very useful and under-appreciated, and give 
 some recommendations to career-young data scientists who are embarking on a similar career.
 Key topics include Statistical Anaylsis, Statistical Process Control, Data Engineering, Databases and Dashboard tools
+
+
+R for Agriculture
+
+Data Engineering
+
+Machine Data
+
+"Big Data" - make it "Small Data" as much as possible
+
+SQL
+Dont let the perfect be the enemy of the good.
+
+duckdb
+duckplyr
+GIS
+{terra} and {sf}
+
+Earth Observation
+
+JuliaEO
+
+
+
