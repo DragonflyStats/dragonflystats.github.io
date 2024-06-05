@@ -84,8 +84,8 @@ GROUP BY
 
 A. **INCORRECT**  table_y has no dependencies
 B. **INCORRECT**  table_y is dependent on table_x
-C. table_x is dependent on table_y
-D. table_x is dependent on table_y and dates_rollup
+C. **TRY** table_x is dependent on table_y
+D. **CORRECT** table_x is dependent on table_y and dates_rollup
 
 -------------------------------------------------------------------------
 
@@ -96,16 +96,12 @@ Based on what you know about the orders table for this class, which of the follo
 undefined
 **Please note, due to the limitations of the free version of Mode Analytics, you are not able to replicate this data without an Enterprise account.
 
-0.4 / 1 point
 
-A. Created_at
-B. user_id
-C. Invoice_id
-D. item_name
-E. Paid_at
-
-This should not be selected
-Please revisit the lesson: Data Types.
+A. **INCORRECT** Created_at
+B. **CORRECT** user_id
+C. **CORRECT** Invoice_id
+D. **CORRECT** item_name
+E. **INCORRECT** Paid_at
 
 -------------------------------------------------------------------------
 
@@ -133,8 +129,8 @@ Based on what you know about the items table for this class, which of the follow
 
 
 
-A. category
-B. name
+A. **CORRECT** category
+B. **CORRECT** name
 C. *INCORRECT** created_at
 
 This should not be selected
@@ -195,7 +191,7 @@ When creating a user info table we used a variable in place of which column?
 
 
 A. The user
-B. The order id
+B. **INCORRECT** The order id
 C. The date
 
 Incorrect
@@ -229,8 +225,8 @@ user@domain.com
 
 
 A. Number
-B. **CORRECT** Date
-C. String
+B. **INCORRECT** Date
+C. **CORRECT** String
 
 ---------------------------------------------------------
 ### Question 10
@@ -238,7 +234,7 @@ In this module, we created a table specifically of item view events. What level 
 
 
 A. **INCORRECT** Learn and Optimize
-B. Explore and Transform
+B. **CORRECT** Explore and Transform
 C. Collecting Data
 
 Incorrect

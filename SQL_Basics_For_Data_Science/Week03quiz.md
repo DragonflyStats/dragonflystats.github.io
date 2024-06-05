@@ -8,7 +8,7 @@ B. **INCORRECT** Every join is an inner join
  - This should not be selected. Please revisit the lesson: Test Queries vs. Final Queries.
 C. **CORRECT** Every column has a descriptive name
  - This is an attribute that distinguishes a work-in-progress from a "polished" final query.
-D. Every column is listed in a GROUP BY clause
+D. **INCORRECT** Every column is listed in a GROUP BY clause
 
 ---------------------------------------------------------------
 
@@ -16,7 +16,7 @@ D. Every column is listed in a GROUP BY clause
 In which of the following sections did we perform analysis to directly guide decision making?
 
 A. **INCORRECT** Pulling email addresses and item_ids for a promo email
-B. Answering a question about reordering items
+B. **CORRECT** Answering a question about reordering items
 C. **INCORRECT** Creating a view items table
 
 
@@ -59,6 +59,7 @@ ON
   items.id = orders.item
 </code></pre>
 
+* **INCORRECT** **Option B**
 <pre><code>
 SELECT *
 
@@ -75,6 +76,7 @@ ON
   items.id = orders.item
 </code></pre>
 
+* **CORRECT** **Option C**
 <pre><code>
 SELECT   *
 
@@ -136,9 +138,9 @@ A. **INCORRECT** How many users have purchased an item?
  - This should not be selected. Please revisit the lesson: Map Out Your Joins.
 B. **CORRECT** How many items have been purchased?
  - Counting questions related to the number of items.
-C. What work would need to be done to remove products from the catalog?
-D. How many items do we have?
-E. How many products do our competitors carry?
+C. **INCORRECT** What work would need to be done to remove products from the catalog?
+D. **CORRECT** How many items do we have?
+E. **INCORRECT** How many products do our competitors carry?
 F. **CORRECT** How many items have been viewed but not ordered?
 G. **CORRECT** How many items have been viewed?
  - Counting questions related to the number of items.
@@ -150,7 +152,7 @@ Which of the following tasks can be accomplished with a windowing function? (Sel
 A. **INCORRECT** Find the price of each item
  - Please revisit the lesson: Find Each User's Most Recently Viewed Page for an Email Campaign.
 B. **INCORRECT** Find the email address of each user
-C. Find the most expensive item per order
+C. **TRY** Find the most expensive item per order
 D. **CORRECT** Find the most recently viewed item
 
 
@@ -208,5 +210,5 @@ A. **CORRECT** Identify the question you are trying to answer
 B. Determine what tables you need
 C. Start building subqueries
 
-Correct
+#### Explanation
 Plan first, then code.

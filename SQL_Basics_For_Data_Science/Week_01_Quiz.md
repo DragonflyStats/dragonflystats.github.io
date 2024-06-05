@@ -3,11 +3,12 @@ Based on the dataset for this course, what does this query count?
 
 <IMAGE>
 
-A. Counts the number of rows in the orders table
+A. **CORRECT** Counts the number of rows in the orders table
 B. **INCORRECT** Counts the number of users who have ordered an item
 C. **INCORRECT** Counts the number of invoices
 D. **INCORRECT** Counts the numbers of users
 
+All of the orders have a user_id, and every user is in the user's table, so this will return the one row for every entry in the orders table.
 
 ----------------------------------------------------------
 ###  Question 2
@@ -37,8 +38,8 @@ Please revisit the lesson: Introduction to the Course Dataset.
 ### Question 4
 When you encounter a new dataset, which of the following can you assume? (Select all that apply.)
 
-A. Test usage is unfiltered
-B. The table is empty
+A. **CORRECT** Test usage is unfiltered
+B. **CORRECT** The table is empty
 C. **CORRECT** The data is out-of-date
 D. **INCORRECT** The table has a primary key
 E. **CORRECT** There are duplicate rows
