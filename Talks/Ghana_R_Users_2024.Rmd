@@ -12,6 +12,53 @@ Machine Data
 
 "Big Data" - make it "Small Data" as much as possible
 
+My Career
+
+
+
+Working With Documents
+PDFtools
+
+Forestry
+Measurements
+DBHs
+Tree Heights
+
+Spatial Data
+Terra
+SF
+Shapefiles
+
+Statistics
+Simple Stats
+Dont let the perfect be the enemy of the good
+
+Statistical Process Control
+Japanese
+KPIs
+
+Data Engineering
+DuckDB
+duckplyr
+
+Communication of Results
+Working with Non-Technical User
+Shiny
+What is Shiny for?
+
+Using R in Industry
+- Company Wide Enterprise System
+- Microsoft System
+
+Citrix creates software that allows employees to work and collaborate remotely regardless of device or network. The company's main products are in desktop software, Desktop as a Service (DaaS) systems, networking, cloud, and Software as a service (SaaS).[86][87]
+
+
+
+Task Scheduling
+- Problems
+
+Linux
+- CRON Jobs
 SQL
 Dont let the perfect be the enemy of the good.
 
