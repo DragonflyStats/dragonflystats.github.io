@@ -1,0 +1,14 @@
+A service account or application account is a digital identity used by an application software or service to interact with other applications or the operating system. 
+They are often used for machine to machine communication, for example for application programming interfaces
+
+---
+
+### Service Accounts
+
+A service account is a special type of account used for specific purposes:
+
+* It provides a security context for services running on Windows Server operating systems.
+* Service accounts are typically used by applications or compute workloads, rather than by people.
+* They represent non-human entities such as applications, APIs, or other services.
+
+---
