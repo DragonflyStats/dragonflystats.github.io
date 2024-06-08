@@ -1,0 +1,92 @@
+---
+title: "Ghana R - June 2024"
+subtitle: "Kevin O'Brien"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+---
+
+---
+
+## Harvesting Timber
+
+**Harvester Head**
+
+<img src="images/HarvestorHead_1.PNG" alt="Harvest Timber 1" width="800"/>
+
+
+(Source: Discovery KAI's Youtube channel)
+
+---
+
+#### Harvesting Timber
+
+**Felling**
+
+<img src="images/HarvestorHead_2.PNG" alt="Harvest Timber 2" width="800"/>
+
+
+(Source: Discovery KAI's Youtube channel)
+
+---
+
+#### Harvesting Timber
+
+**Delimbing and Bucking**
+
+<img src="images/HarvestorHead_3.PNG" alt="Harvest Timber 3" width="800"/>
+
+
+(Source: Discovery KAI's Youtube channel)
+
+---
+
+#### Harvesting Timber
+
+<img src="images/HarvestorHead_4.PNG" alt="Harvest Timber 4" width="800"/>
+
+
+(Source: Discovery KAI's Youtube channel)
+
+
+---
+
+#### Harvesting Timber
+
+<img src="images/HarvestorHead_5.PNG" alt="Harvest Timber 5" width="800"/>
+
+
+(Source: Discovery KAI's Youtube channel)
+
+---
+
+### Raw Timber Data Collected
+
+* **Logs** : Log Length, Diameters at each end, Volume, Product Type
+
+* **Stems**: Diameter at Breast Height (DBH), Species of Tree, Location, Number of Products
+
+* Number of logs and stems runs into millions.
+
+
+### Additional Information Known
+
+* **Locale**: Age and Species Mix of Plantation, Soil Composition and Elevation.
+
+### Derived Information
+
+* Impute the Top Height of the tree using Taper equations,
+
+---
+
+### U.S. Forest Service
+
+
+<img src="images/USForestService.PNG" alt="US Forest Service" width="800"/>
+
+
+(Website: www.fs.usda.gov)
+

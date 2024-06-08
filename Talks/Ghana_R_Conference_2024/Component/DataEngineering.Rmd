@@ -1,0 +1,67 @@
+---
+title: "Ghana R - June 2024"
+subtitle: "Kevin O'Brien"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+---
+
+---
+
+## Using the Harvest Data
+
+#### {dbplyr}
+
+<img src="images/dbplyr.PNG" alt="dbplyr" width="800"/>
+
+
+(Source: dbplyr.tidyverse.org)
+
+---
+
+
+<img src="images/duckdb_dplyr.jpg" alt="duckplyr" width="750"/>
+
+
+(Source: https://duckdb.org/2024/04/02/duckplyr.html)
+
+---
+
+## duckdb
+
+* The goal of ***duckplyr*** is to provide a drop-in replacement for ***dplyr*** that uses DuckDB as a backend for fast operation. DuckDB is an in-process SQL OLAP database management system.
+
+* ***duckplyr*** also defines a set of generics that provide a low-level implementer’s interface for dplyr’s high-level user interface.
+
+(Source: duckdblabs and posit documentation)
+
+---
+
+## duckdb & duckplyr
+
+<img src="images/duckdb_R_API.png" alt="duckplyr" width="800"/>
+
+(Source: https://duckdb.org/docs/api/r.html)
+
+---
+
+## Task Scheduling
+
+<img src="images/TashScheduler.png" alt="Task Scheduler" width="800"/>
+
+---
+
+## Batch Files
+
+<pre><code>
+
+Rscript.exe "C:/Analysis/myRScripts.R"
+
+</code></pre>
+
+
+### Resource:
+* **https://www.r-bloggers.com/2023/06/how-to-use-a-windows-bat-file-to-execute-an-r-script/**

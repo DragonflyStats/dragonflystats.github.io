@@ -1,0 +1,90 @@
+---
+title: "Ghana R - June 2024"
+subtitle: "Kevin O'Brien"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+---
+
+---
+
+#### Statistical Process Control- Deming in Japan (1)
+
+*Statistical Process Control is developed in the 1920’s by Walter Shewart at Bell Telephone Laboratories. It started as an investigation to develop a scientific basis for attaining economic control of quality of manufacturing product through the establishment of control limits to indicate at every stage in the production process from raw materials to finished product*
+
+*Just prior to World War II American industrial management did not pay very much attention to Deming and his views on statistical techniques and open management style. However Japan’s post war efforts to increase production, and to compete with western industries, found Deming’s philosophy attractive.*
+
+
+
+(source: https://datalyzer.com/lessons/where-did-statistical-process-control-spc-came-from/)
+
+---
+
+#### Deming in Japan (2)
+
+*Top Japanese management concluded that they had to improve quality, and invited Deming to lecture in Japan in the early 1950’s. The successful tour lead to a few companies implementing the Deming methodologies and within a few months their quality and productivity increased.* 
+
+*This in turn led to a greater proliferation of these techniques in Japan. It was the commitment of top Japanese management, the realization of the rewards of SPC implementation plus the philosophies of Deming that are the basis of Japanese competitive advantage as we know it today.* 
+
+(source: https://datalyzer.com/lessons/where-did-statistical-process-control-spc-came-from/)
+
+---
+
+### {qcc} R package
+
+{qcc} is a contributed R package for statistical quality control charts which provides:
+
+* Shewhart quality control charts for continuous, attribute and count data
+* Cusum and EWMA charts
+* Operating characteristic curves
+* Process capability analysis
+* Pareto chart and cause-and-effect chart
+* Multivariate control charts.
+
+(source: https://luca-scr.github.io/qcc/articles/qcc.html )
+
+
+---
+
+### {qcc} R package
+
+<img src="images/xbarchart.PNG" alt="xbarchart" width="700"/>
+
+(source: https://luca-scr.github.io/qcc/articles/qcc.html )
+
+
+---
+
+## Decision Rules for Control Charts
+
+Decision rules in statistical process control for detecting out-of-control or non-random conditions on control charts.
+
+* Nelson Rules
+* Western Electric Company (WECO) Rules
+* Westgard Rules
+
+
+---
+
+
+#### Rule 2
+
+* **Observe**: Nine (or more) points in a row are on the same side of the mean.
+* **Conclusion**: Some prolonged bias exists.
+
+<img src="images/NelsonRule2.PNG" alt="NelsonRule2" width="500"/>
+
+---
+
+### Conclusion
+
+* Develop a suite of simple, well thought-out metrics and indicators that accurately describe the current state of a process.
+
+* Make these metrics accessible to non-technical users.
+
+---
+
+---

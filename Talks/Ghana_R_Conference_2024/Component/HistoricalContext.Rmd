@@ -1,0 +1,63 @@
+---
+title: "Ghana R - June 2024"
+subtitle: "Kevin O'Brien"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+---
+
+---
+
+## Historical Context
+
+* Statistical Methods to promote Human Development date all the way back to prehistorical times.
+
+* Crops, Commerce, Lunar Cycles, Employment, Taxation etc
+
+* Three short examples from ancient times - all from the African Continent
+
+* Humankind will (hopefully) be doing the same sort of activities 1000s of years into the future.
+
+
+
+
+---
+
+### The Ishango Bone
+
+<img src="images/IshangoBone.PNG" alt="ishango" width="500"/>
+
+
+
+The Ishango bone, discovered at the "Fisherman Settlement" of Ishango in the Democratic Republic of the Congo, is believed to be an ancient mathematical device known as a "Tally Stick" that dates to the Upper Paleolithic era (20,000 years ago).
+
+---
+
+### Lebombo Stick
+
+<img src="images/LebomboStick.PNG" alt="Lebombo" width="750"/>
+
+(Source: HistoryOfInformation.com)
+
+---
+
+### Ancient Egyptians Attendance Record (Ostracon)
+
+<img src="images/Ostracon.PNG" alt="Ostracon" width="600"/>
+
+(Source: www.mymodernmet.com)
+
+---
+
+### Ancient Egyptians Attendance Record
+
+(Text from *www.mymodernmet.com*)
+
+***3,200-Year-Old Egyptian Tablet Shows They Took Attendance at Work and Recorded Absences***
+
+Calling in sick to work is apparently an ancient tradition. Whether its the sniffles or a scorpion bite, somedays you just can't make it. As it turns out, Ancient Egyptian employers kept track of employee days off in registers written on tablets. A tablet held by The British Museum and dating to 1250 BCE is an incredible window into ancient work-life balance. The 40 employees listed are marked for each day they missed, with reasons ranging from illness to family obligations.
+
+(Source: www.mymodernmet.com)
