@@ -1,0 +1,19 @@
+---
+title: Citizen Science with R
+author: DragonflyStats
+output:
+  xaringan::moon_reader:
+    nature:
+      autoplay: 30000
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### What is citizen science?
+Citizen science is data collection by members of the public to help answer research questions. Having a strong recording community is essential to citizen science.
+
+<i>We are extremely grateful for our volunteers. One of the benefits of citizen science is that we are able to collect data nationwide over long periods of times.</i> 
+<i>For example, the Irish Butterfly Monitoring Scheme began in 2008 and it simply would not be possible without citizen science to generate such a large dataset across Ireland on our butterfly populations.</i>
+
+---
