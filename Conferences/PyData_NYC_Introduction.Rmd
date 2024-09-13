@@ -1,0 +1,39 @@
+PyData NYC Conference {data-navmenu="Conferences"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+### PyData NYC Conference 2024
+
+#### PyData NYC Conference 2024
+
+![PyData NYC Conf 2024](Conferences/PYDATA_NYC_BANNER.jpg)
+
+The **PyData NYC conference** is an annual event that brings together an international community of data scientists, data engineers, and developers of data analysis tools. The conference focuses on sharing ideas, best practices, and emerging technologies in data management, processing, analytics, and visualization².
+<p>
+The event typically includes keynote sessions, talks, lightning talks, and tutorials. It's a great opportunity for networking and learning from experts in the field. The next PyData NYC conference is scheduled for November 6-8, 2024³.
+
+
+#### Programme
+
+At PyData NYC, you'll find a wide range of topics that cater to various interests within the data science and analytics community. Some popular topics typically covered include:
+
+- **Machine Learning and AI**: Techniques, tools, and applications in various industries.
+- **Data Visualization**: Best practices and tools for visualizing complex data.
+- **Big Data**: Handling and processing large datasets efficiently.
+- **Data Engineering**: Building and maintaining data pipelines and infrastructure.
+- **Deep Learning**: Advances in neural networks and their applications.
+- **Natural Language Processing (NLP)**: Techniques for processing and analyzing text data.
+- **Data Ethics and Privacy**: Ensuring ethical use of data and protecting user privacy.
+- **Open Source Tools**: Development and use of open-source software for data analysis.
+
+These topics are often presented through a mix of keynote speeches, technical talks, hands-on tutorials, and panel discussions. Is there a particular topic you're most interested in?
+
+---------------------------------------------------------------------------------
+
+(1) PyData NYC 2023. https://pydata.org/nyc2023/.
+(2) PyData NYC - Meetup. https://www.meetup.com/pydatanyc/.
+(3) PyData NYC - Home. https://nyc.pydata.org/.
+(4) Home | PyData NYC 2022. https://pydata.org/nyc2022/.
+(5) About - PyData NYC 2022. https://pydata.org/nyc2022/about/. 

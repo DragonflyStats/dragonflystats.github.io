@@ -1,0 +1,132 @@
+
+
+Why R? Pre-meetings {data-navmenu="Why R"}
+==============================
+
+Column 
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+Why R?'s African Program {data-navmenu="Why R"}
+===========================================================
+
+Column
+---------------------------------------
+
+
+### Southern Africa Program 2020
+
+<center>
+<div>
+<img src="./Resources/SouthernAfrica.jpg" class="fit image" width=600>
+</div>
+<b> Why R? pre-meeting series (2017-2020) </b>
+</center>
+<p>
+
+
+
+
+Why R? are also financially supporting a series of R events in Africa over the spring in 2020.
+
+* A [SatRdays](www.satrdays.org) conference in both [Abidjan](https://abidjan2020.satrdays.org/) (Cote d'Ivoire) and [Johannesburg](https://joburg2020.satrdays.org/) (South Africa)
+* A series of [Forwards](forwards.github.io) workshops in Eswatini, Namibia and Botswana.
+
+
+The profits from the main conference are not massive, so the contributions are rather modest (approx 300 Euro per event).
+This provides clarity as to what exactly the R community is essentially supporting, if they support Why R? foundation in any way.
+
+### Why R? Pre-meetings Series
+
+
+
+<center>
+<div>
+<img src="./resources/europa_2020.jpg" class="image" width =675 >
+</div>
+<b> Why R? pre-meeting series (2017-2020) </b>
+</center>
+
+<p>
+
+The Why R? Foundation is a European R user community foundation. Why R? are running a series of pre-meetings around Europe in anticipation of their main conference in Warsaw in August 2020.
+
+Future Why R? events are planned to take place in Ireland as part of the pre-meeting series.
+
+As an aside, Why R? was bidding to host UseR! 2021 in Warsaw, and were in the shortlist of the final three candidates.
+
+
+### Forwards
+
+#### Forwards Southern Africa Project 2020
+
+<div>
+<center>
+<img src = "./resources/ForwardsSA.JPG" width=500>
+</center>
+</div>
+<br>
+<div>
+<center>
+<img src = "./resources/WhyR-SouthernAfrica.jpeg" width =500>
+</center>
+</div>
+
+#### Forwards Southern Africa Project 2020
+
+Forwards (the R Foundation taskforce for underrepresented groups) plan to deliver a number of workshops and talks in neighbouring countries to help develop the R community in Southern Africa. 
+
+The events will be lead by Heather Turner, chair of [Forwards](forwards.github.io), in collaboration with local community organisers and will take place in the first half of March 2020.
+<p>
+<b> Itinerary</b>
+
+The planned itinerary is outlined below, further links and dates will be added when available.
+
+<p>
+<b>Johannesburg, South Africa </b> 
+
+In partnership with satRdays Johannesberg (March 6-7, 2020) 
+
+* R package development workshop (1 day)
+* Conference keynote talk by [Dr. Heather Turner](https://twitter.com/HeathrTurnr) on Diversity and Inclusion in the R Community
+
+<p>
+<b>Eswatini</b>
+
+Manzini, Eswatini (March 12, 2020)
+
+In partnership with the recently established [Eswatini R user group](meetup.com/EswatiniUseR/):
+
+* Introduction to R for data analysis workshop (1 day)
+* Meetup talk on the R community and resources available for newcomers
+
+<p>
+<b>Botswana</b>
+
+Gaborone, Botswana (March 14-15, 2020)
+
+
+In partnership with WiMLDS Gaborone and PyData Botswana:
+
+Introduction to R workshop (1/2 day)
+
+<p>
+<b>Namibia</b>
+
+Windhoek, Namibia (dates TBC)
+
+In partnership with the Department of Statistics and Population Studies, University of Namibia:
+
+* Introduction to R for data analysis workshop (1 day)
+* Meetup talk on the R Community and resources available for newcomers
+* The meetup will be the launch event of the first R User Group in Namibia

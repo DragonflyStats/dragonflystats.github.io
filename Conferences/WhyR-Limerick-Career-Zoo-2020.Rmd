@@ -1,34 +1,19 @@
----
-title: "Why R? Limerick 2020"
-output: 
-  flexdashboard::flex_dashboard:
-    theme: united
-    css: style.css
-    vertical_layout: scroll
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-
-```
-
-Why R? Limerick 2020
+Why R? Limerick 2020 {data-navmenu="Conferences"}
 ===============================
 
-Column {data-width=700}
---------------------
+Column {.tabset}
+--------------
 
+### Why R? @ Career Zoo Limerick 2020
 
 <div class="container">
 <center>
 <div>
-<img src="./resources/whyrlimerick2020.jpg" width=450 alt="">
+<img src="./Conferences/resources/whyrlimerick2020.jpg" width=450 alt="">
 </div>
 </center>
 </div>
 
-Column {data-width=800}
----------------
 
 #### Why-R? Limerick 
 
@@ -42,8 +27,8 @@ Column {data-width=800}
 * Admission is free, but attendees must have registered for Career Zoo.
 
 
-Tickets
-===============================
+### Tickets
+
 
 <h5> Tickets</h5>
 
@@ -51,12 +36,6 @@ Tickets
 * Tickets are free, but you must register for the event in advance.
 * You should register for both Career Zoo and Why R?
 * Please note that there are a limited number of tickets for the WhyR? event.
-
-Schedule
-===============================
-
-Column
--------------------------------
 
 ### Schedule
 
@@ -87,17 +66,9 @@ Column
 
 
 
+### Abstracts 
 
-
-
-
-Using R for Stylometry {data-navmenu="Workshops"}
-=====================================================
-
-Column
-----------------------------
-
-### Using R for Stylometry
+#### Using R for Stylometry
 
 <b>Who really wrote Shakespeare? A quick introduction to using R for stylometry.</b>
 
@@ -130,14 +101,9 @@ Bio: I am a data science enthusiast who enjoys learning new tools and methodolog
 * To register, visit the [career zoo eventbrite site](https://www.eventbrite.ie/e/career-zoo-presents-tech-on-the-wild-atlantic-way-2020-tickets-77292514993#tickets) and select a general admission and a ticket for this workshop.
 
 
-KNIME Learnathon {data-navmenu="Workshops"}
-==============================
-
-Column 
-------------------
 
 
-### Data Science Learnathon with KNIME
+#### Data Science Learnathon with KNIME
 
 <p>
 <b>What is a Learnathon?</b>
@@ -165,13 +131,9 @@ Follow Paolo on [LinkedIn](linkedin.com/in/paolo-tamagnini/)
 
 
 
-Machine Learning With Julia {data-navmenu="Workshops"}
-=====================================================
+#### Machine Learning With Julia 
 
-Column
-----------------------------
 
-### Machine Learning With Julia
 
 <b>THIS EVENT IS NOW SOLD OUT</b>
 
@@ -197,13 +159,7 @@ Julia Computing was founded in 2015 by all the creators of Julia to provide prod
 * [JuliaCon 2020, Lisbon](www.juliacon.org) - Julia's international conference
 * [Julia Computing](www.juliacomputing.com) - Professional services for Julia 
 
-Machine Learning For Coders {data-navmenu="Workshops"}
-=====================================================
-
-Column
-----------------------------
-
-### Machine Learning For Coders
+#### Machine Learning For Coders 
 
 <b> Machine Learning For Coders </b>
 
@@ -246,13 +202,8 @@ In 2017 I was named in The Sunday Business Post's 30 Under 30 Most Interesting P
 * To register, visit the [career zoo eventbrite site](https://www.eventbrite.ie/e/career-zoo-presents-tech-on-the-wild-atlantic-way-2020-tickets-77292514993#tickets) and select a general admission and a ticket for this workshop.
 
 
-Git and GitHub: A hands-on workshop {data-navmenu="Workshops"}
-=====================================================
+####  Git and GitHub: A hands-on workshop 
 
-Column
-----------------------------
-
-### Git and GitHub: A hands-on workshop
 
 Venue: Workshop Room
 
@@ -285,140 +236,3 @@ Turbo-Charging your technical dexterity using Git and GitHub: A hands-on worksho
 
 
 
-
-
-Why R? Pre-meetings {data-navmenu="Why R"}
-==============================
-
-Column 
--------------------------------------
-
-### Why R? Pre-meetings Series
-
-
-
-<center>
-<div>
-<img src="./resources/europa_2020.jpg" class="image" width =675 >
-</div>
-<b> Why R? pre-meeting series (2017-2020) </b>
-</center>
-
-<p>
-
-The Why R? Foundation is a European R user community foundation. Why R? are running a series of pre-meetings around Europe in anticipation of their main conference in Warsaw in August 2020.
-
-Future Why R? events are planned to take place in Ireland as part of the pre-meeting series.
-
-As an aside, Why R? was bidding to host UseR! 2021 in Warsaw, and were in the shortlist of the final three candidates.
-
-
-
-
-
-
-
-
-
-
-
-Why R?'s African Program {data-navmenu="Why R"}
-===========================================================
-
-Column
----------------------------------------
-
-
-### Southern Africa Program 2020
-
-<center>
-<div>
-<img src="./Resources/SouthernAfrica.jpg" class="fit image" width=600>
-</div>
-<b> Why R? pre-meeting series (2017-2020) </b>
-</center>
-<p>
-
-
-
-
-Why R? are also financially supporting a series of R events in Africa over the spring in 2020.
-
-* A [SatRdays](www.satrdays.org) conference in both [Abidjan](https://abidjan2020.satrdays.org/) (Cote d'Ivoire) and [Johannesburg](https://joburg2020.satrdays.org/) (South Africa)
-* A series of [Forwards](forwards.github.io) workshops in Eswatini, Namibia and Botswana.
-
-
-The profits from the main conference are not massive, so the contributions are rather modest (approx 300 Euro per event).
-This provides clarity as to what exactly the R community is essentially supporting, if they support Why R? foundation in any way.
-
-Forwards
-===============================
-
-Column
----------------
-
-### Forwards Southern Africa Project 2020
-
-<div>
-<center>
-<img src = "./resources/ForwardsSA.JPG" width=500>
-</center>
-</div>
-<br>
-<div>
-<center>
-<img src = "./resources/WhyR-SouthernAfrica.jpeg" width =500>
-</center>
-</div>
-
-Column
----------------
-
-### Forwards Southern Africa Project 2020
-
-Forwards (the R Foundation taskforce for underrepresented groups) plan to deliver a number of workshops and talks in neighbouring countries to help develop the R community in Southern Africa. 
-
-The events will be lead by Heather Turner, chair of [Forwards](forwards.github.io), in collaboration with local community organisers and will take place in the first half of March 2020.
-<p>
-<b> Itinerary</b>
-
-The planned itinerary is outlined below, further links and dates will be added when available.
-
-<p>
-<b>Johannesburg, South Africa </b> 
-
-In partnership with satRdays Johannesberg (March 6-7, 2020) 
-
-* R package development workshop (1 day)
-* Conference keynote talk by [Dr. Heather Turner](https://twitter.com/HeathrTurnr) on Diversity and Inclusion in the R Community
-
-<p>
-<b>Eswatini</b>
-
-Manzini, Eswatini (March 12, 2020)
-
-In partnership with the recently established [Eswatini R user group](meetup.com/EswatiniUseR/):
-
-* Introduction to R for data analysis workshop (1 day)
-* Meetup talk on the R community and resources available for newcomers
-
-<p>
-<b>Botswana</b>
-
-Gaborone, Botswana (March 14-15, 2020)
-
-
-In partnership with WiMLDS Gaborone and PyData Botswana:
-
-Introduction to R workshop (1/2 day)
-
-<p>
-<b>Namibia</b>
-
-Windhoek, Namibia (dates TBC)
-
-In partnership with the Department of Statistics and Population Studies, University of Namibia:
-
-* Introduction to R for data analysis workshop (1 day)
-* Meetup talk on the R Community and resources available for newcomers
-* The meetup will be the launch event of the first R User Group in Namibia

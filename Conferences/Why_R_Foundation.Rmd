@@ -1,0 +1,13 @@
+Why R? Foundation {data-navmenu="Conferences"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+### Why R? Foundation
+
+<h4>Why R? Foundation </h4> 
+
+* The Why R? webinar series took place between April 2020? And May 2021. In total, there were more than 50 webinars encompassing a wide variety of topics relation to the R programming language. 
+
+* In addition to the webinar series, there were two online conferences that took place in December 2020 and December 2021. 

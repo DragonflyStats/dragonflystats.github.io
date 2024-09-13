@@ -1,0 +1,46 @@
+
+PyData Global 2022 {data-navmenu="Conferences"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+### PyData Global
+
+<h4> PyData Global </h4>
+
+PyData Global 2022 Conference is taking place online between Thurs 1st and Sat 3rd December 2022.
+Join PyData for our third year hosting this event virtually bringing together PyData Chapters, community members, and attendees from all over the world together for an unforgettable PyData Conference.
+<p>
+To find out more, go to our conference website: <a href="www.pydata.org/global2022">www.pydata.org/global2022</a>
+
+
+#### Call For Proposals
+
+The CFP is still open until September 12th, 2022.  
+
+We welcome attendees with wide varieties of experiences, expertise, and backgrounds to create a diverse and compelling learning opportunity. Users, contributors, and newcomers can share experiences and learn from one another to solve hard problems and grow a stronger community. nAs well are regular presentations, Workshops and Lightning Talks are also welcome.
+
+Presentations will be given live with opportunities for questions and answers to facilitate a more engaging experience and a deeper discussion. Presentations will come in a variety of formats, such as workshops, talks, and panel discussions to create diverse learning experiences.
+
+Following each session, a recording will be posted to attendees for continued viewing. At the conclusion of the Summit, all presentations will be posted on YouTube.
+
+
+
+#### Pay What You Can
+Tickets are currently on sale and once again we’ll be using a pay-what-you-can pricing model to maximize the number of community members able to participate in this world-class programming. 
+
+#### Talks, Tutorials & Keynotes - Something for Everyone
+At PyData Global 2021, there was over 150 presentations this year including "Wounds Over Time - Tracking Wound Healing via 3D Models”, “Document your scientific project with Markdown, Sphinx, and Read the Docs”, "NLP and Hate speech: Why does it matter and what can we do?”. 
+Keynote addresses were be given by Naomi Ceder and David Beazley
+
+
+#### Keep In Touch
+To stay up-to-date on all conference announcements:
+
+* Follow the ***PyData Global*** company page on LinkedIn: <a href="https://www.linkedin.com/company/74716291">PyData Global</a>
+
+* Follow <a href="http://www.twitter.com/pydata">PyData</a> on Twitter
+
+
+
