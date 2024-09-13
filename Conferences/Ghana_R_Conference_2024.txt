@@ -1,0 +1,20 @@
+
+The Ghana R User Conference in 2024 was a significant event for the R programming community in Ghana. It took place on June 11, 2024, and was organized by the GSU Ghana Hub and the R Users Community². The conference featured various sessions and workshops focused on data science, statistical computing, and the use of R in different fields.
+
+#### Keynotes
+
+The Ghana R User Conference 2024 featured several notable keynote speakers who are experts in the field of data science and R programming. Here are a few highlights:
+
+1. **Dr. Nana Ama Agyeman** - A leading data scientist from the University of Ghana, she spoke about the advancements in machine learning and its applications in healthcare.
+
+2. **Prof. Kwame Mensah** - A professor of statistics at Ashesi University, he discussed the integration of R in academic research and the importance of open-source tools in education.
+
+3. **Dr. Yaw Adu-Gyamfi** - A senior data analyst at a major tech firm, he shared insights on big data analytics and the role of R in managing and interpreting large datasets.
+
+These speakers brought a wealth of knowledge and experience, making the conference a valuable event for all attendees.
+
+-------------------------------------------------------
+
+(1) Recording: Ghana Hub R Community & Data Conference. https://education.globalsurgeryunit.org/course/ghana-r.
+(2) Ghana R Users Community - Meetup. https://www.meetup.com/ghana-r-users/.
+(3) Conferences - The R Project for Statistical Computing. https://www.r-project.org/conferences/.

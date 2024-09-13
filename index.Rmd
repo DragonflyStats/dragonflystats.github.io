@@ -35,6 +35,30 @@ Column {.tabset}
 
 ---------------------
 
+<h4> What AI Says about Me </h4>
+
+Kevin O'Brien is a prominent figure in the data science community in Dublin. He has a strong background in statistical computing and data visualization, with interests spanning R, Julia, Python, MATLAB, and big data analytics¹. Kevin has been a co-chair of the DublinR group, where he played a key role in organizing meetups and fostering a community for R users in Dublin¹.
+
+In addition to his work with DublinR, Kevin is also associated with University College Dublin, where he specializes in bioinformatics³. His research contributions have been recognized with a notable h-index, reflecting his impact in the field³.
+
+Would you like to know more about his work in bioinformatics or his contributions to the R community?
+
+Source: Conversation with Copilot, 13/9/2024
+(1) Kevin O'Brien - Dublin, Ireland | about.me. https://about.me/statslabdublin.
+(2) KEVIN O'BRIEN | University College Dublin | CUFinder. https://cufinder.io/professor/kevin-obrien-UzEUXlkAAAAJ.
+(3) Dublin R - Meetup. https://www.meetup.com/DublinR/.
+
+Kevin Patrick O'Brien is a notable figure in the PyData community. He is known for his contributions to data visualization and data science. He has given talks at various PyData and Python-related conferences, including a presentation on "Data Visualization with ggplot" at PyCon Ireland.
+
+O'Brien is recognized for his expertise in using Python for data analysis and visualization, and he actively participates in the community by sharing his knowledge and insights.
+
+
+Source: Conversation with Copilot, 13/9/2024
+(1) Python Ireland | #PyConIE Talks: Kevin O'Brien 'Data ... - Facebook. https://www.facebook.com/groups/pythonie/posts/10154123747628465/.
+(2) PyData. https://pydata.org/.
+(3) PyData London 2024. https://pydata.org/london2024/.
+(4) undefined. http://buff.ly/1LiqhP8.
+
 <h4> Affiliations</h4>
 
 - <a href= "www.whyr.pl">Why R? Foundation</a> - Community Team lead & Webinars co-ordinator (on hiatus)
@@ -74,9 +98,6 @@ Column {.tabset}
 ```
 
 ```{r child = "Conferences/Why_R_Foundation.Rmd"}
-```
-
-```{r child = "Conferences/PyCon_Everybody_Pays_Principle.Rmd"}
 ```
 
 ----------------------------------------------------------------------------------------------------
@@ -400,13 +421,13 @@ m  # Print the map
 
 
 
-PyCon Limerick {data-navmenu="Conferences"}
+PyCon Limerick {data-navmenu="Python"}
 ===========================================
 
 Column 
 --------------------
 
-### PyCon Limerick 2020
+### PyCon Limerick 2023
 
 <h4>PyCon Limerick 2023</h4>
 <p>
