@@ -1,4 +1,4 @@
-Scikit-Learn Workshop {data-navmenu="Python"}
+Scikit-Learn Workshop {data-navmenu="Talks and Workshops"}
 ===========================================
 
 Column {.tabset}
