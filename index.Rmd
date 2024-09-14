@@ -95,12 +95,30 @@ Source: Conversation with Copilot, 13/9/2024
 ```{r child = "Conferences/PyData_NYC_Social_Whitney.Rmd"}
 ```
 
+
+
+
+```{r child = "Conferences/Use_R_Conference_2024.Rmd"}
+```
+
+```{r child = "Conferences/JuliaCon_Conferences.Rmd"}
+```
+
+```{r child = "Conferences/JuliaCon_Virtual_Conference_2021.Rmd"}
+```
+
+```{r child = "Conferences/JuliaCon_Local_Eindhoven_2023.Rmd"}
+```
+
 ```{r child = "Conferences/PyData_Global_2022_Conference.Rmd"}
 
 ```
 
 
 ```{r child = "Conferences/WhyR-Limerick-Career-Zoo-2020.Rmd"}
+```
+
+```{r child = "Conferences/PyCon_Ireland.Rmd"}
 ```
 
 ```{r child = "Conferences/Why_R_Foundation.Rmd"}

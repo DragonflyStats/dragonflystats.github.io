@@ -1,0 +1,23 @@
+JuliaCon {data-navmenu="Conferences"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+### JuliaCon
+
+<h3>JuliaCon</h3>
+
+![JuliaCon](./Conferences/Resources/banner-1120-191.png)
+
+JuliaCon is the largest annual conference dedicated to the Julia programming language. It brings together developers, researchers, and enthusiasts from around the world to share knowledge, present research, and discuss advancements in Julia. The event features a variety of activities, including technical talks, workshops, posters, and hackathons¹.
+
+JuliaCon 2024 will be held from July 9th to 13th in Eindhoven, Netherlands, at the Philips Stadion¹. The conference includes workshops, co-hosted events with PyData, and a hackathon¹. It's a great opportunity for networking and learning from experts in the field.
+
+
+####References
+
+(1) JuliaCon 2024. https://juliacon.org/2024/.
+(2) JuliaCon 2024: Registration and Ticketing. https://juliacon.org/2024/tickets/.
+(3) About the Conference - JuliaCon 2023. https://live.juliacon.org/about.
+(4) JuliaCon 2019, Baltimore, MD, USA. https://juliacon.org/2019/.

@@ -1,0 +1,41 @@
+### JuliaCon 2021 Virtual Conference
+
+JuliaCon 2021 was held virtually from **July 28th to 30th, 2021**¹. The conference featured a wide range of activities, including keynote speeches, technical talks, workshops, and poster sessions. Some notable keynote speakers included William Kahan, Jan Vitek, and Xiaoye (Sherry) Li¹.
+
+The event was accessible online, allowing participants from around the world to join and engage with the Julia community. All the recorded talks from the conference are available on YouTube, providing a valuable resource for those who couldn't attend live¹.
+
+Are you interested in any specific topics or talks from JuliaCon 2021?
+
+Source: Conversation with Copilot, 14/9/2024
+(1) JuliaCon 2021 & JuMP-dev, Everywhere on Earth. https://juliacon.org/2021/.
+(2) JuliaCon 2021. https://julialang.org/juliacon/.
+(3) Save the date: JuliaCon 2021 - Announcements - Julia Programming Language. https://discourse.julialang.org/t/save-the-date-juliacon-2021/51940.
+(4) undefined. https://juliacon.org/2021/tickets/.
+(5) undefined. https://live.juliacon.org.
+(6) undefined. https://live.juliacon.org/discord/join.
+(7) undefined. https://pretalx.com/juliacon2021/schedule/.
+(8) undefined. https://juliacon.org/2021/posters/.
+(9) undefined. https://juliacon.org/2021/experiences/.
+(10) undefined. https://www.eventbrite.com/x/137139721599/.
+(11) undefined. https://www.bonfire.com/store/the-julia-language/.
+(12) undefined. https://juliacon.org/2021/workshops/.
+
+JuliaCon 2021 saw a record-breaking attendance with over **20,000 registrations** and more than **43,000 unique YouTube viewers** during the conference³. This made it the largest JuliaCon event to date, reflecting the growing interest and engagement in the Julia programming community.
+
+Are you interested in any specific talks or topics from the conference?
+
+Source: Conversation with Copilot, 14/9/2024
+(1) JuliaCon 2021 Highlights. https://bing.com/search?q=JuliaCon+2021+attendance.
+(2) JuliaCon 2021 & JuMP-dev, Everywhere on Earth. https://juliacon.org/2021/.
+(3) JuliaCon 2021. https://julialang.org/juliacon/.
+(4) JuliaCon 2021 Highlights. https://julialang.org/blog/2021/08/juliacon-highlights/.
+(5) JuliaCon 2021, the largest Julia Programming event in history. https://julialang.org/blog/2021/07/juliacon2021/.
+(6) undefined. https://juliacon.org/2021/tickets/.
+(7) undefined. https://live.juliacon.org.
+(8) undefined. https://live.juliacon.org/discord/join.
+(9) undefined. https://pretalx.com/juliacon2021/schedule/.
+(10) undefined. https://juliacon.org/2021/posters/.
+(11) undefined. https://juliacon.org/2021/experiences/.
+(12) undefined. https://www.eventbrite.com/x/137139721599/.
+(13) undefined. https://www.bonfire.com/store/the-julia-language/.
+(14) undefined. https://juliacon.org/2021/workshops/.

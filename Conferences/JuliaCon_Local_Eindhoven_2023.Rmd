@@ -1,0 +1,16 @@
+
+### Juliacon Local
+
+**JuliaCon Local Eindhoven 2023** was a one-day conference held on **December 1, 2023**, at the High Tech Campus Conference Center in Eindhoven, Netherlands¹². The event was co-hosted with PyData Eindhoven 2023, creating a unique opportunity for cross-pollination between the Julia and Python communities¹.
+
+The conference featured a full day of talks, workshops, and networking sessions, covering a wide range of topics related to the Julia programming language². Highlights included a Pluto Workshop held the day before the main event, focusing on reactive and reproducible notebooks for Julia¹.
+
+The event also emphasized inclusivity, offering diversity scholarships to individuals from underrepresented groups¹. Overall, it was a vibrant gathering for Julia enthusiasts to learn, share, and connect.
+
+Are you interested in any specific topics or sessions from JuliaCon Local Eindhoven 2023?
+
+Source: Conversation with Copilot, 14/9/2024
+(1) JuliaCon Local Eindhoven 2023. https://juliacon.org/local/eindhoven2023/.
+(2) JuliaCon Local Eindhoven 2023 Program. https://juliacon.org/local/eindhoven2023/program/.
+(3) Experience JuliaCon Local - Eindhoven 2023 - info.juliahub.com. https://info.juliahub.com/blog/juliacon-local-eindhoven-2023.
+(4) JuliaCon 2023. https://juliacon.org/2023/.

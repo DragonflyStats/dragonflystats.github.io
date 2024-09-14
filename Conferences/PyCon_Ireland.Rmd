@@ -1,0 +1,26 @@
+PyCon Ireland {data-navmenu="Conferences"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+
+### PyCon Ireland
+
+**PyCon Ireland** is an annual conference organized by Python Ireland, the Irish organization representing Python users. The event brings together Python enthusiasts, developers, and professionals to share knowledge, network, and discuss the latest advancements in Python programming.
+
+#### Links
+
+1. PyCon - Python Ireland. https://pycon.ie/.
+
+### PyCon Ireland 2024
+**PyCon Ireland 2024** will take place in Dublin on **November 16th and 17th**¹. The conference will feature a dynamic, multi-track program on Saturday, followed by hands-on workshops on Sunday. Attendees can look forward to a diverse range of talks and workshops covering topics from scripting and machine learning to web development and cloud deployments¹.
+
+The event is known for its warm and friendly atmosphere, making it a great opportunity for both newcomers and seasoned Python veterans to connect and learn¹.
+
+
+#### Links
+
+1. PyCon - Python Ireland. https://pycon.ie/.
+2. PyCon Ireland 2024 - Python. http://python.ie/pycon-2024/.
+3. undefined. https://sessionize.com/pycon-ireland-2024.
