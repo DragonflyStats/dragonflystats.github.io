@@ -100,6 +100,9 @@ Source: Conversation with Copilot, 13/9/2024
 ```{r child = "Conferences/Why_R_Foundation.Rmd"}
 ```
 
+```{r child = "Conferences/PyCon_Everybody_Pays_Principle.Rmd"}
+```
+
 ----------------------------------------------------------------------------------------------------
 
 R Talks 
@@ -403,38 +406,23 @@ Column {.tabset}
 ```{r child="maps/Salzburg/Salzburg.Rmd"}
 ```
 
-### Earl's Court
-
-<h4>Earl's Court</h4>
-
-```{r echo=FALSE}
-library(leaflet)
-
-m <- leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = -0.1925321, lat = 51.4920942, zoom = 16) %>%
-  addMarkers(lng=-0.1920409, lat=51.4888221, popup="The Troubadour")
-
-m  # Print the map
-
-```
 
 
 
-PyCon Limerick {data-navmenu="Python"}
+PyCon Limerick {data-navmenu="Conferences"}
 ===========================================
 
 Column 
 --------------------
 
-### PyCon Limerick 2023
+### PyCon Limerick 2020
 
-<h4>PyCon Limerick 2023</h4>
+<h4>PyCon Limerick 2020</h4>
 <p>
 
 <div>
 <center>
-<img src="./images/PyConLimerick.jpg" width=600 alt="">
+<img src="./Images/PyConLimerick.jpg" width=600 alt="">
 </center>
 </div>
 
