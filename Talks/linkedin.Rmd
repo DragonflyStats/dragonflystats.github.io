@@ -1,0 +1,36 @@
+
+LinkedIn Data Analytics {data-navmenu="Rstats"}
+========================================================
+
+Column {.tabset}
+--------------
+
+### LinkedIn Data Analytics 
+
+<h4> LinkedIn Followership</h4>
+```{r include=FALSE,echo=FALSE}
+
+library(tidyverse)
+library(plotly)
+library(magrittr)
+
+
+myData <- read_csv("https://raw.githubusercontent.com/DragonflyStats/Projects/master/linkedin/Company_2024.csv")
+myData_more <- read_csv("https://raw.githubusercontent.com/DragonflyStats/Projects/master/linkedin/Company_2025.csv")
+myData <- myData %>% bind_rows(myData_more)
+myData_more <- read_csv("https://raw.githubusercontent.com/DragonflyStats/Projects/master/linkedin/Company_2023.csv")
+myData <- myData %>% bind_rows(myData_more)
+myData_more <- read_csv("https://raw.githubusercontent.com/DragonflyStats/Projects/master/linkedin/Company_2022.csv")
+myData <- myData %>% bind_rows(myData_more)
+myData_more <- read_csv("https://raw.githubusercontent.com/DragonflyStats/Projects/master/linkedin/Company_2021.csv")
+myData <- myData %>% bind_rows(myData_more)
+myData <- myData %>% arrange(Company,Date) %>% distinct()
+```
+
+
+```{r,echo=FALSE}
+
+(myData %>% filter(Company  %in% c("R Consortium","Jumping Rivers","useR! - The R User Conference","R User Community","The R Foundation for Statistical Computing"))) %>% ggplot(aes(x=Date,y=Followers,colour=Company)) + geom_line() + theme_bw()
+```
+
+
