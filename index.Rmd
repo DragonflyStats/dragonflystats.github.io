@@ -127,9 +127,16 @@ Source: Conversation with Copilot, 13/9/2024
 ```{r child = "Conferences/PyCon_Everybody_Pays_Principle.Rmd"}
 ```
 
--------------------------------------------------------
 
-R Talks 
+
+
+```{r child = "Community/Linkedin_Tags.Rmd"}
+```
+
+
+
+
+R Talks {data-navmenu="Community"}
 =====================
 
 Column {.tabset}

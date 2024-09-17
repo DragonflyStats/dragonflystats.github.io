@@ -1,0 +1,37 @@
+
+
+Linkedin Tag Followership {data-navmenu="Community"}
+==========================================================
+
+Column {.tabset}
+--------------
+
+### Linkedin Tag Followership
+
+<h3> Linkedin Tag Followership</h3>
+
+```{r linkedin, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+require(tidyverse)
+require(reactable)
+require(reactablefmtr)
+
+TAGS <- read_csv("https://raw.githubusercontent.com/Joint-Operations-Working-Group/Social-Media-Analytics/main/LinkedInTags/Tags.csv")
+
+TAGS <- TAGS %>% arrange(Tag,desc(Date),Followers)
+```
+
+
+```{r echo=FALSE}
+TAGS %>% reactable(
+  pagination = TRUE,
+#  theme = slate(font_size = 14, header_font_size = 16, header_font_color = "darkorange", cell_padding = 1),
+  defaultPageSize = 40,
+  columns = list(
+    Tag  = colDef(width=200,filterable=TRUE),
+    Date  = colDef(width=140,filterable=TRUE),
+    Followers  = colDef(width=140,align="right")
+  )
+)
+```
