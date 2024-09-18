@@ -1,12 +1,29 @@
 X - Remove Coursera
 X - Remove R Stuff
 
-The HighLine
-The Whitney Photo
-Ghana R User Conference
-UseR! 2024 Salzburg
-JuliaCon Social Media Team
-R User Community - LinkedIn and Graphic
-R In Forestry Abstract
-R @ PyData Conf
-New York Explorer Maps
+Dragonfly Stats - Cynthia Longfield
+Intro - Fix up Biography
+Arts Sector - JDIFF
+Arts Sector - Prague Fringe
+Community - Best Practice (ERUM rant)
+Community - Linkedin
+Community - Guild.host and Lu.ma
+Community - Discord
+Community - Open Source Collider
+Biography - Cleanup AI stuff
+Conferences - Ghana R User Community
+Conferences - PyData Global 2024
+Conferences - Fix Up JuliaCon section /JuliaCon Social Media Team
+Workshops - Remove SKL
+Maps - Fix up London
+Maps - Add New York Explorer Maps
+Maps - Remove Leaflet Test
+Maps - Prague
+R-Talks - Move to "Talks and Workshops"
+The HighLine - Images
+The Whitney Photo  - Images
+UseR! 2024 Salzburg - Images
+Community - R User Community - LinkedIn and Graphic
+Talks  - R In Forestry Abstract
+Conferences - R @ PyData Global Conf
+
