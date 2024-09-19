@@ -1,4 +1,0 @@
-### Week 01: Introduction to Spark
-
-* In this module, you will be able to discuss the core concepts of distributed computing and be able to recognize when and where to apply them. You'll be able to identify the basic data structure of Apache Spark™, known as a DataFrame. 
-* Additionally, you will use the collaborative Databricks workspace and write SQL code that executes against a cluster of machines.

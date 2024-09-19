@@ -24,10 +24,12 @@ TAGS <- TAGS %>% arrange(Tag,desc(Date),Followers)
 
 
 ```{r echo=FALSE}
-TAGS %>% reactable(
+TAGS %>%  group_by(Tag) %>% slice(1) %>%
+  arrange(Date) %>% reactable(
   pagination = TRUE,
-#  theme = slate(font_size = 14, header_font_size = 16, header_font_color = "darkorange", cell_padding = 1),
-  defaultPageSize = 40,
+  theme = slate(font_size = 14, 
+                header_font_size = 16, header_font_color = "darkorange", cell_padding = 1),
+  defaultPageSize = 20,
   columns = list(
     Tag  = colDef(width=200,filterable=TRUE),
     Date  = colDef(width=140,filterable=TRUE),
@@ -35,3 +37,7 @@ TAGS %>% reactable(
   )
 )
 ```
+
+#### Details 
+
+* Tag by most recent recording date

@@ -26,4 +26,4 @@ UseR! 2024 Salzburg - Images
 Community - R User Community - LinkedIn and Graphic
 Talks  - R In Forestry Abstract
 Conferences - R @ PyData Global Conf
-
+Dublin R

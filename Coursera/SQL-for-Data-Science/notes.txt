@@ -1,3 +1,0 @@
-SQL-for-Data-Science
-
-https://github.com/trentparkinson/SQL-for-Data-Science/blob/master/YelpDatabaseSchema.png
