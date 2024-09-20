@@ -1,0 +1,58 @@
+**eRum 2018** was the European R Users Meeting held in Budapest from May 14-16, 2018. This international conference aimed to bring together users of the R programming language from across Europe, especially in years when the useR! conference was held outside the continent¹².
+
+The event featured a variety of workshops, talks, and social activities:
+- **Workshops**: Topics included machine learning, data visualization, spatial data, and writing R packages¹.
+- **Talks**: There were keynotes, invited talks, contributed talks, and lightning talks covering a wide range of subjects such as statistics, time-series analysis, big data, and web applications¹².
+- **Social Events**: Networking opportunities included a welcome reception, a poster session, Shiny demos, and a conference dinner on a boat trip along the Danube¹².
+
+The conference was a great success, attracting around 450 attendees from 39 countries².
+
+The **eRum 2018 conference** was organized by a dedicated team of individuals from various R user groups and organizations across Europe. The local organizing committee was led by **Gergely Daróczi** from Hungary¹. The program committee included members from the Hungarian R User Group, eRum 2016, R Forwards, R Ladies, and other European R User Groups¹³. Some notable members were:
+
+- **Adolfo Alvarez** (Poland)
+- **Ágnes Salánki** (Hungary)
+- **Andrew Lowe** (Hungary)
+- **Bence Arató** (Hungary)
+- **Branko Kovač** (Serbia)
+- **Eszter Windhager-Pokol** (Hungary)
+- **Heather Turner** (UK)
+- **Kevin O’Brien** (Ireland)
+- **Imre Kocsis** (Hungary)
+- **László Gönczy** (Hungary)
+- **Maciej Beresewicz** (Poland)
+- **Mariachiara Fortuna** (Italy)
+- **Przemyslaw Biecek** (Poland)
+- **Szilárd Pafka** (USA)
+
+This diverse team ensured a well-rounded and successful event¹³.
+
+
+
+**eRum 2018** offered several key takeaways for the R community:
+
+1. **Advancements in R**: There were numerous presentations on the latest developments in R packages and tools, highlighting innovations in data visualization, machine learning, and statistical modeling.
+
+2. **Community and Collaboration**: The conference emphasized the importance of community and collaboration within the R ecosystem. Attendees had ample opportunities to network, share ideas, and collaborate on projects.
+
+3. **Practical Applications**: Many talks and workshops focused on real-world applications of R, demonstrating its versatility in various fields such as finance, healthcare, and environmental science.
+
+4. **Education and Training**: There was a strong emphasis on education, with workshops designed to help both beginners and advanced users improve their R skills. Topics ranged from basic data manipulation to advanced machine learning techniques.
+
+5. **Diversity and Inclusion**: The conference highlighted the importance of diversity and inclusion within the R community, with sessions dedicated to promoting these values.
+
+6. **Future Directions**: Discussions about the future of R and its role in the broader data science landscape were prevalent, with insights into emerging trends and technologies.
+
+Overall, eRum 2018 was a vibrant and informative event that showcased the dynamic and growing nature of the R community.
+
+Is there a specific topic or session from the conference that you're particularly interested in?
+
+---------------------------------------------------------------
+
+Is there anything specific you'd like to know about the conference or its organizers?
+
+Source: Conversation with Copilot, 20/9/2024
+(1) eRum 2018 @ Budapest. https://2018.erum.io/.
+(2) Conference Report: eRum 2018 - The R Journal. https://journal.r-project.org/news/RJ-2018-1-erums/.
+(3) My eRum 2018 biggest highlights - R-bloggers. https://www.r-bloggers.com/2018/05/my-erum-2018-biggest-highlights/.
+(4) undefined. https://t.co/QKJSpscE0A.
+(5) undefined. https://t.co/jGE9YrGWTL. 
