@@ -1,0 +1,17 @@
+**eRum 2018** was the European R Users Meeting held in Budapest from May 14-16, 2018. This international conference aimed to bring together users of the R programming language from across Europe, especially in years when the useR! conference was held outside the continent¹².
+
+The event featured a variety of workshops, talks, and social activities:
+- **Workshops**: Topics included machine learning, data visualization, spatial data, and writing R packages¹.
+- **Talks**: There were keynotes, invited talks, contributed talks, and lightning talks covering a wide range of subjects such as statistics, time-series analysis, big data, and web applications¹².
+- **Social Events**: Networking opportunities included a welcome reception, a poster session, Shiny demos, and a conference dinner on a boat trip along the Danube¹².
+
+The conference was a great success, attracting around 450 attendees from 39 countries².
+
+Are you interested in any specific topics or highlights from the conference?
+
+Source: Conversation with Copilot, 20/9/2024
+(1) eRum 2018 @ Budapest. https://2018.erum.io/.
+(2) Conference Report: eRum 2018 - The R Journal. https://journal.r-project.org/news/RJ-2018-1-erums/.
+(3) My eRum 2018 biggest highlights - R-bloggers. https://www.r-bloggers.com/2018/05/my-erum-2018-biggest-highlights/.
+(4) undefined. https://t.co/QKJSpscE0A.
+(5) undefined. https://t.co/jGE9YrGWTL.
