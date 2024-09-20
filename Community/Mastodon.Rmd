@@ -1,0 +1,13 @@
+For the Pydata community, there are a few Mastodon servers that are quite popular:
+
+1. **Fosstodon.org**: This server is well-known among tech enthusiasts, especially those interested in open-source software and data science².
+2. **Mstdn.science**: A server dedicated to scientists and researchers, which includes many from the data science and Pydata communities².
+3. **DataSci.social**: Specifically tailored for data scientists and those interested in data science topics².
+
+These servers provide a great space for discussions, sharing knowledge, and connecting with like-minded individuals in the Pydata community. Have you tried any of these, or are you looking for something specific?
+
+Source: Conversation with Copilot, 20/9/2024
+(1) Twitter Quitter? 7 Best Mastodon Instances You Can Join - It's FOSS. https://itsfoss.com/best-mastodon-instances/.
+(2) Which Mastodon server to join? Our 12 best picks and 5 tips - Nerds Chalk. https://nerdschalk.com/which-mastodon-server-to-join-our-12-best-picks-and-5-tips/.
+(3) Servers - Mastodon. https://joinmastodon.org/servers.
+(4) en.wikipedia.org. https://en.wikipedia.org/wiki/Mastodon_(social_network).
