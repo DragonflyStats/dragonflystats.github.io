@@ -1,0 +1,174 @@
+---
+title: "Tech Limerick"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: united
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+Column {.tabset}
+-------------------------------------
+    
+### Python
+    
+<h5>Python </h5>
+Python is an interpreted high-level general-purpose programming language. 
+Its design philosophy emphasizes code readability with its use of significant indentation. 
+Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+
+<p>
+
+<h5> Limerick</h5>
+Python are due to hold a social event in Limerick in March - and the Conference in May
+
+<p>
+
+<h5> Links</h5>
+* <a href="https://www.meetup.com/pythonireland/">Python Ireland Meetup</a>
+* <a href="www.pycon.ie">PyCon Limerick Website</a>   
+   
+### Julia
+
+<h5>Julia </h5>
+Julia is a high-level, high-performance, dynamic programming language. While it is a general-purpose language and can be used to write any application, many of its features are well suited for numerical analysis and computational science.
+
+<p>
+
+<h5> Limerick</h5>
+Limerick and UL have been hosts to several Julia events already.
+<p>
+
+<h5> Links</h5>
+* <a href="www.julialang.org">Julia Language Website</a>
+
+ 
+
+### R
+<h5> R Programming</h5>    
+R is a programming language and free software environment for statistical computing and graphics supported by the R Core Team and the R Foundation for Statistical Computing. 
+It is widely used among statisticians and data miners for developing statistical software and data analysis. Polls, data mining surveys, and studies of scholarly literature databases show substantial increases in R's popularity; since August 2021, R ranks 14th in the TIOBE index, a measure of popularity of programming languages.
+
+<p>
+
+<h5> Limerick</h5>
+This is my own speciality - a programming language for Statistics and Data Science. We held a "Why R? mini-conference" as a satellite to the Career Zoo event in 2020 at Thomond park. This is a straightforward matter - and I can organize something easily and quickly and there is enough people around who would be interested.
+
+<p>
+
+<h5>Links</h5>
+
+* <a href="www.whyr.pl"> Why R? Foundation (Poland) </a>
+
+
+### Memgraph
+Memgraph is a streaming graph application platform that helps you wrangle your streaming data, build sophisticated models that you can query in real-time, and develop applications you never thought possible in days, not months.
+
+Memgraph directly connects to your streaming infrastructure, so you and your team don't spend countless hours building and maintaining complex data pipelines. You can ingest data from sources like Kafka, SQL, or plain CSV files. Memgraph provides a standard interface to query your data with Cypher, a widely-used and declarative query language that is easy to write, understand and optimize for performance. 
+<p>
+This is achieved by using the property graph data model, which stores data in terms of objects, their attributes, and the relationships that connect them. This is a natural and effective way to model many real-world problems without relying on complex SQL schemas.
+<p>
+
+<h5> Limerick</h5>
+I dont know a whole lot about this project. It doesnt matter a whole lot though. Once you develop a good rapport with the DevRels/Advocates - they keep you in their contacts for good, even when they move company
+
+
+<p>
+
+<h5>Links</h5>
+
+* <a href="https://www.linkedin.com/company/memgraph/"> Memgraph LinkedIn Page </a>
+
+
+
+
+### Apache Druid and Imply
+<h5>Apache Druid</h5>
+Apache Druid is a real-time database to power modern analytics applications.
+<p>
+
+<h5> Links</h5>
+
+* <a href="https://druid.apache.org/">Apache Druid Website</a>
+* <a href="https://medium.com/data-reply-it-datatech/what-is-apache-druid-ad67bb8cd7f7">What is Apache Druid? (Medium Article)</a>
+
+<h5> Limerick</h5>
+
+
+Quite a few big firms are using it. I can see this taking off
+
+### Coding Grace /PyLadies Dublin
+
+<h4> PyLadies Dublin</h4>
+Misson Statement: We are the first Irish group of the international PyLadies. Our focus is to help more women become active participants and leaders in the Python open-source community. Our mission is to promote, educate and advance a diverse Python community. PyLadies Dublin also aims to provide a friendly support network for women and a bridge to the larger Python world. Anyone with an interest in Python is encouraged to participate!
+
+### Vue
+<h5>Vue</h5>
+Vue.js (commonly referred to as Vue; pronounced like "view") is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.
+
+<p>
+
+<h5> Limerick</h5>
+There was a Vue Vixen Workshop in Sligo in 2019 
+We could invite the organizers of this workshop down to Limerick for a weekend workshop
+
+
+
+### Terminus DB
+<h4> Terminus DB</h4>
+TerminusDB is an open source knowledge graph and document store. It is used to build versioned data products. It is a native revision control database that is architecturally similar to Git. It is listed on DB-Engines.
+
+TerminusDB provides a document API for building via the JSON exchange format. TerminusX is a cloud self-serve data platform built on TerminusDB
+
+TerminusDB is available under the Apache 2.0 license. TerminusDB is implemented in Prolog and Rust. 
+<p>
+
+<h5> Limerick</h5>
+* This is a Dublin Based Company. Their main Developer Relations Person has previously visited Limerick (PyCon Limerick).
+
+### Rust
+<h4> Rust</h4>
+Rust is a systems programming language that runs blazingly fast, prevents nearly all segfaults, and guarantees thread safety.
+
+#### Rust In Production
+Hundreds of companies around the world are using Rust in production today for fast, low-resource, cross-platform solutions. Software you know and love, like Firefox, Dropbox, and Cloudflare, uses Rust. From startups to large corporations, from embedded devices to scalable web services, Rust is a great fit. (*www.rust-lang.org*)
+
+#### Links
+
+* <a href="https://www.rust-lang.org/">Rust Programming Language</a> 
+* <a href="https://www.meetup.com/Rust-Dublin/">Rust Dublin Meetup</a>
+
+
+### DotNet/Azure
+
+#### Links
+
+* <a href="https://www.meetup.com/Limerick-DotNet/">Limerick Dot-NEt Azure Meetupp</a>
+
+
+
+
+### Open Street Map, OSGEO and Irlogi
+
+There are a few Geographic/ GIS related groups around. They actually have big footprint in the west of Ireland
+
+#### OSGEO
+
+The Open Source Geospatial Foundation, is a non-profit non-governmental organization whose mission is to support and promote the collaborative development of open geospatial technologies and data.
+
+
+#### Open Street Map Ireland
+
+* <a href="https://www.openstreetmap.ie/about-osmie/"> OSM Ireland</a>
+
+### Power BI
+<h5>PowerBI</h5>
+Power BI is an interactive data visualization software developed by Microsoft with primary focus on business intelligence. It is part of the Microsoft Power Platform.
+<p>
+
+<h5> Limerick</h5>
+Dublin Power BI user group 
