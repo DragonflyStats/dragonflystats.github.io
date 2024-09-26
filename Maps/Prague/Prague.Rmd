@@ -12,20 +12,16 @@ myDF <- read.csv("https://raw.githubusercontent.com/DragonflyStats/dragonflystat
 
 m <- myDF %>% leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = -0.1102952, lat = 51.5134326, zoom = 14) %>%
+  setView(lng = 14.404229821523053, lat = 50.088204365441726, zoom = 14) %>%
   addMarkers(lng= myDF$Longtitude, lat= myDF$Latitude,popup=myDF$Location)
 m
 ```
 
-### All Prague
+
+
+### Prague City Centre 
 
 ```{r echo=FALSE}
-library(leaflet)
-library(tidyverse)
-library(leaflet.extras)
-
-myDF <- read.csv("https://raw.githubusercontent.com/London-Explorer/Datasets/main/London_Version_1.csv")
-
 
 icons_Green <- awesomeIcons(
   icon = 'ios-close',
@@ -78,7 +74,7 @@ myDF <- read.csv("https://raw.githubusercontent.com/DragonflyStats/dragonflystat
 
 m <- myDF %>% leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = 14.402952, lat = 50.084326, zoom = 14) %>%
+  setView(lng = 14.408229821523053, lat = 50.0877397, zoom = 15) %>%
   addMarkers(lng= myDF$Longtitude, lat= myDF$Latitude,popup=myDF$Location)
 
 m
@@ -96,7 +92,7 @@ library(leaflet)
 
 m <- leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = -0.1387976, lat = 51.5133462, zoom = 16) %>%
+  setView(lng = 14.451190190093318, lat = 50.081034832488875, zoom = 16) %>%
   addMarkers(lng=-0.132908, lat=51.5165172, popup="Bradley's Spanish Bar") %>%
   addMarkers(lng=-0.1319526, lat=51.5124381, popup="The French House")
 
@@ -104,91 +100,6 @@ m  # Print the map
 
 ```
 
-### New Map (Arvid Kingl)
-
-```{r echo=FALSE}
-
-library(leaflet)
-library(tidyverse)
-library(leaflet.extras)
-
-icons_Green <- awesomeIcons(
-  icon = 'ios-close',
-  iconColor = 'black',
-  library = 'ion',
-  markerColor = "green"
-)
-
-
-icons_Red <- awesomeIcons(
-  icon = 'ios-close',
-  iconColor = 'black',
-  library = 'ion',
-  markerColor = "red"
-)
-
-icons_Yellow <- awesomeIcons(
-  icon = 'ios-close',
-  iconColor = 'black',
-  library = 'ion',
-  markerColor = "orange"
-)
-
-
-icons_Blue <- awesomeIcons(
-  icon = 'ios-close',
-  iconColor = 'black',
-  library = 'ion',
-  markerColor = "blue"
-)
-
-
-
-icons_Purple <- awesomeIcons(
-  icon = 'ios-close',
-  iconColor = 'black',
-  library = 'ion',
-  markerColor = "purple"
-)
-
-icons_Black <- awesomeIcons(
-  icon = 'ios-close',
-  iconColor = 'black',
-  library = 'ion',
-  markerColor = "black"
-)
-
-
-
-
-myDF <- read.csv("https://raw.githubusercontent.com/London-Explorer/Datasets/main/London_Version_2_Info.csv")
-
-
-
-
-myDF1 <- myDF %>% filter(Type %in% c("Museum","Sight"))
-myDF2 <- myDF %>% filter(Type %in% c("Pub","Pub","Venue/Pub","Pub/Food"))
-myDF3 <- myDF %>% filter(Type %in% c("Park"))
-myDF4 <- myDF %>% filter(Type %in% c("Church"))
-myDF5 <- myDF %>% filter(Type %in% c("House","Residence"))
-myDF6 <- myDF %>% filter(Type %in% c("Theatre and Arts"))
-
-
-
-m <-  leaflet(myDF1) %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = -0.1102952, lat = 51.5134326, zoom = 14) %>%
-  addAwesomeMarkers(lng= myDF1$Longitude, lat= myDF1$Latitude,icon=icons_Green,popup=myDF1$Name)
-
-m <- m %>%   addAwesomeMarkers(lng= myDF2$Longitude, lat= myDF2$Latitude,icon=icons_Red,popup=myDF2$Name)
-m <- m %>%   addAwesomeMarkers(lng= myDF3$Longitude, lat= myDF3$Latitude,icon=icons_Purple,popup=myDF3$Name)
-m <- m %>%   addAwesomeMarkers(lng= myDF4$Longitude, lat= myDF4$Latitude,icon=icons_Blue,popup=myDF4$Name)
-m <- m %>%   addAwesomeMarkers(lng= myDF5$Longitude, lat= myDF5$Latitude,icon=icons_Yellow ,popup=myDF5$Name)
-m <- m %>%   addAwesomeMarkers(lng= myDF6$Longitude, lat= myDF6$Latitude,icon=icons_Black ,popup=myDF6$Name)
-
-
-m
-```
 
 
 
@@ -201,18 +112,13 @@ library(leaflet)
 
 m <- leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = 14.1102952, lat = 51.5134326, zoom = 16) %>%
+  setView(lng = 14.404465855904965, lat = 50.088280086105584, zoom = 16) %>%
   addMarkers(lng=14.1102952, lat=51.5134326, popup="Oliver Goldsmith's Grave") %>%
-  addMarkers(lng=14.1074333, lat=51.5140786, popup="The Old Chesire Cheese (Pub)")
+  addMarkers(lng=14.1074333, lat=51.5140786, popup="Beseda")
 
 m  # Print the map
 
 ```
-
-
-### Wapping
-
-
 
 
 Using the {leaflet} R package {data-navmenu="Talks and Workshops"}
