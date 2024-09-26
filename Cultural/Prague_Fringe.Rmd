@@ -1,3 +1,5 @@
+<h3> Prague Fringe</h3>
+
 The Prague Fringe Festival is an annual performance festival held in the Malá Strana district of Prague. Modeled after the Edinburgh Festival Fringe, it showcases a diverse range of performances including theatre, comedy, music, dance, storytelling, and more⁴. Here are some key highlights:
 
 - **History**: Founded in 2001, the festival has grown to feature over 200 artists in about 45 productions, with around 250 performances each year⁴.
@@ -7,9 +9,8 @@ The Prague Fringe Festival is an annual performance festival held in the Malá S
 
 The Prague Fringe Festival is known for its vibrant and eclectic atmosphere, offering a unique cultural experience in one of the world's most beautiful cities.
 
-Are you planning to attend or interested in a specific aspect of the festival?
+#### References
 
-Source: Conversation with Copilot, 23/9/2024
 (1) Prague Fringe Festival - Wikipedia. https://en.wikipedia.org/wiki/Prague_Fringe_Festival.
 (2) Prague Fringe Festival · #VisitCzechia. https://www.visitczechia.com/en-us/things-to-do/events/2024/05/e-prague-fringe-festival.
 (3) . https://bing.com/search?q=Prague+Fringe+Festival.
