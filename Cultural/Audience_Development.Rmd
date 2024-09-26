@@ -6,6 +6,8 @@ Column {.tabset}
 
 ### Audience development
 
+<h3>Audience Development</h3>
+
 Audience development in the context of cultural and artistic festivals refers to the strategic efforts made by an organization to attract, engage, and retain a diverse and growing audience. This involves a variety of activities and approaches aimed at broadening the reach and impact of the festival. Here are some key aspects:
 
 1. **Understanding the Audience**: This involves researching and analyzing the demographics, preferences, and behaviors of current and potential audiences. Understanding who the audience is and what they want helps in tailoring the festival's offerings to meet their needs¹.
@@ -22,14 +24,14 @@ Audience development in the context of cultural and artistic festivals refers to
 
 By focusing on these areas, cultural and artistic festivals can develop a sustainable audience base, ensuring their long-term success and impact.
 
-Is there a specific festival or aspect of audience development you're particularly interested in?
-
-Source: Conversation with Copilot, 23/9/2024
+#### References 
 (1) ATELIER FOR FESTIVAL MANAGERS TOOLKIT Audience Development and Retention. https://www.thefestivalacademy.eu/media/3663-copy-of-toolkit_-audience-development-and-retention.pdf.
 (2) Guide | Audience Development Planning | The Audience Agency. https://www.theaudienceagency.org/resources/guide-to-audience-development-planning.
 (3) Audience Development Strategies (in Culture and the Arts). https://kmshare.net/isac2018/assets/images/maria.pdf.
 (4) New Festivals Toolkit Supports Audience Development & Engagement. https://massculturalcouncil.org/blog/new-festivals-toolkit-supports-audience-development-engagement/.
 (5) Recent Key Insights - The Audience Agency. https://www.theaudienceagency.org/evidence/cultural-participation-monitor/key-insights.
+
+### Technological and Digital Innovations
 
 Technology plays a crucial role in audience development for cultural and artistic festivals. Here are some key ways it contributes:
 
@@ -49,7 +51,9 @@ Technology plays a crucial role in audience development for cultural and artisti
 
 By leveraging these technological tools, festivals can not only attract a larger and more diverse audience but also create a more engaging and inclusive experience for all attendees.
 
-Is there a particular technology or tool you're interested in exploring further for audience development?
+### Audience Development in Open Source Tech
+
+<h3>Audience Development in Open Source Tech</h3>
 
 Open source technology conferences can leverage audience development programs to enhance their reach, engagement, and impact. Here are some strategies they can use:
 
