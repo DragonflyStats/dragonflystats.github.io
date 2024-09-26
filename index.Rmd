@@ -87,6 +87,12 @@ Source: Conversation with Copilot, 13/9/2024
 
 * This focuses on reproducibility, reusability, and accuracy of data analysis and applications created for research.
 
+
+### Cynthia Longfield
+
+```{r child = "Cynthia_Longfield.Rmd"}
+```
+
 ----------------------------------------------------------------------------------------------------
 
 ```{r child = "Conferences/PyData_NYC_Introduction.Rmd"}
@@ -136,7 +142,7 @@ Source: Conversation with Copilot, 13/9/2024
 
 
 
-R Talks {data-navmenu="Community"}
+R Talks {data-navmenu="Talks and Workshops"}
 =====================
 
 Column {.tabset}
@@ -167,7 +173,10 @@ s
 ```
 
  
-```{r child="Python/scikitlearnworkshop.Rmd"}
+```{r child="Cultural/JDIFF.Rmd"}
+```
+
+```{r child="Cultural/Audience_Development.Rmd"}
 ```
 
 
@@ -426,6 +435,14 @@ m  # Print the map
 
 ```
 
+Prague {data-navmenu="Maps"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+```{r child="maps/Prague/Prague.Rmd"}
+```
 
 
 

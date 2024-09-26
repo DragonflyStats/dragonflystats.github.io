@@ -1,64 +1,23 @@
----
-title: "Salzburg Explorer"
-output: 
-  flexdashboard::flex_dashboard:
-    theme: united
-    css: style.css
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(leaflet)
-
-```
-
-Salzburg Explorer
-=====================
-
-Column {.tabset}
---------------
 
 
-### About
-<h4> About<h4>
-<p>
-An R project to discover the wonderful city of Salzburg.
-</p>
-<br>
-<img src="images/coverimage.jpg" alt="useR! 2024 Salzburg Concept Art" style="width:400px;"/>
-
-
-### Contributors
-
-<h4>Contributors </h4> 
-
-* Kevin O'Brien
-
-
-Salzburg {data-navmenu="Salzburg"}
-===========================================
-
-Column {.tabset}
---------------------
-
-### All Salzburg
+### All Prague
 
 ```{r echo=FALSE}
 library(leaflet)
 library(leaflet.extras)
 library(tidyverse)
 
-myDF <- read.csv("https://raw.githubusercontent.com/London-Explorer/Datasets/main/London_Version_1.csv")
+myDF <- read.csv("https://raw.githubusercontent.com/DragonflyStats/dragonflystats.github.io/refs/heads/main/Maps/Prague/Prague_Locations.csv")
 
 
 m <- myDF %>% leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
   setView(lng = -0.1102952, lat = 51.5134326, zoom = 14) %>%
-  addMarkers(lng= myDF$Longtitude, lat= myDF$Latitude,popup=myDF$Name)
+  addMarkers(lng= myDF$Longtitude, lat= myDF$Latitude,popup=myDF$Location)
 m
 ```
 
-### All Salzburg
+### All Prague
 
 ```{r echo=FALSE}
 library(leaflet)
@@ -114,16 +73,13 @@ icons_Black <- awesomeIcons(
   markerColor = "gray"
 )
 
-SalzDF <- read_csv("SalzburgLocations.csv")
+myDF <- read.csv("https://raw.githubusercontent.com/DragonflyStats/dragonflystats.github.io/refs/heads/main/Maps/Prague/Prague_Locations.csv")
 
-m <-  leaflet(SalzDF) %>%
+
+m <- myDF %>% leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = 13.044999, lat = 47.799997, zoom = 14) %>%
-  addAwesomeMarkers(lng= SalzDF$Longtitude, 
-                    lat=SalzDF$Latitude,
-                    icon=icons_Green,
-                    popup=SalzDF$Name)
-
+  setView(lng = 14.402952, lat = 50.084326, zoom = 14) %>%
+  addMarkers(lng= myDF$Longtitude, lat= myDF$Latitude,popup=myDF$Location)
 
 m
 ```
@@ -131,9 +87,9 @@ m
 
 
 
-### Soho
+### Prague 7
 
-<h4>Soho</h4>
+<h4>Prague 7</h4>
 
 ```{r echo=FALSE}
 library(leaflet)
@@ -236,18 +192,18 @@ m
 
 
 
-### The City
+### Prague Fringe Festival Venues
 
-<h4>The City of Salzburg</h4>
+<h4>Prague Fringe Festival Venues</h4>
 
 ```{r echo=FALSE}
 library(leaflet)
 
 m <- leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = -0.1102952, lat = 51.5134326, zoom = 16) %>%
-  addMarkers(lng=-0.1102952, lat=51.5134326, popup="Oliver Goldsmith's Grave") %>%
-  addMarkers(lng=-0.1074333, lat=51.5140786, popup="The Old Chesire Cheese (Pub)")
+  setView(lng = 14.1102952, lat = 51.5134326, zoom = 16) %>%
+  addMarkers(lng=14.1102952, lat=51.5134326, popup="Oliver Goldsmith's Grave") %>%
+  addMarkers(lng=14.1074333, lat=51.5140786, popup="The Old Chesire Cheese (Pub)")
 
 m  # Print the map
 
@@ -256,45 +212,10 @@ m  # Print the map
 
 ### Wapping
 
-<h4>Wapping</h4>
-
-```{r echo=FALSE}
-library(leaflet)
-
-m <- leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = -0.05831, lat = 51.505328, zoom = 15) %>%
-  addMarkers(lng=-0.06301, lat=51.50345, popup="The Town of Ramsgate") %>%
-  addMarkers(lng=-0.0349695, lat=51.5087151, popup="The Grapes") %>%
-  addMarkers(lng=-0.0589519, lat=51.5032233, popup="The Captain Kidd")
-
-
-m  # Print the map
-
-```
-
-
-51.4920942,-0.1925321
-
-### Earl's Court
-
-<h4>Earl's Court</h4>
-
-```{r echo=FALSE}
-library(leaflet)
-
-m <- leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = -0.1925321, lat = 51.4920942, zoom = 16) %>%
-  addMarkers(lng=-0.1920409, lat=51.4888221, popup="The Troubadour")
-
-m  # Print the map
-
-```
 
 
 
-Using the {leaflet} R package {data-navmenu="About"}
+Using the {leaflet} R package {data-navmenu="Talks and Workshops"}
 ======================================
 
 Column {.tabset}

@@ -1,4 +1,4 @@
-Jameson Dublin International_Film Festival {data-navmenu="Cultural"}
+Jameson Dublin International Film Festival {data-navmenu="Cultural"}
 ===========================================
 
 Column {.tabset}
@@ -6,7 +6,7 @@ Column {.tabset}
 
 ### Jameson Dublin International_Film Festival
 
-<h3>Jameson Dublin International_Film Festival<h3>
+<h3>Jameson Dublin International_Film Festival</h3>
 
 The **Jameson Dublin International Film Festival (JDIFF)** was an annual film festival held in Dublin, Ireland, from 2003 to 2016. Sponsored by Jameson Irish Whiskey, the festival showcased a diverse selection of Irish and international films, including features, documentaries, and shorts¹.
 
