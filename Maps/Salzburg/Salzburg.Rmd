@@ -88,24 +88,6 @@ m
 
 
 
-
-### Soho
-
-<h4>Soho</h4>
-
-```{r echo=FALSE}
-library(leaflet)
-
-m <- leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  setView(lng = -0.1387976, lat = 51.5133462, zoom = 16) %>%
-  addMarkers(lng=-0.132908, lat=51.5165172, popup="Bradley's Spanish Bar") %>%
-  addMarkers(lng=-0.1319526, lat=51.5124381, popup="The French House")
-
-m  # Print the map
-
-```
-
 ### New Map (Arvid Kingl)
 
 ```{r echo=FALSE}
