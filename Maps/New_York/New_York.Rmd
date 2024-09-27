@@ -1,0 +1,119 @@
+
+New York {data-navmenu="Maps"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+### New York
+
+```{r echo=FALSE}
+library(leaflet)
+library(leaflet.extras)
+library(tidyverse)
+
+myDF <- read.csv("https://raw.githubusercontent.com/New-York-Explorer/Locations/main/Locations-Set-1.csv")
+
+
+
+library(leaflet)
+library(leaflet.extras)
+library(tidyverse)
+myDF <- read.csv("https://raw.githubusercontent.com/New-York-Explorer/Locations/main/Locations-Set-1.csv")
+m <- myDF %>% leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -73.99, lat = 40.7506832232061 , zoom = 12) %>%
+  addMarkers(lng= myDF$Long, lat= myDF$Lat,popup=myDF$Name)
+m
+
+```
+
+### Manhattan
+
+```{r echo=FALSE}
+# myDF <- read.csv("raw.githubusercontent.com/New-York-Explorer/Locations/main/Locations-Set-1.csv")
+
+
+icons_Green <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "green"
+)
+
+
+icons_Red <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "lightred"
+)
+
+icons_Yellow <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "orange"
+)
+
+
+icons_Blue <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "lightblue"
+)
+
+
+
+icons_Purple <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "darkpurple"
+)
+
+icons_Black <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  library = 'ion',
+  markerColor = "gray"
+)
+
+myDF <- read.csv("https://raw.githubusercontent.com/New-York-Explorer/Locations/main/Locations-Set-1.csv")
+m <- myDF %>% leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -73.99, lat = 40.7506832232061 , zoom = 14) %>%
+  addMarkers(lng= myDF$Long, lat= myDF$Lat,popup=myDF$Name)
+m
+
+```
+
+
+
+
+### Long Island
+
+<h4>Long Island</h4>
+
+```{r echo=FALSE}
+
+myDF <- read.csv("https://raw.githubusercontent.com/New-York-Explorer/Locations/main/Locations-Set-1.csv")
+m <- myDF %>% leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  setView(lng = -73.92541052547556, lat = 40.76195824916284 , zoom = 14) %>%
+  addMarkers(lng= myDF$Long, lat= myDF$Lat,popup=myDF$Name)
+m
+
+```
+
+
+
+### About
+
+An R project to discover the wonderful city of New York
+
+### Contributors
+
+* Kevin O'Brien
+* Liam Arbetman
