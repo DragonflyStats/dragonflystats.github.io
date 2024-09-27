@@ -22,3 +22,23 @@ The next useR! conference will be held from **July 8th to 11th, 2024**, in **Sal
 (3) useR! 2022. https://user2022.r-project.org/.
 (4) About - user2022.r-project.org. https://user2022.r-project.org/about/user/.
 
+### Organizing Committee
+
+
+
+<h2 data-anchor-id="organising-committee">Organising Committee</h2>
+<ul>
+<li>James Black</li>
+<li>Emily Ruff</li>
+<li>Linux Foundation Events Team</li>
+</ul>
+
+<h2 data-anchor-id="additional-support">Additional Support</h2>
+<p>We’d like to thank the R Consortium for their fiduciary oversight and support of the core compoments of useR! (e.g.&nbsp;this website theme, R User Groups globally, and R-ladies)</p>
+
+<h2 data-anchor-id="working-groups">Working groups</h2>
+<p><strong>Website</strong>: James Black (Quarto theme by Ben Ubah working under an R Consortium Grant)</p>
+<p><strong>Diversity &amp; Inclusion</strong>: Binod J. Bogati, Ozan Evkaya, Lydia Gibson</p>
+<p><strong>Online experience</strong>: Mayank Agrawal</p>
+<p><strong>Social experience</strong>: Robert Mueller, Moritz Lang</p>
+<p><strong>Marketing</strong>: Steven Kell, Kevin O’Brien</p>
