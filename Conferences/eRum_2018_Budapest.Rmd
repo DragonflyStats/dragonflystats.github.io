@@ -26,7 +26,7 @@ The **eRum 2018 conference** was organized by a dedicated team of individuals fr
 
 This diverse team ensured a well-rounded and successful event¹³.
 
-
+#### Features 
 
 **eRum 2018** offered several key takeaways for the R community:
 
@@ -44,13 +44,13 @@ This diverse team ensured a well-rounded and successful event¹³.
 
 Overall, eRum 2018 was a vibrant and informative event that showcased the dynamic and growing nature of the R community.
 
-Is there a specific topic or session from the conference that you're particularly interested in?
+#### Conference Report
 
+* https://journal.r-project.org/news/RJ-2018-1-erums/
 ---------------------------------------------------------------
 
-Is there anything specific you'd like to know about the conference or its organizers?
+#### References
 
-Source: Conversation with Copilot, 20/9/2024
 (1) eRum 2018 @ Budapest. https://2018.erum.io/.
 (2) Conference Report: eRum 2018 - The R Journal. https://journal.r-project.org/news/RJ-2018-1-erums/.
 (3) My eRum 2018 biggest highlights - R-bloggers. https://www.r-bloggers.com/2018/05/my-erum-2018-biggest-highlights/.
