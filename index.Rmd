@@ -435,6 +435,19 @@ m  # Print the map
 
 ```
 
+
+New York {data-navmenu="Maps"}
+===========================================
+
+Column {.tabset}
+--------------------
+```{r child="maps/New_York/New_York.Rmd"}
+```
+
+
+
+
+
 Prague {data-navmenu="Maps"}
 ===========================================
 

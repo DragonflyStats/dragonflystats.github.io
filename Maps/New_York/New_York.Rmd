@@ -1,10 +1,4 @@
 
-New York {data-navmenu="Maps"}
-===========================================
-
-Column {.tabset}
---------------------
-
 ### New York
 
 ```{r echo=FALSE}
