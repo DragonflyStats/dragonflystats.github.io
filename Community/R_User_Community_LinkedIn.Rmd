@@ -1,0 +1,13 @@
+
+We are reorganizing the R User Community LinkedIn pages - creating and adapting pages to cover very specific subject areas.
+I would like to get your opinions and feedback while this plans is in it's early stages.
+
+The main page is the "R User Community" page (which has approx 17,400 followers)
+This was quite successful in being a signal-booster and aggregator for R activity on LinkedIn. 
+Because of the increasing volume of posts,It is time to create new pages to cope with the volume.
+Too many posts in a short period of time from the same page is something we wish to avoid.
+We have been given permission to re-configure the Why R? Foundations LinkedIn page ( approx 4,600 followers) to feature technical content about R ( details about R packages and coding practice, as opposed to Meetup and conferences)
+The Why R? Foundation has ceased to activities, but the digital media assets are still active.
+The first spin-off page is "R User Community EMEA". Currently it has 240 followers.
+Additionally I propose to do an R-Forwards company page, and an R User Community Africa page.
+The R User Community pages will have the same confederal structure as the original page, allowing multiple administrators to use it to promote their events. Also they will also function primarily as Aggregators and Signal Boosters.
