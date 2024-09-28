@@ -1,0 +1,37 @@
+**PyData Ireland** is part of the global PyData network, which provides a forum for users and developers of data analysis tools to share ideas and learn from each other. The community focuses on best practices, new approaches, and emerging technologies in data management, processing, analytics, and visualization¹.
+
+PyData events often feature discussions and presentations on various data science topics, using languages like Python, Julia, and R. These events are supported by NumFOCUS, a non-profit organization that promotes sustainable high-level programming languages and open-source development¹².
+
+Are you interested in attending one of their meetups or learning more about their activities?
+
+Source: Conversation with Copilot, 28/9/2024
+(1) PyData Ireland - Meetup. https://www.meetup.com/PyDataIreland/.
+(2) PyData Ireland - GitHub. https://github.com/PyDataIreland.
+(3) PyData Ireland - Meetup. https://www.meetup.com/pydataireland/.
+(4) PyData. https://pydata.org/.
+(5) undefined. https://secure.meetupstatic.com/photos/event/7/9/c/600_464221948.jpeg%29.
+(6) undefined. https://www.linkedin.com/company/pydata-ireland/.
+(7) undefined. https://twitter.com/P.
+(8) undefined. https://github.com/Py.
+(9) undefined. https://www.meetup.com/pro/pydata/%29.
+
+**PyData Ireland** is part of the global PyData network, which provides a forum for users and developers of data analysis tools to share ideas and learn from each other. The community focuses on best practices, new approaches, and emerging technologies in data management, processing, analytics, and visualization¹.
+
+PyData events often feature discussions and presentations on various data science topics, using languages like Python, Julia, and R. These events are supported by NumFOCUS, a non-profit organization that promotes sustainable high-level programming languages and open-source development¹².
+
+Are you interested in attending one of their meetups or learning more about their activities?
+
+Source: Conversation with Copilot, 28/9/2024
+(1) PyData Ireland - Meetup. https://www.meetup.com/PyDataIreland/.
+(2) PyData Ireland - GitHub. https://github.com/PyDataIreland.
+(3) PyData Ireland - Meetup. https://www.meetup.com/pydataireland/.
+(4) PyData. https://pydata.org/.
+(5) undefined. https://secure.meetupstatic.com/photos/event/7/9/c/600_464221948.jpeg%29.
+(6) undefined. https://www.linkedin.com/company/pydata-ireland/.
+(7) undefined. https://twitter.com/P.
+(8) undefined. https://github.com/Py.
+(9) undefined. https://www.meetup.com/pro/pydata/%29.
+
+PyData Ireland events are typically organized by local volunteers who are passionate about data science and the PyData community. These organizers work in collaboration with NumFOCUS, the non-profit organization that supports the PyData network globally.
+
+Would you like me to find out the specific organizers for the next event or provide more details on how you can get involved?
