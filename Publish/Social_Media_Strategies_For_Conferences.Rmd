@@ -1,0 +1,39 @@
+---
+title: "Optimizing Social Media Tools for Open-Source Tech Communities"
+subtitle: "Developing New Strategies to Increase Outreach"
+date: June 2025
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+```{css my-header-colors, echo = FALSE}
+.page-header {
+    background-image: linear-gradient(120deg, purple, lightpink);
+}
+```
+
+### Using Alt-Text
+
+To maximize engagement on LinkedIn, aim to include an image in every post—and **always add alt text**. You can use AI to generate a descriptive caption, ideally up to the 1,000-character limit, using keywords that align with your content. LinkedIn’s recommendation engine favors posts with alt text, as it can be parsed for relevance and searchability. Never publish on an official account without it. While alt text entry can be more difficult on mobile devices, just do the best you can.
+
+### Image Orientations
+
+**Use landscape-format images** where possible.
+
+### Stills Photography
+
+When taking photos of the event, avoid any photos showing empty chairs. Direct photography teams to shoot from angles that hide empty spaces—ideally focusing tightly on the speaker. At conferences, try to assign ushers to encourage attendees to sit closer to the front, just like in a theatre. It makes for better optics and stronger speaker engagement.
+
+### Frequency
+
+Limit your posting frequency—**once every three days** is optimal on LinkedIn. Favor medium- to long-form posts, as the platform doesn’t reward tweet-style microcontent. Use emojis and AI-generated copy; many accounts now do this effectively. Strategically weave relevant keywords into your text. Training a custom AI model (e.g., a chatbot like Copilot) to generate tailored posts is highly effective.
+
+### Other Platforms
+
+While platforms like Mastodon or Bluesky may not significantly boost corporate outreach, they can still be helpful for sourcing speakers and sponsors.
+
+Avoid persistent short-form updates—they can actually lead to follower fatigue. In the lead-up to conferences, poorly executed posting bursts may reduce your following, while well-timed campaigns tend to drive rapid growth in followers.
+
+Finally, **avoid placing hyperlinks directly in the body** of your LinkedIn posts. The platform deprioritizes posts with in-text links. A better strategy is to write “Link in comments” and add your URL as a comment, which also drives engagement metrics.

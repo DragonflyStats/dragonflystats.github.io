@@ -1,0 +1,48 @@
+---
+title: "London R - June 2022"
+subtitle: "Kevin O'Brien"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+
+
+---
+
+### Prompt Engineering
+
+Prompt engineering is the **art and science of designing and optimizing inputs (prompts) for AI models, especially large language models (LLMs), to achieve desired and high-quality outputs.**
+
+Think of it this way: 
+- AI models are incredibly powerful, but they need clear instructions to perform specific tasks effectively. 
+- Prompt engineering is about crafting those instructions in a way that the AI understands your intent, avoids generating irrelevant or incorrect information (hallucinations), and produces results that are useful, accurate, and in the desired format.
+
+---
+
+### Key Aspects of Prompt Engineering:
+
+* **Crafting effective prompts:** This involves choosing the right words, phrases, and structures to guide the AI. It's not just about what you ask, but how you ask it.
+
+* **Providing context:** Giving the AI relevant background information, data, or examples helps it understand the scope and nuances of the task.
+
+* **Setting goals and constraints:** Clearly defining what you want the AI to achieve (e.g., summarize, translate, generate code, write a story) and any limitations (e.g., word count, tone, target audience).
+
+* **Iterative refinement:** Prompt engineering is rarely a one-shot process. It often involves experimenting with different prompts, analyzing the AI's responses, and refining the prompts based on the outputs to improve accuracy and relevance.
+
+* **Understanding AI capabilities and limitations:** A good prompt engineer understands what different AI models are good at, their potential biases, and where they might struggle. This helps in tailoring prompts to leverage the AI's strengths and mitigate its weaknesses.
+
+---
+
+### Prompt Engineering As An Important Skill Set
+
+* **Optimizing outputs:** It ensures that AI-generated content aligns with specific goals, reducing the need for extensive post-processing and revision.
+
+* **Unlocking AI potential:** Effective prompts can unlock new capabilities and applications for AI models, pushing their boundaries beyond their initial design.
+
+* **Improving efficiency:** Well-crafted prompts lead to more relevant and accurate responses, making interactions with AI more efficient and productive.
+
+* **Reducing hallucinations:** By providing clear and specific instructions, prompt engineering helps minimize the generation of fabricated or nonsensical information.
+
+---

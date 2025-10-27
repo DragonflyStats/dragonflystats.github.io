@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Working with Documents using R (and AI)</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Working with Documents using R (and AI)
+]
+.subtitle[
+## Kevin O’Brien - Ghana R Conference - June 2025
+]
+
+---
+
+
+
+
+
+
+
+
+
+### Kevin O'Brien
+
+- Agricultural Data Scientist based in the West of Ireland 
+  - Also in London, UK a lot
+  
+- Was previously (what is now known) as a "Research Software Engineer" in a University.
+
+- R, Python, SQL now with the aid of AI
+  
+&lt;p&gt;
+
+#### Previously 
+
+- Why R? - Community Team lead &amp; Webinars co-ordinator (on hiatus)
+
+- Python Ireland - Director and Conference Lead
+
+- UseR! 2024 - Social Media Co-Chair
+
+
+
+---
+
+![Limerick City](Limerick.jpg)
+---
+
+### Agriculture and Forestry
+
+
+* R is very useful in Agriculture, Food and Forestry 
+
+* Last year, I discussed R in Forestry Sector
+ - Diameter at Breast Height / Height
+ - Growth Curves and Yield Models
+ - Statistical Analysis and Data Visualization
+ 
+* Other R packages have been ***VERY*** useful 
+
+![ForestryData](timbeter.png)
+
+
+---
+## Talk Outline - Part 1 (15 min)
+
+&lt;span style="color:#3C989E;"&gt;**Strategizing Career Development**&lt;/span&gt;
+
+
+* How to build a career as a data scientist 
+ - (or whatever term we will use in the future)
+
+&lt;p&gt;
+
+&lt;span style="color:#3C989E;"&gt;**Embracing AI in Data Science**&lt;span style="color:red"&gt;**(NEW!)**&lt;/span&gt;&lt;/span&gt;
+
+
+* The rapidly evolving AI Landscape, and how it affects coders
+
+* AI as Your Coding Partner and Mentor
+
+ - How AI assists with code generation, boilerplate, and suggestions.
+
+* Best Practices and what to avoid
+
+ - Integrating AI effectively into your workflow.
+
+---
+
+### Part 2: Working with Documents with R (25 min)
+
+* Defining "Documents": Focus on Word (*.docx*) and PDF (*.pdf*) in a corporate context.
+   - Iterative Dashboards and Quarto are separate subjects.
+
+* Why R for Documents?: Reproducibility, automation, and integration benefits.
+
+* Word Documents with `{officer}`: Creating and manipulating Word files programmatically.
+
+* Enhanced Tables with `{flextable}`: Crafting beautiful, custom tables.
+
+* PDF Interaction with `{pdftools}`: Extracting data and metadata from PDFs.
+
+* Essential R Skills: Highlighting sf, lubridate, and stringr for document tasks.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Data Science Careers
+
+&lt;center&gt;
+  &lt;img src="Career/HBR_Sexiest_Job.png" width="100%"&gt;
+&lt;/center&gt;
+
+(Published by Harvard Business Review in October 2012)
+---
+
+### The Last Decade (The Golden Age)
+
+* The 2012 Harvard Business Review article titled ***"Data Scientist: The Sexiest Job of the 21st Century"*** marked a pivotal shift in how the role of data scientists was viewed across industries.
+
+* Sparking considerable debate, the article highlighted the rapid rise in demand for professionals capable of extracting insights from vast, complex datasets and translating them into actionable business value.
+
+* This surge in interest was mirrored by the growing popularity of tools like **R** and **Python**, alongside an explosion of online courses, bootcamps, and self-paced learning platforms catering to aspiring data professionals.
+
+* In response, **universities began establishing dedicated undergraduate and postgraduate degree programs** focused on data science, analytics, and machine learning.
+
+* At the same time, companies—from agile startups to global multinationals—**started building out dedicated analytics departments and hiring data scientists in droves**, recognizing the strategic edge that data-driven decision-making could provide.
+
+
+---
+
+### Data Science Careers
+
+&lt;center&gt;
+  &lt;img src="Career/MeetingsDocumentation.PNG" width="80%"&gt;
+&lt;/center&gt;
+
+
+---
+
+### &lt;tt&gt;Tweet by @Type_Error&lt;/tt&gt;
+
+![Career](Career/Type_Error_1.PNG)
+
+&lt;br&gt;
+
+
+
+![Career](Career/Type_Error_2.PNG)
+
+
+---
+
+### Domain Knowledge 
+
+* Michael Green  (Data Scientist @ NIM)
+
+Comments on LinkedIn
+
+https://www.linkedin.com/feed/update/urn:li:activity:6765853465861267456/
+
+
+---
+
+### Importance of Domain Knowledge (1)
+
+![Career](Career/DomainKnowledge1.PNG)
+
+&lt;br&gt;
+
+(*screenshot of LinkedIn Post listed previously - Part 1*)
+
+
+---
+
+### Importance of Domain Knowledge (2)
+
+![Career](Career/DomainKnowledge2.PNG)
+
+&lt;br&gt;
+(*screenshot of LinkedIn Post listed previously  - Part 2*)
+
+---
+
+### Importance of Domain Knowledge (3)
+
+![Career](Career/DomainKnowledge3.PNG)
+
+
+&lt;br&gt;
+(*screenshot of LinkedIn Post listed previously - Part 3*)
+
+
+---
+
+### Stripe
+
+![Stoxygen Factor](Career/stripe_stoxygen.PNG)
+
+---
+
+
+
+### Career Strategy
+
+Think about tedious boring jobs that can be automated, and processes that can be made more efficient
+
+![Darkside](Career/Darkside.jpg)
+
+
+
+
+
+
+ 
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+### The Expert Beginner Problem
+
+&lt;center&gt;
+  &lt;img src="Career/Expert_Beginner_Problem.png" width="100%"&gt;
+&lt;/center&gt;
+
+(Published by Harvard Business Review in October 2012)
+
+---
+
+### Expert Beginner
+
+* The "Expert Beginner" problem describes a phenomenon, particularly prevalent in fields like software development, where an individual has gained enough experience to be somewhat competent and self-sufficient, ***but their learning and growth have stagnated***. 
+
+* They often believe they are experts, but in reality, they lack a deep understanding of fundamental principles, best practices, or broader industry knowledge.
+
+* This problem was discussed at length before AI. AI expected to make it much worse!
+
+* ***IMPORTANT*** Make sure this doesn't happen to you!!!
+
+---
+
+### Characteristics of an Expert Beginner
+
+* An Expert Beginner is someone who has enough experience to be self-sufficient but has stagnated in their learning and growth, often due to false confidence. 
+
+* They exhibit "***one year of experience, ten times***" repeating basic practices without developing deeper skills or varied knowledge. 
+
+* Their perspective is limited to familiar tools, leading them to resist new ideas and feedback that challenge their perceived expertise. 
+
+* Crucially, they lack fundamental understanding of why things work, often leading to brittle solutions. 
+
+* When in leadership, Expert Beginners can hinder team progress, leading to stagnation, suboptimal outcomes, and discouraging innovation and growth.
+
+---
+
+### Why does it happen?
+
+* **Initial rapid progress:** When someone starts in a new field, they often experience a rapid learning curve and feel a sense of accomplishment, which can lead to overconfidence (Dunning-Kruger effect).
+
+* **Lack of challenging feedback:** In environments where feedback is scarce or where there are no true experts to benchmark against, an Expert Beginner might not realize their limitations.
+
+* **Comfort zone:** It's easier to stick to what's familiar than to constantly learn and adapt.
+
+* **Organizational culture:** Some organizations might unintentionally foster this by valuing longevity over continuous skill development, or by promoting individuals based on time served rather than demonstrated expertise and growth potential.
+
+---
+
+### How to avoid (or overcome) being an Expert Beginner:
+
+* **Embrace continuous learning:** Never stop learning, even if you feel competent. Explore new technologies, methodologies, and concepts.
+
+* **Seek feedback and critique:** Be open to constructive criticism and actively solicit feedback from peers and mentors.
+
+* **Mentor and be mentored:** Teaching others reinforces your own understanding, and having a mentor can provide new perspectives and challenge your assumptions. 
+ - ***Use AI as a mentoring tool***
+
+* **Engage with the broader community:** Participate in conferences, online forums, open-source projects, and meetups to expose yourself to diverse ideas and approaches.
+
+* **Focus on fundamentals:** Understand the underlying principles, not just the tools. This allows you to adapt to new technologies more easily.
+* **Don't be afraid to make mistakes and learn from them.**
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Prompt Engineering
+
+Prompt engineering is the **art and science of designing and optimizing inputs (prompts) for AI models, especially large language models (LLMs), to achieve desired and high-quality outputs.**
+
+Think of it this way: 
+- AI models are incredibly powerful, but they need clear instructions to perform specific tasks effectively. 
+- Prompt engineering is about crafting those instructions in a way that the AI understands your intent, avoids generating irrelevant or incorrect information (hallucinations), and produces results that are useful, accurate, and in the desired format.
+
+---
+
+### Key Aspects of Prompt Engineering:
+
+* **Crafting effective prompts:** This involves choosing the right words, phrases, and structures to guide the AI. It's not just about what you ask, but how you ask it.
+
+* **Providing context:** Giving the AI relevant background information, data, or examples helps it understand the scope and nuances of the task.
+
+* **Setting goals and constraints:** Clearly defining what you want the AI to achieve (e.g., summarize, translate, generate code, write a story) and any limitations (e.g., word count, tone, target audience).
+
+* **Iterative refinement:** Prompt engineering is rarely a one-shot process. It often involves experimenting with different prompts, analyzing the AI's responses, and refining the prompts based on the outputs to improve accuracy and relevance.
+
+* **Understanding AI capabilities and limitations:** A good prompt engineer understands what different AI models are good at, their potential biases, and where they might struggle. This helps in tailoring prompts to leverage the AI's strengths and mitigate its weaknesses.
+
+---
+
+### Prompt Engineering As An Important Skill Set
+
+* **Optimizing outputs:** It ensures that AI-generated content aligns with specific goals, reducing the need for extensive post-processing and revision.
+
+* **Unlocking AI potential:** Effective prompts can unlock new capabilities and applications for AI models, pushing their boundaries beyond their initial design.
+
+* **Improving efficiency:** Well-crafted prompts lead to more relevant and accurate responses, making interactions with AI more efficient and productive.
+
+* **Reducing hallucinations:** By providing clear and specific instructions, prompt engineering helps minimize the generation of fabricated or nonsensical information.
+
+---
+
+
+---
+
+### Voice To Text
+
+
+&lt;center&gt;
+  &lt;img src="AITools/Voice_To_Text.jpg" width="60%"&gt;
+&lt;/center&gt;
+
+* Voice To Text Transcription App on my mobile phone
+* Generate an unedited **Context File**
+---
+
+### Editing Your AI outputs
+
+
+&lt;center&gt;
+  &lt;img src="AITools/Editor.jpg" width="60%"&gt;
+&lt;/center&gt;
+
+* Can generate large volumes of AI generated content quickly.
+* Edit, Refine and Test it on a regular basis
+---
+
+
+
+
+
+---
+
+## Part 2 - The R Packages
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![excel](excel/excel-globalfinancialsystem.PNG)
+
+---
+
+
+![excel](excel/readxl.PNG)
+
+(*** Source: readxl.tidyverse.org ***)
+
+---
+
+
+
+---
+
+
+### Working with Documents
+
+* Agriculture and Forestry is highly regulated in Ireland 
+  - (Water quality, natural heritage, habitats)
+  
+* Lots of documents
+
+* Government agencies strongly prefer Microsoft Word and PDFs
+
+* Legal Documents
+
+* Time consuming
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### PDF Tools
+
+![PDF Tools](pdftools/pdftools.PNG)
+
+
+(***Source: ROpenSci Organization***)
+---
+
+### Usage
+
+&lt;pre&gt; &lt;code&gt;
+pdf_info(pdf, opw = "", upw = "")
+
+pdf_text(pdf, opw = "", upw = "")
+
+pdf_data(pdf, font_info = FALSE, opw = "", upw = "")
+
+pdf_fonts(pdf, opw = "", upw = "")
+
+pdf_attachments(pdf, opw = "", upw = "")
+
+pdf_toc(pdf, opw = "", upw = "")
+
+pdf_pagesize(pdf, opw = "", upw = "")
+
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+---
+
+### &lt;tt&gt;pdf_text()&lt;/tt&gt;
+
+* Extract text from an inputed PDF document.
+* Each line corresponds to a single string
+
+&lt;pre&gt;&lt;code&gt;
+
+myPDFText &lt;- pdf_text( myInputPDF )
+
+&lt;/code&gt;&lt;/pre&gt;
+
+#### Processing
+
+* Very high accuracy for PDF documents that were created directly from MS Word. (i.e. Save as "PDF")
+* Taking advantage of the standardized format of the documents, the contents can be processed and add to a single spreadsheet.
+
+
+---
+
+### &lt;tt&gt;pdf_combine()&lt;/tt&gt;
+
+&lt;pre&gt;&lt;code&gt;
+
+library(pdftools)
+
+# Combine 2 two-page documents
+
+pdf_combine(
+  input = c("TESTPAGE1.pdf", "TESTPAGE2.pdf"), 
+  output = "TESTCOMBINED.pdf")
+
+# Should say 4
+pdf_length("TESTCOMBINED.pdf")
+&lt;/code&gt;&lt;/pre&gt;
+
+
+---
+
+### Tesseract
+
+Useful for more complicated scans (photocopies)
+
+![Tesseract](pdftools/tesseract.PNG)
+
+---
+
+### magick R package
+
+![magick](pdftools/magickPackage.PNG)
+
+
+
+#### The magick R package supports:
+
+* Many common formats: png, jpeg, tiff, pdf, etc
+* Different manipulations types: rotate, scale, crop, trim, flip, blur, etc.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![doconv](pdftools/doconv-cran.PNG)
+
+---
+
+
+#### Package Author
+
+* David Gohel (Ardata.Fr)
+* Twitter : &lt;tt&gt;@DavidGohel&lt;/tt&gt;
+
+#### doconv: Document Conversion to 'PDF' or 'PNG'
+
+* Functions to convert 'Microsoft Word' or 'Microsoft PowerPoint' documents to 'PDF' format and also for converting them into a thumbnail. 
+
+* In order to work, 'LibreOffice' must be installed on the machine and possibly 'python' and 'Microsoft Word'. 
+
+* If the latter is available, it can be used to produce PDF documents identical to the originals, otherwise, 'LibreOffice' is used.
+
+
+
+
+---
+
+
+&lt;tt&gt;docx2pdf&lt;/tt&gt; Convert docx to pdf
+
+#### Description
+
+* Convert docx to pdf directly using "Microsoft Word". This function will not work if "Microsoft
+Word" is not available on your machine.
+
+* On Windows, this is implemented via win32com while on macOS this is implemented via JXA
+(Javascript for Automation, aka AppleScript in JS).
+
+
+#### Usage 
+
+&lt;pre&gt;&lt;code&gt;
+docx2pdf(input, output = gsub("\\.docx$", ".pdf", input))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### {Stringr} - Processing Text with R
+
+
+![stringr](stringr/stringr.PNG)
+
+(***Source: stringr.tidyverse.org***)
+
+---
+
+### Useful Base R commands
+
+
+#### Text
+
+* &lt;tt&gt; grep()&lt;/tt&gt;
+* &lt;tt&gt; gsub()&lt;/tt&gt;
+* &lt;tt&gt; nchar()&lt;/tt&gt;
+* &lt;tt&gt; paste()&lt;/tt&gt;
+* &lt;tt&gt; readLines() &lt;/tt&gt; and &lt;tt&gt;writeLines()&lt;/tt&gt;
+* &lt;tt&gt; matrix() &lt;/tt&gt;
+
+#### Dates
+
+* &lt;tt&gt; Sys.Date()&lt;/tt&gt;
+* &lt;tt&gt; as.Date()&lt;/tt&gt;
+
+---
+
+#### &lt;tt&gt;matrix()&lt;/tt&gt;
+
+
+``` r
+colours()[1:16]
+```
+
+```
+##  [1] "white"         "aliceblue"     "antiquewhite"  "antiquewhite1"
+##  [5] "antiquewhite2" "antiquewhite3" "antiquewhite4" "aquamarine"   
+##  [9] "aquamarine1"   "aquamarine2"   "aquamarine3"   "aquamarine4"  
+## [13] "azure"         "azure1"        "azure2"        "azure3"
+```
+
+
+``` r
+matrix(colours()[1:16],nrow=4,byrow=TRUE)
+```
+
+```
+##      [,1]            [,2]            [,3]            [,4]           
+## [1,] "white"         "aliceblue"     "antiquewhite"  "antiquewhite1"
+## [2,] "antiquewhite2" "antiquewhite3" "antiquewhite4" "aquamarine"   
+## [3,] "aquamarine1"   "aquamarine2"   "aquamarine3"   "aquamarine4"  
+## [4,] "azure"         "azure1"        "azure2"        "azure3"
+```
+
+---
+
+### {lubridate} - Working with dates with R
+
+
+![lubridate](stringr/lubridate.PNG)
+
+(***Source: lubdridate.tidyverse.org***)
+---
+
+### Officerverse
+
+* David Gohel
+
+* https://www.ardata.fr/
+* davidgohel.github.io
+
+#### R Packages
+
+* Officer 
+* Flextable 
+* Officedown
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Officer R Package
+
+Automated Generation of Word Documents with R
+
+![officer](officer/officer-r-package.PNG)
+
+
+---
+
+### Officer R Package
+
+#### Examples
+
+&lt;pre&gt;&lt;code&gt;
+my_doc &lt;- read_docx() %&gt;%
+      body_add_par(value='Some text etc etc') %&gt;%
+      body_add_flextable(value=ft) %&gt;% 
+      body_add_break()
+      
+&lt;/code&gt;&lt;/pre&gt;      
+
+* Formatted Text
+
+* Add Images
+
+* Replace Text in Existing Document
+
+
+---
+
+### Officer R Package
+
+#### Example
+
+&lt;pre&gt;&lt;code&gt;
+
+MyText_header &lt;- fpar(ftext(MyText_header ,  
+		prop = fp_text(color = "black", font.family="Calibri", 
+		font.size = 14, bold = TRUE)))
+
+MyText_1 &lt;- fpar(ftext(MyText_1 ,  
+		prop = fp_text(color = "black", font.family="Calibri", 
+		font.size = 12, bold = FALSE)))
+
+MyText_2  &lt;- fpar(ftext(MyText_2 ,  
+		prop = fp_text(color = "black", font.family="Calibri", 
+		font.size = 12, bold = FALSE)))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+---
+
+### Officer R Package
+
+#### Example
+
+&lt;pre&gt;&lt;code&gt;
+my_doc &lt;- my_doc  %&gt;% 
+  body_add_fpar( MyText_header ) %&gt;%   
+  body_add_par("", style = "Normal") %&gt;%
+  body_add_fpar( MyText_1 ) %&gt;%   
+  body_add_par("", style = "Normal") %&gt;%
+  body_add_fpar( MyText_2) %&gt;%   
+  body_add_par("", style = "Normal")
+
+
+print(my_doc, target = Output_File_Name)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Flextable R Package
+
+Automated Generation of Tables with R
+
+![flextable](flextable/flextable-r-package.PNG)
+
+(***Author: David Gohel***)
+---
+
+### Flextable R Package
+
+Automated Generation of Tables with R
+
+![flextable](flextable/flextable-r-package-2.PNG)
+
+(***Author: David Gohel***)
+
+---
+
+### Flextable R Package
+
+&lt;pre&gt;&lt;code&gt;
+This_OutPut_Table  &lt;- This_Input_DF %&gt;% 
+  flextable() %&gt;% 
+  width(width=c(2.25,4.75)) %&gt;%  
+  align( align = "left", part = "all" ) %&gt;%
+  font(fontname = "Calibri",part="all") %&gt;%
+  fontsize(size = 12, part = "body") %&gt;%
+  padding(padding = 3, part = "all" ) %&gt;%
+  delete_part(part="header") %&gt;%
+  border_remove() %&gt;%
+  border_outer( part="all", border = big_border ) %&gt;%
+  border_inner_h(part="all", border = big_border ) %&gt;%
+  border_inner_v(part="all", border = big_border ) 
+
+
+my_doc &lt;- my_doc %&gt;% 
+  body_add_flextable(This_OutPut_Table,align="left") %&gt;%
+  body_add_par("", style = "Normal")
+
+&lt;/code&gt;&lt;/pre&gt;
+
+---
+
+### Flextable Gallery
+
+&lt;tt&gt; ardata-fr.github.io/flextable-gallery/gallery/ &lt;/tt&gt;
+
+![flextable](flextable/gallery.PNG)
+
+(***Author: David Gohel***)
+
+
+---
+
+### Useful R packages
+
+* &lt;tt&gt; {tidyverse} &lt;/tt&gt;
+* &lt;tt&gt; {janitor} &lt;/tt&gt;
+* &lt;tt&gt; {scales} &lt;/tt&gt;
+
+### Useful Commands
+
+* &lt;tt&gt; sprintf() &lt;/tt&gt;
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Manipulation of Directories and File Permissions
+
+These functions provide a low-level interface to the computer's file system.
+
+#### Usage
+
+* &lt;tt&gt; dir.exists(paths)&lt;/tt&gt;
+* &lt;tt&gt; dir.create(path, showWarnings = TRUE, recursive = FALSE, mode = "0777")&lt;/tt&gt;
+
+#### Others
+* &lt;tt&gt; Sys.chmod(paths, mode = "0777", use_umask = TRUE)&lt;/tt&gt;
+* &lt;tt&gt; Sys.umask(mode = NA)&lt;/tt&gt;
+
+---
+
+### File Manipulation
+
+These functions provide a low-level interface to the computer's file system.
+
+#### Usage
+
+* &lt;tt&gt; file.exists(...) &lt;/tt&gt;
+* &lt;tt&gt; file.remove(...) &lt;/tt&gt;
+* &lt;tt&gt; file.rename(from, to) &lt;/tt&gt;
+
+* &lt;tt&gt; file.copy(from, to, overwrite = recursive, recursive = FALSE,
+          copy.mode = TRUE, copy.date = FALSE) &lt;/tt&gt;
+
+#### Others
+
+* &lt;tt&gt; file.append(file1, file2) &lt;/tt&gt;
+* &lt;tt&gt; file.create(..., showWarnings = TRUE) &lt;/tt&gt;
+* &lt;tt&gt; file.symlink(from, to) &lt;/tt&gt;
+* &lt;tt&gt; file.link(from, to) &lt;/tt&gt;
+* &lt;tt&gt; Sys.junction(from, to) &lt;/tt&gt;
+
+---
+
+### Rstats - What They Forget to Teach you.
+
+![Rstats_WTF](working_environment/rstats-wtf.PNG)
+
+
+* ***www.rstats.wtf***
+* The &lt;tt&gt; {here} &lt;/tt&gt; R package
+
+
+
+
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

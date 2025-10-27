@@ -1,0 +1,44 @@
+---
+title: AI and the Acceleration of Workflows
+subtitle: How to get the best from the volume of AI content
+date: June 2025
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+```{css my-header-colors, echo = FALSE}
+.page-header {
+    background-image: linear-gradient(120deg, blue, lightblue);
+}
+```
+
+---
+
+### AI and the Acceleration of Workflows
+
+Artificial intelligence extends this momentum. With AI tools accelerating tasks like writing, refactoring, and analysis, workflows are faster than ever. But rather than treating this time-saving as an end in itself, it’s an opportunity to **enhance the quality of our work**.
+
+### When “Your Cup Runneth Over”
+
+To borrow a Shakespearean expression, *“my cup runneth over.”* That’s how it can feel when you discover the potential of AI. You're brimming with ideas, starting dozens of projects—and then find yourself buried under an avalanche of half-finished, disorganized code or experiments.
+
+That’s why **cataloging, curation, and maintenance are just as crucial as creation**. Without them, you risk losing valuable work in a chaos of digital clutter. This is especially important when AI-generated outputs accumulate faster than traditional workflows can manage.
+
+---
+
+
+### Documentation
+
+One such area is documentation. The codebase you write today, with all its modern flair and tidyverse vernacular, could seem cryptic and obsolete 15 years from now. Thoughtful documentation—and the use of AI to assist with it—helps safeguard against technical debt. It ensures that future developers (or your future self) aren’t left untangling arcane logic with no breadcrumbs.
+
+---
+
+
+### Borrowing from Industrial Wisdom
+
+There's wisdom to borrow from industrial philosophy—particularly post-WWII Japan’s emphasis on **Total Quality Management (TQM)** and the concept of **kaizen**, or continuous improvement. These aren’t just manufacturing principles; they’re mindset shifts: small, incremental refinements that lead to lasting impact.
+
+Incorporating these ideas into your AI-enhanced workflow means making **quality, structure, and clarity a continuous goal**, not a final step. Whether it’s code, analysis, or insight generation, the path to excellence isn't a sprint—it’s a disciplined, iterative walk.
+

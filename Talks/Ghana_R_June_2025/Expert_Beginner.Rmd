@@ -1,0 +1,75 @@
+---
+title: "London R - June 2022"
+subtitle: "Kevin O'Brien"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+
+
+---
+### The Expert Beginner Problem
+
+<center>
+  <img src="Career/Expert_Beginner_Problem.png" width="100%">
+</center>
+
+(Published by Harvard Business Review in October 2012)
+
+---
+
+### Expert Beginner
+
+* The "Expert Beginner" problem describes a phenomenon, particularly prevalent in fields like software development, where an individual has gained enough experience to be somewhat competent and self-sufficient, ***but their learning and growth have stagnated***. 
+
+* They often believe they are experts, but in reality, they lack a deep understanding of fundamental principles, best practices, or broader industry knowledge.
+
+* This problem was discussed at length before AI. AI expected to make it much worse!
+
+* ***IMPORTANT*** Make sure this doesn't happen to you!!!
+
+---
+
+### Characteristics of an Expert Beginner
+
+* An Expert Beginner is someone who has enough experience to be self-sufficient but has stagnated in their learning and growth, often due to false confidence. 
+
+* They exhibit "***one year of experience, ten times***" repeating basic practices without developing deeper skills or varied knowledge. 
+
+* Their perspective is limited to familiar tools, leading them to resist new ideas and feedback that challenge their perceived expertise. 
+
+* Crucially, they lack fundamental understanding of why things work, often leading to brittle solutions. 
+
+* When in leadership, Expert Beginners can hinder team progress, leading to stagnation, suboptimal outcomes, and discouraging innovation and growth.
+
+---
+
+### Why does it happen?
+
+* **Initial rapid progress:** When someone starts in a new field, they often experience a rapid learning curve and feel a sense of accomplishment, which can lead to overconfidence (Dunning-Kruger effect).
+
+* **Lack of challenging feedback:** In environments where feedback is scarce or where there are no true experts to benchmark against, an Expert Beginner might not realize their limitations.
+
+* **Comfort zone:** It's easier to stick to what's familiar than to constantly learn and adapt.
+
+* **Organizational culture:** Some organizations might unintentionally foster this by valuing longevity over continuous skill development, or by promoting individuals based on time served rather than demonstrated expertise and growth potential.
+
+---
+
+### How to avoid (or overcome) being an Expert Beginner:
+
+* **Embrace continuous learning:** Never stop learning, even if you feel competent. Explore new technologies, methodologies, and concepts.
+
+* **Seek feedback and critique:** Be open to constructive criticism and actively solicit feedback from peers and mentors.
+
+* **Mentor and be mentored:** Teaching others reinforces your own understanding, and having a mentor can provide new perspectives and challenge your assumptions. 
+ - ***Use AI as a mentoring tool***
+
+* **Engage with the broader community:** Participate in conferences, online forums, open-source projects, and meetups to expose yourself to diverse ideas and approaches.
+
+* **Focus on fundamentals:** Understand the underlying principles, not just the tools. This allows you to adapt to new technologies more easily.
+* **Don't be afraid to make mistakes and learn from them.**
+
+

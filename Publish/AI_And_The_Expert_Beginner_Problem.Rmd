@@ -1,0 +1,93 @@
+---
+title: AI And The Expert Beginner Problem
+subtitle: How AI Is Exacerbating the Expert–Beginner Problem
+date: June 2025
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+```{css my-header-colors, echo = FALSE}
+.page-header {
+    background-image: linear-gradient(120deg, blue, lightblue);
+}
+```
+
+### Abstract
+
+*Artificial intelligence tools—while immensely powerful—are unintentionally widening the gap between beginners and experts, a phenomenon often referred to as the Expert–Beginner Problem. At its core, the issue arises when beginners are able to produce impressive-looking results using AI without fully understanding the underlying principles, while experts recognize the flaws, limitations, and misapplications that may be hidden beneath the surface.*
+
+
+
+### The Expert Beginner Problem
+
+<center>
+  <img src="Images/Expert_Beginner_Problem.png" width="80%">
+</center>
+
+(Published by Harvard Business Review in October 2012)
+
+---
+
+### Expert Beginner
+
+* The "Expert Beginner" problem describes a phenomenon, particularly prevalent in fields like software development, where an individual has gained enough experience to be somewhat competent and self-sufficient, ***but their learning and growth have stagnated***. 
+
+* They often believe they are experts, but in reality, they lack a deep understanding of fundamental principles, best practices, or broader industry knowledge.
+
+* This problem was discussed at length before AI. AI expected to make it much worse!
+
+* ***IMPORTANT*** Make sure this doesn't happen to you!!!
+
+---
+
+### Characteristics of an Expert Beginner
+
+* An Expert Beginner is someone who has enough experience to be self-sufficient but has stagnated in their learning and growth, often due to false confidence. 
+
+* They exhibit "***one year of experience, ten times***" repeating basic practices without developing deeper skills or varied knowledge. 
+
+* Their perspective is limited to familiar tools, leading them to resist new ideas and feedback that challenge their perceived expertise. 
+
+* Crucially, they lack fundamental understanding of why things work, often leading to brittle solutions. 
+
+* When in leadership, Expert Beginners can hinder team progress, leading to stagnation, suboptimal outcomes, and discouraging innovation and growth.
+
+---
+
+### Why does it happen?
+
+* **Initial rapid progress:** When someone starts in a new field, they often experience a rapid learning curve and feel a sense of accomplishment, which can lead to overconfidence (Dunning-Kruger effect).
+
+* **Lack of challenging feedback:** In environments where feedback is scarce or where there are no true experts to benchmark against, an Expert Beginner might not realize their limitations.
+
+* **Comfort zone:** It's easier to stick to what's familiar than to constantly learn and adapt.
+
+* **Organizational culture:** Some organizations might unintentionally foster this by valuing longevity over continuous skill development, or by promoting individuals based on time served rather than demonstrated expertise and growth potential.
+
+---
+
+### How to avoid (or overcome) being an Expert Beginner:
+
+* **Embrace continuous learning:** Never stop learning, even if you feel competent. Explore new technologies, methodologies, and concepts.
+
+* **Seek feedback and critique:** Be open to constructive criticism and actively solicit feedback from peers and mentors.
+
+* **Mentor and be mentored:** Teaching others reinforces your own understanding, and having a mentor can provide new perspectives and challenge your assumptions. 
+ - ***Use AI as a mentoring tool***
+
+* **Engage with the broader community:** Participate in conferences, online forums, open-source projects, and meetups to expose yourself to diverse ideas and approaches.
+
+* **Focus on fundamentals:** Understand the underlying principles, not just the tools. This allows you to adapt to new technologies more easily.
+* **Don't be afraid to make mistakes and learn from them.**
+
+---
+
+### Summary
+
+AI gives novices the ability to generate polished code, visualizations, or reports with minimal technical expertise. However, without a strong foundation in best practices, statistical reasoning, or coding logic, it becomes easy to produce work that “looks right” but is fundamentally unsound. This creates a false sense of competence—what some might call “synthetic expertise.” Meanwhile, seasoned practitioners are burdened with the task of quality control, trying to debug or critique outputs created by tools that obscure the learning process.
+
+What’s more, because AI can generate plausible responses to just about anything, beginners often don’t receive the kind of critical feedback that fosters real understanding. The learning curve flattens in the short term, but deep learning—built through trial, error, and human feedback—becomes stunted.
+
+In effect, the very tools designed to democratize knowledge can, paradoxically, make it harder for beginners to know what they don’t know. As a result, the gap between surface-level ability and deep expertise may continue to grow unless paired with strong educational scaffolding, mentorship, and reflective practice.

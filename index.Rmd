@@ -30,15 +30,28 @@ Column {.tabset}
 
 - Former University Lecturer of Mathematics and Statistics. 
 
-  * Maths and Statistics Students (Teaching R)
+  * Maths and Statistics Students (Teaching R, Matlab and Julia)
   * Health sciences, Life Sciences, Equine science, Sports Science, Food science, Biochemistry 
+  * **Important:** At no stage of my career was I affiliated with the MACSI research cluster.
 
 ---------------------
 
 ### Biography
 
-<h4> What AI Says about Me </h4>
+<h3>Open Source Technology Communities</h3>
 
+In recent years, I’ve been part of the organizing teams for several major PyData conferences, including PyData London 2025, PyData NYC 2024, and ongoing support for PyData Global. My contributions typically focus on social media strategy, corporate outreach, speaker recruitment, CFP review, and session chairing.
+
+I also assisted with the organization of PyData Berlin 2025, specifically in retrieving social media assets and advising on best practices for outreach and engagement.
+
+Earlier in my journey, I founded PyData Dublin / PyData Ireland, helping establish a vibrant local community. While I’ve since stepped back from day-to-day organizational duties, the initiative continues to thrive.
+
+I served on the Board of Python Ireland, acting as Conference Lead for PyCon Ireland (2015–2019) and PyCon Limerick (2019–2020). Over the past decade, I’ve also been actively involved in the R and Julia communities, contributing to events, outreach, and cross-community collaboration.
+
+### What AI Says about Me
+<h3> What AI Says about Me </h3>
+
+<b> Disclaimer - This is a mixture of truth and nonsense</b><p>
 Kevin O'Brien is a prominent figure in the data science community in Dublin. He has a strong background in statistical computing and data visualization, with interests spanning R, Julia, Python, MATLAB, and big data analytics¹. Kevin has been a co-chair of the DublinR group, where he played a key role in organizing meetups and fostering a community for R users in Dublin¹.
 
 In addition to his work with DublinR, Kevin is also associated with University College Dublin, where he specializes in bioinformatics³. His research contributions have been recognized with a notable h-index, reflecting his impact in the field³.
@@ -439,12 +452,13 @@ m  # Print the map
 New York {data-navmenu="Maps"}
 ===========================================
 
-Column {.tabset}
---------------------
-```{r child="maps/New_York/New_York.Rmd"}
+```{r eacho=FALSE}
+# Column {.tabset}
+# --------------------
+# ```{r child="maps/New_York/New_York.Rmd" eval=FALSE}
+# ```
+
 ```
-
-
 
 
 

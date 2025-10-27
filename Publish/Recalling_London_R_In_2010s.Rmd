@@ -1,0 +1,34 @@
+---
+title: "The London R Meetup In the 2010s"
+subtitle: "The Halcyon Days of the London R Community"
+date: June 2025
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+```{css my-header-colors, echo = FALSE}
+.page-header {
+    background-image: linear-gradient(120deg, purple, lightpink);
+}
+```
+
+## The Halcyon Days of London R 
+
+
+I was the founder and, on multiple occasions, the main organizer of Dublin R. The R meetup I'm most closely associated with, however, is London R.
+
+London R had, in my opinion, the best layout and structure of any R meetup. It was a format I wanted to replicate in Dublin but couldn’t, due to resource constraints. In Dublin, we also imposed certain self-limitations—some sensible, others arguably counterproductive—which likely contributed to its eventual decline.
+
+### London R's Format
+
+In contrast, London R operated on a quarterly rather than monthly basis. Each event was structured like a mini-conference. It typically began around noon or just after lunch, kicking off with a three-hour workshop on a topical subject—for example, **ggplot2**, **tidyverse**, **shiny**, **quarto**, or **R Markdown**, all of which were emerging at the time. After a break, the second part of the day transitioned into meetup-style talks, usually held between 6:30 p.m. and 8:30 p.m. The talks were of high quality and often topical. Mango Solutions did a stellar job engaging the local R community to source speakers—including myself. Their outreach was excellent.
+
+These were followed by what we affectionately called “the after-after”—informal networking in a bar nearby. It was during these sessions that the real glue of the community formed. Mango Solutions, who sponsored the event, provided complimentary drinks, which didn’t go unnoticed. More importantly, the format gave people a compelling reason to travel, even from beyond London. I myself was in London frequently, but for many attendees coming in from the West Country, Norfolk, or further afield, the format justified the effort.
+
+
+
+Initially, we held the meetup in a bar basement near Liverpool Street Station. As the event grew in size and confidence, we moved to a much larger venue: Ball’s Brothers on Mincing Lane, which featured a spacious function room downstairs.
+
+---

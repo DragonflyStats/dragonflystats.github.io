@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>London R - June 2022</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# London R - June 2022
+]
+.subtitle[
+## Kevin O’Brien
+]
+
+---
+
+### The Expert Beginner Problem
+
+&lt;center&gt;
+  &lt;img src="Career/Expert_Beginner_Problem.png" width="100%"&gt;
+&lt;/center&gt;
+
+(Published by Harvard Business Review in October 2012)
+
+---
+
+### Expert Beginner
+
+* The "Expert Beginner" problem describes a phenomenon, particularly prevalent in fields like software development, where an individual has gained enough experience to be somewhat competent and self-sufficient, ***but their learning and growth have stagnated***. 
+
+* They often believe they are experts, but in reality, they lack a deep understanding of fundamental principles, best practices, or broader industry knowledge.
+
+* This problem was discussed at length before AI. AI expected to make it much worse!
+
+* ***IMPORTANT*** Make sure this doesn't happen to you!!!
+
+---
+
+### Characteristics of an Expert Beginner
+
+* An Expert Beginner is someone who has enough experience to be self-sufficient but has stagnated in their learning and growth, often due to false confidence. 
+
+* They exhibit "***one year of experience, ten times***" repeating basic practices without developing deeper skills or varied knowledge. 
+
+* Their perspective is limited to familiar tools, leading them to resist new ideas and feedback that challenge their perceived expertise. 
+
+* Crucially, they lack fundamental understanding of why things work, often leading to brittle solutions. 
+
+* When in leadership, Expert Beginners can hinder team progress, leading to stagnation, suboptimal outcomes, and discouraging innovation and growth.
+
+---
+
+### Why does it happen?
+
+* **Initial rapid progress:** When someone starts in a new field, they often experience a rapid learning curve and feel a sense of accomplishment, which can lead to overconfidence (Dunning-Kruger effect).
+
+* **Lack of challenging feedback:** In environments where feedback is scarce or where there are no true experts to benchmark against, an Expert Beginner might not realize their limitations.
+
+* **Comfort zone:** It's easier to stick to what's familiar than to constantly learn and adapt.
+
+* **Organizational culture:** Some organizations might unintentionally foster this by valuing longevity over continuous skill development, or by promoting individuals based on time served rather than demonstrated expertise and growth potential.
+
+---
+
+### How to avoid (or overcome) being an Expert Beginner:
+
+* **Embrace continuous learning:** Never stop learning, even if you feel competent. Explore new technologies, methodologies, and concepts.
+
+* **Seek feedback and critique:** Be open to constructive criticism and actively solicit feedback from peers and mentors.
+
+* **Mentor and be mentored:** Teaching others reinforces your own understanding, and having a mentor can provide new perspectives and challenge your assumptions. 
+ - ***Use AI as a mentoring tool***
+
+* **Engage with the broader community:** Participate in conferences, online forums, open-source projects, and meetups to expose yourself to diverse ideas and approaches.
+
+* **Focus on fundamentals:** Understand the underlying principles, not just the tools. This allows you to adapt to new technologies more easily.
+* **Don't be afraid to make mistakes and learn from them.**
+
+The Expert Beginner problem highlights the importance of a growth mindset and the humility to constantly question one's own knowledge, even after years of experience.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

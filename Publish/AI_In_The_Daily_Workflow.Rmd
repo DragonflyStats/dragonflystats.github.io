@@ -1,0 +1,95 @@
+---
+title: "Using AI in a Day-To-Day Workflow"
+subtitle: How to get the best from the volume of AI content
+date: June 2025
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+```{css my-header-colors, echo = FALSE}
+.page-header {
+    background-image: linear-gradient(120deg, blue, lightblue);
+}
+```
+
+---
+
+### My AI Workflow: Big Impact from Small Jobs
+
+Most of the time, I use AI for **smaller, everyday tasks**—jobs that take 2–3 hours at most. These are low-lift, high-frequency activities where AI shines. Larger-scale, high-stakes projects might need a different approach, often involving more computation or bespoke solutions. That said, my workflows tend to evolve with the tools themselves, which keeps things interesting.
+
+
+
+### Using Off-the-Shelf AI Tools for Practical Applications
+
+Incorporating artificial intelligence tools like **Gemini** or **Microsoft Copilot** is remarkably straightforward. If you already have a Gmail account, it’s simple to get started with Gemini. Likewise, if you use Outlook or Hotmail, Copilot can be set up with ease. These accounts may even be connected to services like GitHub or your company email system.
+
+For brevity, I’ll focus on **mainstream, off-the-shelf tools** that are commonly available and widely used. There are, of course, other niche tools out there, but the general approach is usually similar.
+
+AI tools typically require users to enter prompts manually—typed or pasted in. This introduces the first limitation: **prompt length**, which usually ranges between 8,000 and 12,000 characters—generous in most cases. Some platforms also limit how many prompts you can send per session (often around 30) before requiring a chat refresh.
+
+The experience with **Copilot for personal use** tends to be fairly unrestricted. However, in corporate or enterprise settings, you’ll likely encounter more guardrails due to data protection and compliance policies. I suspect that the current open-access model may not last forever—energy consumption, data center resources, and high demand may eventually prompt tighter controls or paywalls.
+
+Another emerging constraint is **access to microchips**, particularly the high-end GPUs essential to run AI models. The semiconductor supply chain is intricate, global, and vulnerable to geopolitical or economic disruptions. A spike in demand or a drop in supply could increase chip costs—and, by extension, limit the accessibility of AI tools.
+
+So, although we currently use these tools as though they’re limitless, it's reasonable to anticipate future constraints.
+
+
+---
+
+### Common Use Cases: From Error Handling to Documentation
+
+A basic but powerful use case is **debugging**. I often paste in error messages alongside the script and ask the AI to help identify the problem. In many cases, it spots issues quickly. However, there’s a caveat: **sometimes the AI introduced the error in the first place**, so a cautious approach is key.
+
+I also rely on AI for **code documentation and refactoring**. I’ll provide a script and ask it to:
+- Remove redundant or commented-out code,
+- Add a meaningful docstring at the top,
+- Suggest improvements (e.g. replace `if`/`else` statements with `case_when()` from the tidyverse),
+- Streamline formatting and ensure tidyverse conventions are followed.
+
+This helps eliminate clutter and improve clarity.
+
+---
+
+### Enhancing Code with Copilot
+
+Copilot can also help refactor code—improving not just its structure, but also its documentation. It’s a good practice to include sufficient comments so your scripts are easier to understand, especially when relating one script to another, or tying it to a dataset or folder structure.
+
+You can also use Copilot to remove redundant or outdated code. For example, some of your older code written with `case_when` might be automatically reformatted using newer tidyverse conventions—resulting in cleaner, more readable, and better-documented scripts. Adding unit tests and annotations about input sources from the prototyping phase can also boost clarity.
+
+Given the complexity of your projects—which often span numerous data sources and scripts—a **modular coding approach** is ideal. It allows for flexibility, particularly when drastic changes are needed. Identifying which scripts or data pipelines are affected and managing those dependencies becomes much more manageable.
+
+### AI Pitfalls & the Importance of Validation
+
+Of course, AI isn't perfect. One critical issue is **hallucination**—AI tools may fabricate package names or functions. It’s up to you to verify outputs and maintain a feedback loop. By providing additional context or examples during future interactions, the AI becomes more accurate in its responses.
+
+Tools like Copilot are also helpful for **interpreting error messages** and debugging, especially when they already understand the datasets and code you’re working with. That said, sometimes Copilot may introduce bugs in the first place, so careful validation is essential.
+
+In short: take a patient, iterative approach. When used thoughtfully, these tools can dramatically accelerate your workflow and raise the quality of your work.
+
+---
+
+### Database Schema Mapping and Metadata Management
+
+Another great application is **database mapping**. For systems with multiple tables, I document:
+- Each table’s name,
+- Column names and data types,
+- Plain-English descriptions of columns,
+- Relationships between tables (primary and foreign keys).
+
+When a well-structured context file exists, it can be used as the first AI prompt. From there, I can query the database using SQL or R with much more confidence and precision.
+
+That said, this kind of work often involves **commercially sensitive data**. It’s absolutely essential to follow your organization’s **AI policies** and avoid uploading this information to unsecured, public-facing tools. Most organizations that use Microsoft Copilot commercially will have enterprise licenses that include **cybersecurity and data protection** safeguards. In those environments, prompt data stays within the company and is not shared externally—which is exactly what you want.
+
+---
+
+### Custom Formatting and Visualization Preferences
+
+A final but often overlooked use case is **styling visualizations**. When creating plots in **ggplot2**, I can provide a few examples with my preferred color schemes or layouts. The AI will learn from those and apply them consistently across future plots.
+
+Believe it or not, formatting **does matter** in corporate environments—presentation, readability, and even color palette can influence how stakeholders engage with your insights.
+
+---
+
