@@ -108,6 +108,12 @@ Source: Conversation with Copilot, 13/9/2024
 
 ----------------------------------------------------------------------------------------------------
 
+```{r child = "Conferences/Use_R_Conference_2026.Rmd"}
+```
+
+```{r child = "Conferences/Use_R_Conference_2025.Rmd"}
+```
+
 ```{r child = "Conferences/PyData_NYC_Introduction.Rmd"}
 ```
 
