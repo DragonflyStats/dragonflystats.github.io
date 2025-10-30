@@ -33,6 +33,9 @@ Column {.tabset}
   * Maths and Statistics Students (Teaching R, Matlab and Julia)
   * Health sciences, Life Sciences, Equine science, Sports Science, Food science, Biochemistry 
   * **Important:** At no stage of my career was I affiliated with the MACSI research cluster.
+  
+  
+
 
 ---------------------
 
@@ -47,6 +50,20 @@ I also assisted with the organization of PyData Berlin 2025, specifically in ret
 Earlier in my journey, I founded PyData Dublin / PyData Ireland, helping establish a vibrant local community. While I’ve since stepped back from day-to-day organizational duties, the initiative continues to thrive.
 
 I served on the Board of Python Ireland, acting as Conference Lead for PyCon Ireland (2015–2019) and PyCon Limerick (2019–2020). Over the past decade, I’ve also been actively involved in the R and Julia communities, contributing to events, outreach, and cross-community collaboration.
+
+
+<h4>notes<h4>
+
+My Day job is a Forestry Data Scientist with Coillte, the Irish state forestry company. 
+
+In recent times, I have part of the organizing team fo PyData London Conference 2025, PyData NYC Conference 2024, and assisting with PyData Global on an ongoing basis for the past few years. My functions have typically been related to social media, corporate outreach, speaker recruitment, CFP review and session chairing.
+
+I assisted the organization of PyData Berlin Conference 2025 (i.e. retrieval of social media assets, and advice on current best practice for social media and corporate outreach)
+
+I was the founder of PyData Dublin / PyData Ireland. although I have since stepped back from organizational duties. 
+
+I was on the board of Python Ireland and was conference lead for PyCon Ireland (2015 to 2019) and PyCon Limerick (2019 and 2020)
+I was also very active in the R and Julia Communities over the last 10 years,
 
 ### What AI Says about Me
 <h3> What AI Says about Me </h3>
@@ -149,7 +166,7 @@ Source: Conversation with Copilot, 13/9/2024
 ```{r child = "Conferences/Why_R_Foundation.Rmd"}
 ```
 
-```{r child = "Conferences/PyCon_Everybody_Pays_Principle.Rmd"}
+```{r child = "Organization/PyCon_Everybody_Pays_Principle.Rmd"}
 ```
 
 

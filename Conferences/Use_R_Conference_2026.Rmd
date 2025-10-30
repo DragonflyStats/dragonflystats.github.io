@@ -1,4 +1,4 @@
-useR! Conference - Salzburg 2024 {data-navmenu="Conferences"}
+useR! Conference - Warsaw 2026 {data-navmenu="Conferences"}
 ===========================================
 
 Column {.tabset}
@@ -6,19 +6,19 @@ Column {.tabset}
 
 ### useR! Conference
 
-<h3>useR! Conference - Salzburg 2024</h3>
+<h3>useR! Conference - Warsaw 2026</h3>
 
-![useR! Conference - Salzburg 2024](./Conferences/Resources/UseR-24-Event-LaunchAssets-v2_cfp-632x84.png)
+![useR! Conference - Warsaw 2026](./Conferences/Resources/UseR-24-Event-LaunchAssets-v2_cfp-632x84.png)
 
 <p>
 The **useR! conference** is an annual event organized by volunteers from the R community and supported by the R Foundation. It showcases the latest applications and developments in R, a popular programming language for statistical computing and graphics. The conference features a variety of activities, including keynote speeches, technical talks, workshops, and poster sessions¹.
 <p>
-The next useR! conference will be held from **July 8th to 11th, 2024**, in **Salzburg, Austria**, with virtual participation options available¹. It's a great opportunity for R users, developers, data scientists, and statisticians from academia and industry to network, share knowledge, and learn about the latest advancements in R.
+The next useR! conference will be held from **July 8th to 11th, 2026**, in **Warsaw, Austria**, with virtual participation options available¹. It's a great opportunity for R users, developers, data scientists, and statisticians from academia and industry to network, share knowledge, and learn about the latest advancements in R.
 
 #### References
 
 (1) useR! | LF Events. https://events.linuxfoundation.org/user/.
-(2) 2024 Esri User Conference. https://uc2024.esri.com/flow/esri/24uc/eventportal/page/detailed-agenda.
+(2) 2026 Esri User Conference. https://uc2026.esri.com/flow/esri/24uc/eventportal/page/detailed-agenda.
 (3) useR! 2022. https://user2022.r-project.org/.
 (4) About - user2022.r-project.org. https://user2022.r-project.org/about/user/.
 

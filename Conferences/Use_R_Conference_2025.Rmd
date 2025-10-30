@@ -1,4 +1,4 @@
-useR! Conference - Salzburg 2024 {data-navmenu="Conferences"}
+useR! Conference - Durham (NC) 2025 {data-navmenu="Conferences"}
 ===========================================
 
 Column {.tabset}
@@ -6,7 +6,7 @@ Column {.tabset}
 
 ### useR! Conference
 
-<h3>useR! Conference - Salzburg 2024</h3>
+<h3>useR! Conference - Durham (NC) 2024</h3>
 
 ![useR! Conference - Salzburg 2024](./Conferences/Resources/UseR-24-Event-LaunchAssets-v2_cfp-632x84.png)
 
