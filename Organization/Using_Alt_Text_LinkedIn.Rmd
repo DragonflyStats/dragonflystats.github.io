@@ -1,0 +1,29 @@
+Using Alt-Text for LinkedIn Post Images {data-navmenu="Community"}
+===================================================================
+
+Column {.tabset}
+----------------
+
+### LinkedIn Post Protocol: Structure, Keywords, and Visuals
+
+#### Alt Text Guidelines for LinkedIn Images Using Microsoft Copilot
+
+#### Why Alt Text Matters
+
+- **Accessibility**: Alt text ensures screen readers can describe images to visually impaired users.
+- **SEO & Reach**: LinkedIn’s algorithm uses alt text to understand image content, improving discoverability.
+- **Professionalism**: Thoughtful alt text reflects attention to detail and inclusive communication.
+
+#### How to Use Microsoft Copilot for Alt Text
+1. **Paste the image into Copilot** (or upload it if using the app).
+2. **Prompt clearly**: Ask Copilot to generate alt text for LinkedIn, up to **1000 characters**, and include:
+   - A detailed visual description (e.g., "A drone hovering over a coastal village")
+   - **Context** of the event or post (e.g., *"Captured during Why R? Foundation’s outreach on environmental mapping"*)
+   - 2–3 **relevant keywords** (e.g., "drone mapping", "open-source", "community data")
+3. **Review and refine**: Ensure the alt text is accurate, descriptive, and not overly technical or generic.
+4. **Paste into LinkedIn’s alt text field** when uploading the image.
+
+#### Formatting Tips
+- Keep it **natural and readable** — avoid keyword stuffing.
+- Use **landscape images** (3:2 aspect ratio) to ensure optimal display.
+- Always include alt text — it’s not optional.

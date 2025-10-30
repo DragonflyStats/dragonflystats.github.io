@@ -1,5 +1,5 @@
 
-PyCon - Everybody Pays Principle {data-navmenu="Conferences"}
+PyCon - Everybody Pays Principle {data-navmenu="Community"}
 ===========================================
 
 Column {.tabset}

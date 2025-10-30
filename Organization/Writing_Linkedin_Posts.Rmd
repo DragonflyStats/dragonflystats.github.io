@@ -1,0 +1,70 @@
+Writing LinkedIn Posts {data-navmenu="Community"}
+===========================================
+
+Column {.tabset}
+--------------------
+
+### LinkedIn Post Protocol: Structure, Keywords, and Visuals
+
+#### 1. Lead with Key Details (First 3–4 Lines)
+LinkedIn collapses long posts after ~3 lines on mobile and ~4 on desktop. To maximize visibility:
+
+- **Start with the most important info**: event name, announcement, achievement, or call to action.
+- Use **bold phrasing**, line breaks, or formatting to draw attention.
+- Example:
+
+```
+Excited to announce our upcoming community showcase: "Data & Drones: Visualizing the Future"!
+November 12 | Dublin | Hosted by Why R? Foundation
+```
+
+#### 2. Use Strategic Keywords
+LinkedIn’s algorithm surfaces posts based on relevance and engagement. To optimize reach:
+
+- Include **keywords** related to your domain, audience, and theme (e.g., “open-source”, “data visualization”, “community outreach”, “R programming”, “drone mapping”).
+- Mention **organizations, tools, or formats** (e.g., “Why R?”, “Copilot”, “ggplot2”, “Shiny”, “pet portraits for outreach”).
+- Avoid keyword stuffing — 3–5 well-placed terms are ideal.
+
+#### 3. Image Guidelines
+Visuals dramatically increase engagement. Follow these specs:
+
+- **Aspect ratio**: Prefer **landscape (3:2)** — e.g., 1500×1000 px or 1200×800 px.
+- Avoid **portrait orientation** (e.g., 2:3 or 9:16), which LinkedIn penalizes for taking up too much vertical space.
+- Use **high-resolution images** with clear focal points and minimal text overlay.
+
+#### 4. Alt Text for Accessibility and SEO
+Always include **alt text** when uploading images:
+
+- Use **Copilot** or another tool to generate up to **1000 characters** of descriptive alt text.
+- Include:
+  - What’s visually depicted (e.g., “A drone hovering over a coastal landscape with data overlays”)
+  - Context (e.g., “Captured during the Why R? Foundation’s outreach event on environmental mapping”)
+  - 2–3 relevant keywords (e.g., “drone mapping”, “community data”, “open-source visualization”)
+
+#### 5. Writing Tools and Workflow
+- Use **Microsoft Copilot** to draft, refine, and optimize your post.
+- Consider writing in **Word or Notepad first**, then pasting into LinkedIn to avoid formatting glitches.
+- Review your post for:
+  - Line breaks and spacing
+  - Keyword placement
+  - Image alignment and alt text
+
+---
+
+#### Sample LinkedIn Post Template
+
+```
+Just wrapped up our latest outreach project: "Data & Drones: Mapping Community Stories"!
+
+Hosted by Why R? Foundation in Dublin, this initiative brought together open-source advocates, drone pilots, and data artists to visualize local narratives through aerial mapping and R-powered diagrams.
+
+From pet portraits to environmental overlays, we explored how playful visuals and comparative diagrams can foster identity and engagement.
+
+Tools used: ggplot2, Copilot, Shiny, and custom drone telemetry pipelines.
+
+[Image: Drone hovering over a coastal village with data overlays — alt text embedded]
+
+#OpenSource #CommunityOutreach #DataVisualization #WhyR #DroneMapping #RStats
+```
+
+---

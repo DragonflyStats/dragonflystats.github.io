@@ -1,0 +1,107 @@
+Kevin O'Brien
+=====================
+
+Column {.tabset}
+--------------
+
+
+### Kevin O'Brien
+
+---------------------
+
+<h4> About Me </h4>
+
+- Agricultural Data Scientist based between the West of Ireland and London (UK)
+
+- Was (what is now known) as a "Research Software Engineer" in a University.
+
+- Former University Lecturer of Mathematics and Statistics. 
+
+  * Maths and Statistics Students (Teaching R, Matlab and Julia)
+  * Health sciences, Life Sciences, Equine science, Sports Science, Food science, Biochemistry 
+  * **Important:** At no stage of my career was I affiliated with the MACSI research cluster.
+  
+  
+
+
+---------------------
+
+### Biography
+
+<h3>Open Source Technology Communities</h3>
+
+In recent years, I’ve been part of the organizing teams for several major PyData conferences, including PyData London 2025, PyData NYC 2024, and ongoing support for PyData Global. My contributions typically focus on social media strategy, corporate outreach, speaker recruitment, CFP review, and session chairing.
+
+I also assisted with the organization of PyData Berlin 2025, specifically in retrieving social media assets and advising on best practices for outreach and engagement.
+
+Earlier in my journey, I founded PyData Dublin / PyData Ireland, helping establish a vibrant local community. While I’ve since stepped back from day-to-day organizational duties, the initiative continues to thrive.
+
+I served on the Board of Python Ireland, acting as Conference Lead for PyCon Ireland (2015–2019) and PyCon Limerick (2019–2020). Over the past decade, I’ve also been actively involved in the R and Julia communities, contributing to events, outreach, and cross-community collaboration.
+
+
+#### Additional Notes
+
+My Day job is a Forestry Data Scientist with Coillte, the Irish state forestry company. 
+
+In recent times, I have part of the organizing team fo PyData London Conference 2025, PyData NYC Conference 2024, and assisting with PyData Global on an ongoing basis for the past few years. My functions have typically been related to social media, corporate outreach, speaker recruitment, CFP review and session chairing.
+
+I assisted the organization of PyData Berlin Conference 2025 (i.e. retrieval of social media assets, and advice on current best practice for social media and corporate outreach)
+
+I was the founder of PyData Dublin / PyData Ireland. although I have since stepped back from organizational duties. 
+
+I was on the board of Python Ireland and was conference lead for PyCon Ireland (2015 to 2019) and PyCon Limerick (2019 and 2020)
+I was also very active in the R and Julia Communities over the last 10 years
+
+
+### What AI Says about Me
+
+<h3> What AI Says about Me </h3>
+
+<b> Disclaimer - This is a mixture of truth and nonsense</b><p>
+Kevin O'Brien is a prominent figure in the data science community in Dublin. He has a strong background in statistical computing and data visualization, with interests spanning R, Julia, Python, MATLAB, and big data analytics¹. Kevin has been a co-chair of the DublinR group, where he played a key role in organizing meetups and fostering a community for R users in Dublin¹.
+
+In addition to his work with DublinR, Kevin is also associated with University College Dublin, where he specializes in bioinformatics³. His research contributions have been recognized with a notable h-index, reflecting his impact in the field³.
+
+Would you like to know more about his work in bioinformatics or his contributions to the R community?
+
+Source: Conversation with Copilot, 13/9/2024
+(1) Kevin O'Brien - Dublin, Ireland | about.me. https://about.me/statslabdublin.
+(2) KEVIN O'BRIEN | University College Dublin | CUFinder. https://cufinder.io/professor/kevin-obrien-UzEUXlkAAAAJ.
+(3) Dublin R - Meetup. https://www.meetup.com/DublinR/.
+
+Kevin Patrick O'Brien is a notable figure in the PyData community. He is known for his contributions to data visualization and data science. He has given talks at various PyData and Python-related conferences, including a presentation on "Data Visualization with ggplot" at PyCon Ireland.
+
+O'Brien is recognized for his expertise in using Python for data analysis and visualization, and he actively participates in the community by sharing his knowledge and insights.
+
+
+Source: Conversation with Copilot, 13/9/2024
+(1) Python Ireland | #PyConIE Talks: Kevin O'Brien 'Data ... - Facebook. https://www.facebook.com/groups/pythonie/posts/10154123747628465/.
+(2) PyData. https://pydata.org/.
+(3) PyData London 2024. https://pydata.org/london2024/.
+(4) undefined. http://buff.ly/1LiqhP8.
+
+
+### Affiliations
+
+
+<h4> Affiliations</h4>
+
+- <a href= "www.whyr.pl">Why R? Foundation</a> - Community Team lead & Webinars co-ordinator (on hiatus)
+
+- <a href= "www.JuliaCon.Org">JuliaCon 2023</a> - Social Media Chair (2017 to 2023)
+
+- <a href= "www.Python.ie">Python Ireland</a> - **Former** Director & Conference Lead 
+
+-----------------------------------------------------------
+
+### Research Software Engineering
+
+#### Research Software Engineering
+
+* Research software engineering is the use of software engineering practices in research applications. 
+
+* The term was proposed in a research paper in 2010 in response to an empirical survey on tools used for software development in research projects. 
+
+* It started to be used in United Kingdom in 2012, when it was needed to define the type of software development needed in research. 
+
+* This focuses on reproducibility, reusability, and accuracy of data analysis and applications created for research.

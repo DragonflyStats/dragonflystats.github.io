@@ -11,13 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-
-
-
 ```{r child = "About_Me.Rmd"}
 ```
-
-
 
 
 ### Cynthia Longfield
@@ -25,7 +20,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = "Cynthia_Longfield.Rmd"}
 ```
 
-----------------------------------------------------------------------------------------------------
+--------------------------------
+
 
 ```{r child = "Conferences/Use_R_Conference_2026.Rmd"}
 ```
@@ -45,8 +41,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = "Conferences/Use_R_Conference_2024.Rmd"}
 ```
 
+
 ```{r child = "Conferences/JuliaCon_Conferences.Rmd"}
 ```
+
 
 ```{r child = "Conferences/JuliaCon_Virtual_Conference_2021.Rmd"}
 ```
@@ -62,32 +60,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r child = "Conferences/WhyR-Limerick-Career-Zoo-2020.Rmd"}
 ```
 
-```{r child = "Conferences/PyCon_Ireland.Rmd"}
-```
+
 
 ```{r child = "Conferences/Why_R_Foundation.Rmd"}
 ```
 
-```{r child = "Organization/PyCon_Everybody_Pays_Principle.Rmd"}
+```{r child = "Conferences/PyCon_Ireland.Rmd"}
 ```
 
 
-
-```{r child = "Community/Linkedin_Tags.Rmd"}
-```
-
-```{r child = "Organization/Writing_Linkedin_Posts.Rmd"}
-```
-
-
-
-```{r child = "Organization/Using_Alt_Text_LinkedIn.Rmd"}
-```
-
-
-
-```{r child = "Organization/PyData_London_2025_FB_Ad.Rmd"}
-```
 
 
 
@@ -444,3 +425,5 @@ Column
 * Date: Saturday 23rd March 2023
 * Location: Strand Hotel Limerick 
 * Times: 10.00am to 17:10pm approx
+
+

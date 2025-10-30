@@ -1,59 +1,73 @@
-Ad Campaign Report Summary: PyData London Conference Promotion
-Placement & Page Context
-The ad was published via the “Data Scientists Ireland” Facebook page. At the time of launch:
+Facebook Ad Report for PyData London 2025 {data-navmenu="Community"}
+===========================================
 
-The page had approximately 700–800 followers
+Column {.tabset}
+--------------------
 
-This account is relatively inactive, with minimal recent posts and low organic reach
 
-Despite the dormant state of the page, paid promotion enabled a strong performance boost by bypassing reliance on follower engagement.
 
-Campaign Timeline
-Launch Date: Tuesday 29th April 2025
+### Ad Campaign Report Summary: PyData London Conference Promotion
 
-Duration: 10 days
+#### Placement & Page Context
+- The ad was published via the **“Data Scientists Ireland”** Facebook page.
+- At launch:
+  - Page had approximately **700–800 followers**
+  - Account was **relatively inactive**, with minimal recent posts and low organic reach
+- Despite the dormant state, **paid promotion enabled strong performance** by bypassing reliance on follower engagement.
 
-Platform Distribution:
+---
 
-Facebook Mobile Feed
+#### Campaign Timeline
+- **Launch Date**: Tuesday, 29th April 2025  
+- **Duration**: 10 days  
+- **Platform Distribution**:
+  - Facebook Mobile Feed  
+  - Facebook Reels  
+  - Instagram Reels  
+  - Instagram Stories  
 
-Facebook Reels/.
+---
 
-Instagram Reels
+#### Targeting Strategy
+- Used **Meta Advantage+ Audience Optimization** to reach relevant users based on interests and demographics.
 
-Instagram Stories
+#### Age Group
+- 18 and older  
+- Strong reach across ages **25–44**
 
-Targeting Strategy
-The ad used Meta Advantage+ Audience optimization to reach relevant users based on interests and demographics:
+#### Interests & Professional Tags
+- Artificial intelligence  
+- Machine learning  
+- Python  
+- Data science  
+- Computer science  
+- Software engineering  
+- Related educational backgrounds and industry job titles
 
-Age Group: 18 and older, with strong reach across ages 25–44
+#### Geographic Targeting
+- **United Kingdom**: Focused on London and South East England  
+  - Cities: Cambridge, Croydon, Reading, Oxford  
+- **International Reach**: Canterbury, New Zealand  
+  - *(Unintentional — meant to target Canterbury, Kent, UK)*
 
-Interests & Professional Tags:
+---
 
-Artificial intelligence, machine learning, Python, data science, computer science, software engineering
+#### Performance Metrics
+| Metric                  | Value             |
+|------------------------|-------------------|
+| Budget Spent           | €159.99           |
+| Total Reach            | 50,138 accounts   |
+| Impressions            | 85,675            |
+| Link Clicks            | 755               |
+| Post Engagements       | 801 (Reactions: 35, Saves: 9) |
+| Cost per Link Click    | €0.21             |
+| Click-Through Rate     | ~0.88%            |
 
-Related educational backgrounds and industry job titles
+---
 
-Geographic Targeting:
-
-United Kingdom: Concentrated around London and South East England, including cities like Cambridge, Croydon, Reading, and Oxford
-
-International reach: Canterbury, New Zealand (Unintentional - was meant to be Canterbury, Kent, UK, south east of London)
-
-Performance Metrics
-Budget Spent: €159.99
-
-Total Reach: 50,138 accounts
-
-Impressions: 85,675
-
-Link Clicks: 755
-
-Post Engagements: 801 (Reactions: 35, Saves: 9)
-
-Cost per Link Click: €0.21
-
-Click-Through Rate (CTR): Approx. 0.88%
-
-Summary Insight
-The campaign delivered strong results despite being launched from a non-active page. Cost-per-click was low, click-through volume was high, and the ad successfully captured attention from a well-targeted tech-savvy audience. Future campaigns may benefit from using more active community pages or refreshing dormant ones with engaging content.
+#### Summary Insight
+The campaign delivered **strong results** despite launching from a non-active page.  
+- **Low cost-per-click**, **high click-through volume**, and **effective audience targeting** contributed to success.  
+- Future campaigns may benefit from:
+  - Using **more active community pages**
+  - **Refreshing dormant accounts** with engaging content prior to promotion
