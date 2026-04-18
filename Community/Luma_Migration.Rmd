@@ -1,0 +1,14 @@
+## Moving the R Community: Why Luma is the New Destination
+
+The R community has always been defined by its momentum and the strength of its local chapters. To keep that energy growing, many user groups are beginning to transition from Meetup.com to **Luma**.
+
+While Meetup has served the community for years, several "Pioneer" groups have already made the switch. The goal is to consolidate our network on a platform that better suits the needs of modern technical communities. By migrating active, high-impact groups—like the R User Group in Rome—the community can reach a **critical mass** that makes event discovery and networking more seamless for everyone.
+
+### Why Luma?
+The shift isn't just about a change of scenery; it's about building a more integrated ecosystem. Luma offers several advantages for data science and developer circles:
+
+* **Platform Focus:** A cleaner, more modern interface that prioritizes community engagement over generic social browsing.
+* **Unified Tools:** Better integration for newsletters, event registration, and member directories.
+* **Community Momentum:** As more influential R groups join, the platform becomes a central hub, making it easier for members to find high-quality R content globally.
+
+The R community is at its best when it moves together. Transitioning to Luma is a strategic step toward building a more sustainable and connected home for R users everywhere.
