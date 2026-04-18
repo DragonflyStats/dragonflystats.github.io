@@ -24,3 +24,46 @@ The goal is to make our community pages a place where you can always find someth
 Thank you for being part of this journey!
 
 ---
+In the context of promoting **open source technology conferences**, the limited algorithmic propagation on Bluesky and Mastodon is actually a strategic advantage, provided you shift your marketing mindset from **"Mass Broadcasting"** to **"Community Ecosystem Seeding."**
+
+Because these platforms lack a central "engine" that forces content onto disinterested people, you must rely on the specific technical affordances of each network to move your event information through the community.
+
+---
+
+## 1. Mastodon: "Boost" Culture & The Trust Graph
+On Mastodon, "Likes" (Favorites) are purely private bookmarks; they do **not** help your post reach new people. 
+
+* **The Boost is the Only Metric:** To promote an open-source event, your primary goal is to get "Boosts." Since there is no algorithm to "surface" popular content, a post only lives as long as the next person manually shares it.
+* **Instance-Level Targeting:** Open source communities are often clustered on specific instances (e.g., `fosstodon.org`, `hachyderm.io`, or `chaos.social`). Posting from—or tagging—these specific instances ensures your event hits the **"Local Timeline"** of the very people most likely to attend.
+* **Hashtag Utility:** Unlike on X, where hashtags are often ignored by the algorithm in favor of engagement, Mastodon users actively **follow hashtags**. Using `#FOSDEM`, `#KubeCon`, or `#RustLang` is a direct injection into the feeds of people who have opted into those topics.
+
+---
+
+## 2. Bluesky: Curated Feeds & "Starter Packs"
+Bluesky’s propagation is limited by **Feed Subscription**. If your event isn't in a feed someone follows, they won't see it.
+
+* **Targeting Custom Feeds:** The open-source community on Bluesky often uses custom feeds like *"Open Source"* or *"Linux News."* To propagate your event, you must understand the "regex" or keyword triggers for those feeds (e.g., specific keywords or being followed by a specific group of core contributors).
+* **Starter Packs as Onboarding:** One of Bluesky's most effective promotion tools is the **Starter Pack**. Conference organizers can create a list of speakers, sponsors, and core devs. When a user "follows all" in a starter pack, they are instantly opted into the event's social bubble, bypassing the need for a discovery algorithm.
+* **The "Discover" Feed logic:** Bluesky’s "Discover" feed is weighted toward your "social graph" (who you follow). Propagation here is a "friend-of-a-friend" model. If a few key influencers in the dev community interact with your CFP (Call for Papers), it will ripple out to their followers.
+
+---
+
+## 3. Comparison for Event Organizers
+
+| Strategy | Mastodon Approach | Bluesky Approach |
+| :--- | :--- | :--- |
+| **Discovery** | **Active Search:** Users follow `#OpenSource`. | **Algorithmic Choice:** Users follow "Tech" feeds. |
+| **Virality** | **The Boost:** Manual human curation only. | **The Feed:** Getting your post "picked up" by a popular custom feed. |
+| **Trust** | **Instance Identity:** Being on a reputable tech server. | **The Starter Pack:** Bundling speakers into a follow-list. |
+| **Persistence** | **Chronological:** High frequency, low "shelf-life." | **Feed-Based:** Posts can surface as long as the feed criteria are met. |
+
+---
+
+## Strategic Recommendation
+When promoting an event for 2026:
+
+1.  **Don't "Shout" into the Void:** On these platforms, generic "Register Now!" posts without hashtags or mentions have **zero** reach. 
+2.  **Use the "Echo" Effect:** Encourage your speakers to post their own "I'm speaking at [Event]" updates. On Mastodon, this creates a web of boosts; on Bluesky, it helps the "Discover" algorithm realize there is a cluster of activity around your event.
+3.  **Human-Centric Content:** Because there is no AI to reward "engagement bait," the content that propagates best is **high-utility** (e.g., "5 things you'll learn at our WASM workshop"). 
+
+Are you looking for specific ways to set up a "Starter Pack" or a "Custom Feed" to help attendees find each other before the event?
