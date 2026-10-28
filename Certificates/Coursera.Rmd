@@ -1,0 +1,71 @@
+```rmd
+---
+title: "Coursera Specialization Certificates"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+```
+
+## Specialization Certificates
+
+### Data Analysis with R Specialization
+
+* **Issuer:** Duke University
+* **Date Completed:** April 5, 2023
+* **Time Commitment:** Approx. 4 months at 10 hours/week
+* **Verification:** [View Certificate](https://coursera.org/share/58ebfc92fefbe4d79e756496cf2c9fc0)
+
+**Courses Completed:**
+
+* Introduction to Probability and Data with R
+* Inferential Statistics
+* Linear Regression and Modeling
+
+---
+
+### Statistics with Python Specialization
+
+* **Issuer:** University of Michigan
+* **Date Completed:** October 28, 2026
+* **Time Commitment:** Approx. 1 month at 10 hours/week
+
+**Courses Completed:**
+
+* Understanding and Visualizing Data with Python
+* Inferential Statistical Analysis with Python
+* Fitting Statistical Models to Data with Python
+
+**Skills Gained:**
+
+* Data Visualization & Analysis
+* Inferential Statistics Procedures
+* Statistical Modeling (Linear, Logistic, Multilevel, Bayesian Inference)
+
+---
+
+### Generative AI for Data Engineers Specialization
+
+* **Issuer:** IBM
+* **Date Completed:** October 2, 2026
+* **Time Commitment:** Approx. 2 months at 2 hours/week
+* **Verification:** [View Certificate](https://www.coursera.org/account/accomplishments/specialization/1NNXP3F6TBUZ)
+
+**Courses Completed:**
+
+* Generative AI: Introduction and Applications
+* Generative AI: Prompt Engineering Basics
+* Generative AI: Elevate your Data Engineering Career
+
+**Skills Gained:**
+
+* Data Pipelines & ETL
+* Prompt Engineering
+* Data Warehousing & Synthetic Data
+* AI Literacy & Responsible AI
+
+```
+
+```
