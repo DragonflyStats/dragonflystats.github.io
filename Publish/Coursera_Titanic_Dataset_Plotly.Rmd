@@ -1,0 +1,144 @@
+---
+title: "Visualizing the Titanic Manifest: Categorical Flows"
+author: "Kevin O'Brien"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output: 
+  html_document:
+    theme: cosmo
+    highlight: tango
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+```
+
+## Overview
+
+This document was generated on **`r format(Sys.Date(), '%B %d, %Y')`**. It demonstrates how to transform multi-dimensional categorical data into a continuous visual stream using a **Sankey diagram** rendered via `plotly` in R.
+
+Sankey diagrams excel at illustrating proportional shifts across categorical stages. Here, we track passenger demographics and survival outcomes from the RMS Titanic disaster of April 1912.
+
+---
+
+## Dataset Description
+
+The analysis uses the built-in R `Titanic` dataset, derived from the official passenger manifest and historical records compiled after the sinking.
+
+### Structure & Dimensions
+
+The dataset is a 4-dimensional cross-tabulated array consisting of **2,201 records** categorized across four factors:
+
+* **`Class`**: Passenger booking class or crew designation (*1st*, *2nd*, *3rd*, *Crew*).
+* **`Sex`**: Biological sex (*Male*, *Female*).
+* **`Age`**: Age category (*Child*, *Adult*).
+* **`Survived`**: Final survival status (*No*, *Yes*).
+
+### Data Summary
+
+The table below aggregates the total passenger counts across passenger class, sex, and final survival outcomes:
+
+```{r data-summary}
+library(dplyr)
+library(knitr)
+
+# Convert 4D array to data frame
+titanic_df <- as.data.frame(Titanic) %>%
+  filter(Freq > 0)
+
+# Summary table grouped by Class, Sex, and Survived
+summary_table <- titanic_df %>%
+  group_by(Class, Sex, Survived) %>%
+  summarise(Passengers = sum(Freq), .groups = "drop") %>%
+  arrange(Class, Sex, Survived)
+
+kable(summary_table, caption = "Titanic Manifest Summary by Class, Sex, and Outcome")
+
+```
+
+---
+
+## Interactive Flow Diagram
+
+The Sankey diagram maps categorical transitions left-to-right along a two-stage flow:
+
+$$\text{Passenger Class} \longrightarrow \text{Sex} \longrightarrow \text{Survival Outcome}$$
+
+Hover over nodes or connecting flows to inspect exact passenger volumes.
+
+```{r plotly-sankey, fig.width=9, fig.height=6}
+library(plotly)
+
+# Stage 1: Class -> Sex
+flow_class_sex <- titanic_df %>%
+  group_by(Class, Sex) %>%
+  summarise(value = sum(Freq), .groups = "drop") %>%
+  rename(source_name = Class, target_name = Sex)
+
+# Stage 2: Sex -> Survived
+flow_sex_survived <- titanic_df %>%
+  group_by(Sex, Survived) %>%
+  summarise(value = sum(Freq), .groups = "drop") %>%
+  rename(source_name = Sex, target_name = Survived) %>%
+  mutate(target_name = paste("Outcome:", target_name))
+
+# Combine stage flows
+all_flows <- bind_rows(flow_class_sex, flow_sex_survived)
+
+# Map nodes to 0-indexed vectors for Plotly
+unique_nodes <- c("1st", "2nd", "3rd", "Crew", 
+                  "Male", "Female", 
+                  "Outcome: No", "Outcome: Yes")
+
+node_lookup <- setNames(seq(0, length(unique_nodes) - 1), unique_nodes)
+
+all_flows <- all_flows %>%
+  mutate(
+    source = node_lookup[source_name],
+    target = node_lookup[target_name]
+  )
+
+# Define node palette
+node_colors <- c(
+  "#2b5c8f", "#3690c0", "#67a9cf", "#a6bddb", # Class nodes
+  "#8856a7", "#e08214",                      # Sex nodes
+  "#d73027", "#1a9850"                       # Survival outcome nodes
+)
+
+# Render Sankey Widget
+plot_ly(
+  type = "sankey",
+  orientation = "h",
+  node = list(
+    label = unique_nodes,
+    color = node_colors,
+    pad = 18,
+    thickness = 22,
+    line = list(color = "#333333", width = 0.5)
+  ),
+  link = list(
+    source = all_flows$source,
+    target = all_flows$target,
+    value  = all_flows$value
+  )
+) %>%
+  layout(
+    title = list(text = "Titanic Passenger Flows: Class → Sex → Survival", font = list(size = 16)),
+    font = list(size = 12)
+  )
+
+```
+
+---
+
+## Analytical Observations
+
+1. **Class Distribution**: Crew members and 3rd-class passengers represented the largest initial node blocks in the manifest.
+2. **Gender Ratio**: Male passengers heavily outnumbered female passengers, particularly among crew members and 3rd-class travelers.
+3. **Outcome Disparities**: The path width leading into **Outcome: Yes** illustrates high survival proportions among female passengers, highlighting the historical enforcement of the "women and children first" protocol during evacuation.
+
+```
+
+```

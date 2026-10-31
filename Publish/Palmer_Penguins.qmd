@@ -1,0 +1,42 @@
+---
+title: "Palmer Penguins Body Mass Predictor"
+subtitle: "Coursera Developing Data Products Project"
+author: "Kevin O'Brien"
+date: "October 2026"
+format: 
+  revealjs:
+    theme: sky
+    slide-number: true
+    transition: slide
+    chalkboard: true
+execute:
+  echo: true
+  warning: false
+---
+
+## Overview & Motivation
+
+Morphological features are key indicators of health and ecological adaptations in polar penguin populations.
+
+-   **Objective:** Provide an interactive tool estimating penguin body mass in grams ($g$).
+-   **Dataset:** Built on `palmerpenguins::penguins` curated by Dr. Kristen Gorman.
+-   **Predictors:**
+    -   Species (`species`)
+    -   Flipper Length (`flipper_length_mm`)
+    -   Bill Length (`bill_length_mm`)
+
+------------------------------------------------------------------------
+
+## Dataset Inspection
+
+Data summary of clean observations across three species in the Palmer Archipelago:
+
+## Dataset Inspection
+
+Data summary of clean observations across three species in the Palmer Archipelago:
+
+```{r dataset_summary}
+library(palmerpenguins)
+penguins_clean <- na.omit(penguins)
+head(penguins_clean[, c("species", "flipper_length_mm", "bill_length_mm", "body_mass_g")], 4)
+```

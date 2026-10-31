@@ -1,0 +1,76 @@
+---
+title: "Palmer Penguins Body Mass Predictor"
+author: "Kevin O'Brien"
+date: "2026-10-31"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(palmerpenguins)
+library(ggplot2)
+penguins_clean <- na.omit(penguins)
+
+```
+
+## Overview & Motivation
+
+Morphological features are key indicators of health and ecological adaptations in polar penguin populations.
+
+* **Objective:** Provide an interactive tool estimating penguin body mass in grams ($g$).
+* **Dataset:** Built on `palmerpenguins::penguins` curated by Dr. Kristen Gorman.
+* **Predictors:**
+* Species (`species`)
+* Flipper Length (`flipper_length_mm`)
+* Bill Length (`bill_length_mm`)
+
+
+
+## Dataset Inspection
+
+Data summary of clean observations across three species in the Palmer Archipelago:
+
+```{r dataset_summary, echo = TRUE}
+head(penguins_clean[, c("species", "flipper_length_mm", "bill_length_mm", "body_mass_g")], 4)
+
+```
+
+## Regression Model Evaluation
+
+A multiple linear regression model is fitted dynamically on biological metrics:
+
+```{r fit_model, echo = TRUE}
+fit <- lm(body_mass_g ~ species + flipper_length_mm + bill_length_mm, 
+          data = penguins_clean)
+summary(fit)$coefficients
+
+```
+
+The model demonstrates strong predictive power, accounting for species baseline differences alongside body dimensions.
+
+## Application Architecture
+
+The Shiny application executes real-time calculations using a responsive UI:
+
+1. **User Interface (`ui.R` / `app.R`):**
+* Dropdown menu for selecting species (*Adelie*, *Chinstrap*, *Gentoo*).
+* Sliders for flipper length and bill length inputs.
+* Light blue thematic styling using custom CSS rules.
+
+
+2. **Server Calculations (`server.R` / `app.R`):**
+* Evaluates target weight against trained linear regression parameters.
+* Plots prediction point dynamically using a single-row data frame to avoid mapping warnings.
+
+
+
+## Submission & Resources
+
+* **Interactive Shiny App:** [Deployed App on shinyapps.io](http://www.shinyapps.io) *(Replace with your URL)*
+* **GitHub Repository:** [Source Code on GitHub](https://github.com) *(Replace with your URL)*
+
+Thank you for reviewing this project!
+
+```
+
+```
